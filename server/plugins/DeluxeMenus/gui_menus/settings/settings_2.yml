@@ -1,0 +1,256 @@
+menu_title: '&f七七七七七七七七🎥'
+open_command: settings2
+size: 36
+update_interval: 1
+
+items:
+
+  'you_are_op_1':
+    material: BARRIER
+    slot: 1
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'on_payconfirm':
+    material: PAPER
+    model_data: 3185
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴘᴀʏᴍᴇɴᴛ ᴄᴏɴғɪʀᴍᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&7Enable or disable payments'
+      - '&7confirmations'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: settings.payconfirm.off
+    left_click_commands:
+      - "[takepermission] settings.payconfirm.off"
+      - "[givepermission] essentials.payconfirmtoggle"
+      - "[player] payconfirmoff"
+      - "[takepermission] essentials.payconfirmtoggle"
+      - "[refresh]"
+
+  'off_payconfirm':
+    material: PAPER
+    model_data: 3186
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴘᴀʏᴍᴇɴᴛ ᴄᴏɴғɪʀᴍᴀᴛɪᴏɴ'
+    lore:
+      - ''
+      - '&7Enable or disable payments'
+      - '&7confirmations'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    left_click_commands:
+      - "[givepermission] settings.payconfirm.off"
+      - "[givepermission] essentials.payconfirmtoggle"
+      - "[player] payconfirmon"
+      - "[takepermission] essentials.payconfirmtoggle"
+      - "[refresh]"
+
+
+
+
+
+
+
+
+
+  'you_are_op_2':
+    material: BARRIER
+    slot: 10
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'off_payments':
+    material: PAPER
+    model_data: 3185
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴘᴀʏᴍᴇɴᴛs'
+    lore:
+      - ''
+      - '&7Enable or disable payments'
+      - '&7confirmations'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: settings.payments.off
+    left_click_commands:
+      - "[takepermission] settings.payments.off"
+      - "[givepermission] essentials.paytoggle"
+      - "[player] payoff"
+      - "[takepermission] essentials.paytoggle"
+      - "[refresh]"
+
+  'on_payments':
+    material: PAPER
+    model_data: 3186
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴘᴀʏᴍᴇɴᴛs'
+    lore:
+      - ''
+      - '&7Enable or disable payments'
+      - '&7confirmations'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    left_click_commands:
+      - "[givepermission] settings.payments.off"
+      - "[givepermission] essentials.paytoggle"
+      - "[player] payon"
+      - "[takepermission] essentials.paytoggle"
+      - "[refresh]"
+
+
+
+
+
+
+
+
+  'you_are_op_3':
+    material: BARRIER
+    slot: 19
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'on_autotool':
+    material: PAPER
+    model_data: 3185
+    slot: 19
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴀᴜᴛᴏᴛᴏᴏʟ'
+    lore:
+      - ''
+      - '&7Enable or disable autotool'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%besttools_btenabled%"
+          output: "true"
+    left_click_commands:
+      - "[givepermission] besttools.use"
+      - "[player] bt"
+      - "[takepermission] besttools.use"
+      - "[refresh]"
+
+  'off_autotool':
+    material: PAPER
+    model_data: 3186
+    slot: 19
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴀᴜᴛᴏᴛᴏᴏʟ'
+    lore:
+      - ''
+      - '&7Enable or disable autotool'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%besttools_btenabled%"
+          output: "false"
+    left_click_commands:
+      - "[givepermission] besttools.use"
+      - "[player] bt"
+      - "[takepermission] besttools.use"
+      - "[refresh]"
+
+
+
+
+
+
+
+
+
+
+
+
+  'previous':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lsᴄʀᴏʟʟ ᴜᴘ'
+    left_click_commands:
+      - "[openguimenu] settings_1"
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] serverguide_menu"
+
+

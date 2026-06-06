@@ -1,0 +1,783 @@
+menu_title: '&f七七七七七七七七へ'
+open_command: factoriesresearch3
+size: 45
+update_interval: 1
+
+items:
+
+
+  'research_hydrogen_ongoing':
+    material: PAPER
+    model_data: 6013
+    slot: 31
+    update: true
+    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Hydrogen.'
+      - ''
+      - '&6Research Costs: &f15&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.Hydrogen
+    priority: 1
+
+  'research_hydrogen_completed':
+    material: PAPER
+    model_data: 6013
+    slot: 31
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lʜʏᴅʀᴏɢᴇɴ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Hydrogen.'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.Hydrogen
+    priority: 2
+
+  'research_hydrogen_ongoingmaxone':
+    material: PAPER
+    model_data: 6013
+    slot: 31
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ʜʏᴅʀᴏɢᴇɴ'
+    lore:
+      - ''
+      - '&7Research the subject of Hydrogen'
+      - '&7to unlock Hydrogen production.'
+      - ''
+      - '&6Research Costs: &f15&e☀'
+      - ''
+      - '&6Research Duration: &f12 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 3
+
+  'research_hydrogen_start':
+    material: PAPER
+    model_data: 6013
+    slot: 31
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ʜʏᴅʀᴏɢᴇɴ'
+    lore:
+      - ''
+      - '&7Research the subject of Hydrogen'
+      - '&7to unlock Hydrogen production.'
+      - ''
+      - '&6Research Costs: &f15&e☀'
+      - ''
+      - '&6Research Duration: &f12 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 4
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.Hydrogen"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.Hydrogen true 43200s"
+      - "[console] lp user %player_name% parent addtemp research 43200s"
+      - "[console] factoriesresearch take %player_name% 15"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.Gasoline
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 15'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'research_diamond_ongoing':
+    material: PAPER
+    model_data: 6011
+    slot: 33
+    update: true
+    display_name: '&6&lᴅɪᴀᴍᴏɴᴅ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Diamond.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.Diamond
+    priority: 1
+
+  'research_diamond_completed':
+    material: PAPER
+    model_data: 6011
+    slot: 33
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴅɪᴀᴍᴏɴᴅ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Diamond.'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.Diamond
+    priority: 2
+
+  'research_diamond_ongoingmaxone':
+    material: PAPER
+    model_data: 6011
+    slot: 33
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴅɪᴀᴍᴏɴᴅ'
+    lore:
+      - ''
+      - '&7Research the subject of Diamond'
+      - '&7to unlock Diamond production.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Duration: &f20 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 3
+
+  'research_diamond_start':
+    material: PAPER
+    model_data: 6011
+    slot: 33
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴅɪᴀᴍᴏɴᴅ'
+    lore:
+      - ''
+      - '&7Research the subject of Diamond'
+      - '&7to unlock Diamond production.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Duration: &f20 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 4
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.Diamond"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.Diamond true 72000s"
+      - "[console] lp user %player_name% parent addtemp research 72000s"
+      - "[console] factoriesresearch take %player_name% 20"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.Hydrogen
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 20'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+  'research_mechanics3_ongoing':
+    material: PAPER
+    model_data: 6015
+    slot: 11
+    update: true
+    display_name: '&6&lᴍᴇᴄʜᴀɴɪᴄs ɪɪɪ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Mechanics III.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.mechanicsIII
+    priority: 1
+
+  'research_mechanics3_completed_claimed':
+    material: PAPER
+    model_data: 6015
+    slot: 11
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴍᴇᴄʜᴀɴɪᴄs ɪɪɪ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Mechanics III.'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.mechanicsIII
+        permission2:
+          type: "has permission"
+          permission: factory.research.reward.claimed.MechanicsIII
+    priority: 2
+
+  'research_mechanics3_completed_claimnow':
+    material: PAPER
+    model_data: 6015
+    slot: 11
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴄʟᴀɪᴍ ʏᴏᴜʀ ʀᴇᴡᴀʀᴅ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Mechanics III.'
+      - ''
+      - '&e➥ Left-Click to claim research'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.mechanicsIII
+    priority: 3
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.reward.claimed.MechanicsIII"
+      - "[console] factoriesplimit give %player_name% 3"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed the research reward!"
+      - "[refresh]"
+
+  'research_mechanics3_ongoingmaxone':
+    material: PAPER
+    model_data: 6015
+    slot: 11
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴍᴇᴄʜᴀɴɪᴄs ɪɪɪ'
+    lore:
+      - ''
+      - '&7Research the subject of'
+      - '&7Mechanics III to increase your'
+      - '&7production limit with 3.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Duration: &f15 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 4
+
+  'research_mechanics3_start':
+    material: PAPER
+    model_data: 6015
+    slot: 11
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴍᴇᴄʜᴀɴɪᴄs ɪɪɪ'
+    lore:
+      - ''
+      - '&7Research the subject of'
+      - '&7Mechanics III to increase your'
+      - '&7production limit with 3.'
+      - ''
+      - '&6Research Costs: &f20&e☀'
+      - ''
+      - '&6Research Duration: &f15 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 5
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.MechanicsIII"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.MechanicsIII true 54000s"
+      - "[console] lp user %player_name% parent addtemp research 54000s"
+      - "[console] factoriesresearch take %player_name% 20"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.gasoline
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 20'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'research_accounting3_ongoing':
+    material: PAPER
+    model_data: 6014
+    slot: 14
+    update: true
+    display_name: '&6&lᴀᴄᴄᴏᴜɴᴛɪɴɢ ɪɪɪ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Accounting III.'
+      - ''
+      - '&6Research Costs: &f25&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.AccountingIII
+    priority: 1
+
+  'research_accounting3_completed':
+    material: PAPER
+    model_data: 6014
+    slot: 14
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴀᴄᴄᴏᴜɴᴛɪɴɢ ɪɪɪ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Accounting III.'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingIII
+    priority: 2
+
+  'research_accounting3_ongoingmaxone':
+    material: PAPER
+    model_data: 6014
+    slot: 14
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴀᴄᴄᴏᴜɴᴛɪɴɢ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Research the subject of'
+      - '&7Accounting III &fto unlock'
+      - '&7nuclear production.'
+      - ''
+      - '&6Research Costs: &f25&e☀'
+      - ''
+      - '&6Research Duration: &f20 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 3
+
+  'research_accounting3_start':
+    material: PAPER
+    model_data: 6014
+    slot: 14
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴀᴄᴄᴏᴜɴᴛɪɴɢ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Research the subject of'
+      - '&7Accounting III &fto unlock'
+      - '&7nuclear production.'
+      - ''
+      - '&6Research Costs: &f25&e☀'
+      - ''
+      - '&6Research Duration: &f20 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 4
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.AccountingIII"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.AccountingIII true 72000s"
+      - "[console] lp user %player_name% parent addtemp research 72000s"
+      - "[console] factoriesresearch take %player_name% 25"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.MechanicsIII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 25'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'research_netheriteingot_ongoing':
+    material: PAPER
+    model_data: 6012
+    slot: 4
+    update: true
+    display_name: '&6&lɴᴇᴛʜᴇʀɪᴛᴇ ɪɴɢᴏᴛ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Netherite Ingot.'
+      - ''
+      - '&6Research Costs: &f50&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.NetheriteIngot
+    priority: 1
+
+  'research_netheriteingot_completed':
+    material: PAPER
+    model_data: 6012
+    slot: 4
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lɴᴇᴛʜᴇʀɪᴛᴇ ɪɴɢᴏᴛ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Netherite Ingot.'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.NetheriteIngot
+    priority: 2
+
+  'research_netheriteingot_ongoingmaxone':
+    material: PAPER
+    model_data: 6012
+    slot: 4
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ɴᴇᴛʜᴇʀɪᴛᴇ ɪɴɢᴏᴛ'
+    lore:
+      - ''
+      - '&7Research the subject of Netherite Ingot'
+      - '&7to unlock Netherite Ingot production.'
+      - ''
+      - '&6Research Costs: &f50&e☀'
+      - ''
+      - '&6Research Duration: &f50 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 3
+
+  'research_netheriteingot_start':
+    material: PAPER
+    model_data: 6012
+    slot: 4
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ɴᴇᴛʜᴇʀɪᴛᴇ ɪɴɢᴏᴛ'
+    lore:
+      - ''
+      - '&7Research the subject of Netherite Ingot'
+      - '&7to unlock Netherite Ingot production.'
+      - ''
+      - '&6Research Costs: &f50&e☀'
+      - ''
+      - '&6Research Duration: &f50 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 4
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.NetheriteIngot"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.NetheriteIngot true 180000s"
+      - "[console] lp user %player_name% parent addtemp research 180000s"
+      - "[console] factoriesresearch take %player_name% 50"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingIII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 50'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'research_uranium_ongoing':
+    material: PAPER
+    model_data: 6010
+    slot: 7
+    update: true
+    display_name: '&6&lᴜʀᴀɴɪᴜᴍ &8&l| &a&lʀᴇsᴇᴀʀᴄʜɪɴɢ'
+    lore:
+      - ''
+      - '&7You are currently researching'
+      - '&7the subject of Uranium.'
+      - ''
+      - '&6Research Costs: &f35&e☀'
+      - ''
+      - '&6Research Remaining: &f%luckperms_group_expiry_time_research%'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.ongoing.Uranium
+    priority: 1
+
+  'research_uranium_completed':
+    material: PAPER
+    model_data: 6010
+    slot: 7
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴜʀᴀɴɪᴜᴍ &8&l| &a&l✔'
+    lore:
+      - ''
+      - '&7You have completed the research'
+      - '&7of the subject Uranium.'
+    view_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.Uranium
+    priority: 2
+
+  'research_uranium_ongoingmaxone':
+    material: PAPER
+    model_data: 6010
+    slot: 7
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴜʀᴀɴɪᴜᴍ'
+    lore:
+      - ''
+      - '&7Research the subject of Uranium'
+      - '&7to unlock Uranium production.'
+      - ''
+      - '&6Research Costs: &f35&e☀'
+      - ''
+      - '&6Research Duration: &f30 Hours'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou already have an ongoing research!"
+    view_requirement:
+      requirements:
+        research:
+          type: string contains
+          input: "%luckperms_in_group_research%"
+          output: "yes"
+    priority: 3
+
+  'research_uranium_start':
+    material: PAPER
+    model_data: 6010
+    slot: 7
+    update: true
+    display_name: '&6&lʀᴇsᴇᴀʀᴄʜ ᴜʀᴀɴɪᴜᴍ'
+    lore:
+      - ''
+      - '&7Research the subject of Uranium'
+      - '&7to unlock Uranium production.'
+      - ''
+      - '&6Research Costs: &f35&e☀'
+      - ''
+      - '&6Research Duration: &f30 Hours'
+      - ''
+      - '&e➥ Left-Click to research'
+    priority: 4
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.research.completed.Uranium"
+      - "[console] lp user %player_name% permission settemp factory.research.ongoing.Uranium true 108000s"
+      - "[console] lp user %player_name% parent addtemp research 108000s"
+      - "[console] factoriesresearch take %player_name% 35"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started researching this subject!"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingIII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        researchpoints:
+          type: javascript
+          expression: '%coinsengine_balance_raw_factoriesresearch% >= 35'
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough research points!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'previous_page':
+    material: PAPER
+    model_data: 110007
+    slot: 41
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - "[openguimenu] factories_research2"
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] factories_menu_wood"

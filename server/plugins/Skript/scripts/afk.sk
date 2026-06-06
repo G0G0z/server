@@ -1,0 +1,23 @@
+every 15 minutes:
+ loop all players:
+  if "%region at loop-player%" contains "afk":
+   console command "/coins give %loop-player% 2"
+   console command "/codex unlock %loop-player% objectives first_afk_reward"
+   send "&8[&3&l!&8] &3&lAFK &8→ &7You have been given &f2x Coins &7for being AFK!" to loop-player
+
+every 60 minutes:
+ loop all players:
+  if "%region at loop-player%" contains "afk":
+   console command "/excellentcrates:crate key give %loop-player% common 1"
+   console command "/codex unlock %loop-player% objectives first_afk_reward"
+   send "&8[&3&l!&8] &3&lAFK &8→ &7You have been given &f1x Common Key &7for being AFK!" to loop-player
+
+on region enter:
+ wait 2 ticks
+ if "%region at player%" contains "afk":
+  send "&8[&3&l!&8] &3&lAFK &8→ &aYou will now receive afk rewards!"
+
+on region exit:
+ if "%region at player%" contains "afk":
+  send "&8[&3&l!&8] &3&lAFK &8→ &cYou will no longer receive afk rewards!"
+

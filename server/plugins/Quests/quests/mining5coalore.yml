@@ -1,0 +1,46 @@
+tasks:
+  mine:
+    type: "blockbreakcertain"
+    amount: 100
+    block: COAL_ORE
+    reverse-if-placed: true
+display:
+  name: "&bMining Quest &8▪ &7Coal Ore &fII" 
+  lore-normal:
+    - "&8You need to mine a certain"
+    - "&8resource before receiving the reward."
+    - ""
+    - "&bOptions:"
+    - "&8&l∙ &7Objective: &fMine 100 Coal Ore."
+    - "&8&l∙ &7Progress: &f{mine:progress}/100 Coal ore."
+    - ""
+    - "&bRewards: &a$500"
+    - ""
+  lore-started:
+    - "&#FFEC9BYou have started this quest."
+  type: "COAL_ORE"
+# Here you can list messages which will be sent to the player (if they are online) upon the quest starting.
+startstring:
+  - "&7Upon completion of this quest, you will be rewarded with"
+  - " &8&l∙ &a$500"
+rewards:
+  - "eco give {player} 500"
+# Here you can list messages which will be sent to the player (if they are online) upon completion.
+rewardstring:
+  - " &8&l∙ &a$500 &7was added to your in-game balance."
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+
+
+
+options:
+  category: "mining"
+  requires: 
+    - "mining4coalore"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 82600
+  sort-order: 5

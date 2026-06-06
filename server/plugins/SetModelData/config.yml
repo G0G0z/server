@@ -1,0 +1,24 @@
+##Messages##
+
+#Whats the message when you don't put a number/put words?
+noNumber: "&c&lCustomModelData ✘ &fYou need to specify a number."
+
+#Whats the message when you put to many arguments?
+tooManyArgs: "&c&lCustomModelData ✘ &fTo many arguments. Ex: /modeldata 2."
+
+#Whats the message when you try to use the command on air?
+cantSetAir: "&c&lCustomModelData ✘ &fYou cannot change the model data of air."
+
+#Whats the message when the custom model data set was successful?
+#The %1$s is the main hand material,
+#And the %2$s is the custom model data you set.
+customModelDataSuccessful: "&8[&b&l!&8] &b&lToolSkins &8→ &7You have equipped a skin for your tool!"
+
+#Whats the message for when you reload the config?
+reloadMessage: "&a&lCustomModelData ✔ &fYou successfully reloaded the config."
+
+#Whats the message when the player doesn't have permission?
+noPermissions: "&4You do not have permission to run this command."
+
+
+##Made by Humblebunny123. Dm me on discord for support! bunny123#6152##

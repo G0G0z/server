@@ -1,0 +1,16 @@
+location: spawn:7.500:102.9:-5.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&e&lCoinshop&f'
+    height: 0.3
+  - content: '&7(/coinshop)'
+    height: 0.5
+  actions: {}

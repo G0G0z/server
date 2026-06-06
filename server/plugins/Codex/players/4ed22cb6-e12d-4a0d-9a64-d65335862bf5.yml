@@ -1,0 +1,19 @@
+name: Chriz745
+categories:
+  regions:
+    completed: true
+    discoveries:
+    - crates;15/01/2025
+    - afk;15/01/2025
+    - arena;15/01/2025
+    - koth;15/01/2025
+  objectives:
+    completed: false
+    discoveries:
+    - purchase_common_key;15/01/2025
+    - reach_level_3;15/01/2025
+    - sell_a_diamond;15/01/2025
+  features:
+    completed: false
+    discoveries:
+    - shop;15/01/2025

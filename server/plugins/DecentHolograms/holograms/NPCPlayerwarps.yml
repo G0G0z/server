@@ -1,0 +1,16 @@
+location: spawn:-13:101.9:-78
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&b&lPlayer Warps&f'
+    height: 0.3
+  - content: '&7(/pw)'
+    height: 0.5
+  actions: {}

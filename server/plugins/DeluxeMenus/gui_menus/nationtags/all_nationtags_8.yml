@@ -1,0 +1,255 @@
+menu_title: '&f七七七七七七七七⊺'
+open_command: nationtagsall8
+size: 54
+update_interval: 1
+
+items:
+
+
+  'Yemen_tag':
+    material: NAME_TAG
+    slot: 19
+    update: true
+    display_name: '&e&lYemen Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Yemen"
+
+
+  'Zambia_tag':
+    material: NAME_TAG
+    slot: 20
+    update: true
+    display_name: '&e&lZambia Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Zambia"
+
+
+  'Zimbabwe_tag':
+    material: NAME_TAG
+    slot: 21
+    update: true
+    display_name: '&e&lZimbabwe Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Zimbabwe"
+
+
+
+
+
+
+
+
+
+
+
+  'page_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_7"
+
+
+
+
+  'page_previous_category':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] australia_nationtags_1"
+  'page_next_category':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] northamerica_nationtags_1"
+
+
+
+
+
+
+
+  'page_africa':
+    material: PAPER
+    model_data: 4111
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lAfrica'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] africa_nationtags_1"
+
+  'page_asia':
+    material: PAPER
+    model_data: 4112
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&5&lAsia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] asia_nationtags_1"
+
+  'page_australia':
+    material: PAPER
+    model_data: 4113
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lAustralia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] australia_nationtags_1"
+
+  'page_all':
+    material: PAPER
+    model_data: 4114
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&d&lAll'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_1"
+
+  'page_northamerica':
+    material: PAPER
+    model_data: 4108
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lNorth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] northamerica_nationtags_1"
+
+  'page_southamerica':
+    material: PAPER
+    model_data: 4109
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&2&lSouth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] southamerica_nationtags_1"
+
+  'page_europe':
+    material: PAPER
+    model_data: 4110
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lEurope'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] europe_nationtags_1"
+
+
+
+
+  'clear_tag':
+    material: PAPER
+    model_data: 110007
+    slot: 49
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lᴄʟᴇᴀʀ ᴛᴀɢ'
+    lore:
+      - ''
+      - '&8&l∙ &fCurrent: &7%deluxetags_identifier%'
+      - '&8&l∙ &fDisplay: &7%deluxetags_tag%'
+      - ''
+      - '&e➥ Left-Click to clear tag'
+    left_click_commands:
+      - "[console] deluxetags:tags clear %player_name%"
+
+
+
+
+

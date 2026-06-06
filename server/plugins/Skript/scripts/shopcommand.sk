@@ -1,0 +1,35 @@
+command /shop [<text>]:
+  trigger:
+    set {_username} to player's name
+    if {_username} starts with ".":
+
+      if arg-1 is "buy":
+        make player execute command "/geyserbuyshop"
+      if arg-1 is "sell":
+        make player execute command "/geysersellshop"
+      if arg-1 is not set:
+        message ""
+        message "&fDo you want to buy or sell items?"
+        message "&fChoose the right command."
+        message ""
+        message "&a&lBuy: &f/shop buy"
+        message "&c&lSell: &f/shop sell"
+        message ""
+
+    else if {_username} starts with "*":
+
+      if arg-1 is "buy":
+        make player execute command "/geyserbuyshop"
+      if arg-1 is "sell":
+        make player execute command "/geysersellshop"
+      if arg-1 is not set:
+        message ""
+        message "&fDo you want to buy or sell items?"
+        message "&fChoose the right command."
+        message ""
+        message "&a&lBuy: &f/shop buy"
+        message "&c&lSell: &f/shop sell"
+        message ""
+
+    else:
+      make player execute command "/shopblocks1"

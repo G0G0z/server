@@ -1,0 +1,265 @@
+menu_title: '&f七七七七七七七七✃'
+open_command: jobs
+size: 36
+
+items:
+
+
+
+  'playerstats':
+    material: head-%player_name%
+    model_data: 1
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lYour Jobs Profile'
+    lore:
+      - '&8Jobs Statistics'
+      - ''
+      - '&7Here you can view all the'
+      - '&7info about your job stats.'
+      - ''
+      - '&eCurrent Jobs:'
+      - '&#FFE875%jobsr_user_jobs%'
+      - ''
+      - '&6Points: &f%jobsr_user_points_fixed%'
+      - '&6Jobs: &f%jobsr_user_joinedjobcount%/%jobsr_maxjobs%'
+      - '&6Total Level: &f%jobsr_user_totallevels%'
+
+
+  'points_menu':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+    update: true
+    display_name: '&#5B63AF&lᴘᴏɪɴᴛ sʜᴏᴘ'
+    lore:
+      - ''
+      - '&7Use the points you gain from your'
+      - '&7jobs to buy valuable items and perks.'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_valuables"
+
+
+  'levels_menu':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 14
+      - 15
+      - 16
+      - 17
+    update: true
+    display_name: '&c&lʟᴇᴠᴇʟs'
+    lore:
+      - ''
+      - '&7Claim the rewards you obtain'
+      - '&7while increasing your job levels.'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsminer"
+
+
+  'browse_jobs':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    update: true
+    display_name: '&6&lʙʀᴏᴡsᴇ ᴊᴏʙs'
+    lore:
+      - ''
+      - '&7Browse all the available jobs'
+      - '&7in this menu, and manage your'
+      - '&7own job situation.'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobminer"
+
+
+
+
+
+
+  'guide_page_remove_for_OPS':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    display_name: '&a&lᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴊᴏʙs'
+    lore:
+      - ''
+      - '&7This is where the jobs guide is located.'
+      - ''
+      - '&c[!] You cant see this while being OP!'
+    priority: 0
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: permission.op
+
+
+
+
+  'guide_page_4':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    display_name: '&a&lᴊᴏʙ ᴘᴏɪɴᴛs'
+    lore:
+      - ' &8Page 4/4'
+      - ''
+      - '&7All job activies gives you Money, Points'
+      - '&7and EXP. The points can be used in the'
+      - '&7pointshop where you can purchase various'
+      - '&7usefull items on the server!'
+      - ''
+      - '&7With all this information, you should'
+      - '&7be ready to go! Dont hesitate to ask'
+      - '&7any questions you might have in the chat.'
+      - ''
+      - '&6Thanks For Your Time!'
+      - '&e➥ Left-Click for start over'
+    priority: 1
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aSwitched to page 1"
+      - "[takepermission] jobs.guide.page.4"
+      - "[refresh]"
+      - "[sound] ITEM_BOOK_PAGE_TURN"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: jobs.guide.page.4
+
+  'guide_page_3':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    display_name: '&a&lᴊᴏʙ ʟᴇᴠᴇʟs'
+    lore:
+      - ' &8Page 3/4'
+      - ''
+      - '&7When working a job, you receive experience'
+      - '&7for every job activity you do. The EXP will'
+      - '&7increase your Job Level in that job.'
+      - '&7This will lead to earning more money'
+      - '&7from doing your job activities!'
+      - ''
+      - '&7When increasing your level, you also get'
+      - '&7access to the Job Level Rewards. Here you'
+      - '&7can claim rewards when you hit specific'
+      - '&7level milestones in your job.'
+      - ''
+      - '&6Continue To Learn More!'
+      - '&e➥ Left-Click for next page'
+    priority: 2
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aSwitched to page 4"
+      - "[givepermission] jobs.guide.page.4"
+      - "[takepermission] jobs.guide.page.3"
+      - "[refresh]"
+      - "[sound] ITEM_BOOK_PAGE_TURN"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: jobs.guide.page.3
+
+  'guide_page_2':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    display_name: '&a&lʏᴏᴜʀ ғɪʀsᴛ ᴊᴏʙ'
+    lore:
+      - ' &8Page 2/4'
+      - ''
+      - '&7When joining your first job, you should'
+      - '&7consider joining a job with activities'
+      - '&7you already do regularly. You can choose'
+      - '&7between a number of jobs!'
+      - ''
+      - '&6Jobs Available: &f12'
+      - ''
+      - '&7You can maximum have 3 jobs at a time,'
+      - '&7and you will lose all progress if you'
+      - '&7leave a job. But you can always join again.'
+      - ''
+      - '&6Continue To Learn More!'
+      - '&e➥ Left-Click for next page'
+    priority: 3
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aSwitched to page 3"
+      - "[givepermission] jobs.guide.page.3"
+      - "[takepermission] jobs.guide.page.2"
+      - "[refresh]"
+      - "[sound] ITEM_BOOK_PAGE_TURN"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: jobs.guide.page.2
+
+  'guide_page_1':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    display_name: '&a&lᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴊᴏʙs'
+    lore:
+      - ' &8Page 1/4'
+      - ''
+      - '&7This guide will teach you how to'
+      - '&7use jobs to your advantage. You can'
+      - '&7read about all the available features.'
+      - ''
+      - '&7Jobs makes it possible to earn money from'
+      - '&7doing normal Minecraft activies such as'
+      - '&7mining and cutting wood.'
+      - ''
+      - '&6Continue To Learn More!'
+      - '&e➥ Left-Click for next page'
+    priority: 4
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aSwitched to page 2"
+      - "[givepermission] jobs.guide.page.2"
+      - "[refresh]"
+      - "[sound] ITEM_BOOK_PAGE_TURN"
+
+

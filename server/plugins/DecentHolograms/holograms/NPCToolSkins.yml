@@ -1,0 +1,16 @@
+location: spawn:33.500:102.9:-73.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&b&lTool Skins&f'
+    height: 0.3
+  - content: '&7(/toolskins)'
+    height: 0.5
+  actions: {}

@@ -1,0 +1,308 @@
+menu_title: '&f七七七七七七七七⤒'
+open_command: geysersellshopcolors5
+size: 54
+update_interval: 1
+
+items:
+
+
+  'brown_dye':
+    material: brown_dye
+    slot: 19
+    display_name: '&eBrown Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'red_dye':
+    material: red_dye
+    slot: 20
+    display_name: '&eRed Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'orange_dye':
+    material: orange_dye
+    slot: 21
+    display_name: '&eOrange Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'yellow_dye':
+    material: yellow_dye
+    slot: 22
+    display_name: '&eYellow Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'lime_dye':
+    material: lime_dye
+    slot: 23
+    display_name: '&eLime Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'green_dye':
+    material: green_dye
+    slot: 24
+    display_name: '&eGreen Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'cyan_dye':
+    material: cyan_dye
+    slot: 25
+    display_name: '&eCyan Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'light_blue_dye':
+    material: light_blue_dye
+    slot: 28
+    display_name: '&eLight Blue Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'blue_dye':
+    material: blue_dye
+    slot: 29
+    display_name: '&eBlue Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'purple_dye':
+    material: purple_dye
+    slot: 30
+    display_name: '&ePurple Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'magenta_dye':
+    material: magenta_dye
+    slot: 31
+    display_name: '&eMagenta Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'pink_dye':
+    material: pink_dye
+    slot: 32
+    display_name: '&ePink Dye'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_colors4'
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_wood1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_minerals1'
+
+
+
+
+
+
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_misc1'
+
+  'shop_blocks':
+    material: BRICKS
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lBlocks'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_blocks1'
+
+  'shop_wood':
+    material: OAK_LOG
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lWood'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_wood1'
+
+  'shop_colors':
+    material: CYAN_WOOL
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lColors'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_colors1'
+
+  'shop_minerals':
+    material: DIAMOND
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMinerals'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_minerals1'
+
+  'shop_farming':
+    material: WHEAT
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_foods1'
+
+
+
+

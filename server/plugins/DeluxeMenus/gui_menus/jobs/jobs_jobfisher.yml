@@ -1,0 +1,512 @@
+menu_title: '&f七七七七七七七七⇹'
+open_command: jobfisher
+size: 54
+update_interval: 1
+
+items:
+
+
+
+
+
+
+  'fisher_job_joined':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 12
+      - 13
+      - 14
+      - 21
+      - 22
+      - 23
+      - 30
+      - 31
+      - 32
+      - 39
+      - 40
+      - 41
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lFisher Job &8&l▪ &a&lJoined!'
+    lore:
+      - ' &8%jobsr_totalplayers_fisher% Employees'
+      - ''
+      - '&7Join the fisher job to earn'
+      - '&7money by catching fish.'
+      - ''
+      - '&6Paid Actions:'
+      - ' &8&l▪ &#FFC39BCatching fish'
+      - ''
+      - '&e➥ Left-Click to see earnings'
+    left_click_commands:
+      - "[openguimenu] jobs_jobfisher_earnings"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_fisher%"
+          output: "true"
+
+
+  'fisher_job':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 12
+      - 13
+      - 14
+      - 21
+      - 22
+      - 23
+      - 30
+      - 31
+      - 32
+      - 39
+      - 40
+      - 41
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lFisher Job'
+    lore:
+      - ' &8%jobsr_totalplayers_fisher% Employees'
+      - ''
+      - '&7Join the fisher job to earn money'
+      - '&7by catching fish and loot.'
+      - ''
+      - '&6Paid Actions:'
+      - ' &8&l▪ &#FFC39BCatching fish'
+      - ' &8&l▪ &#FFC39BCatching loot'
+      - ''
+      - '&e➥ Left-Click to see earnings'
+    left_click_commands:
+      - "[openguimenu] jobs_jobfisher_earnings"
+    priority: 2
+
+
+
+
+
+  'jobs_information':
+    material: PAPER
+    model_data: 110007
+    slot: 18
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴄʜᴏᴏsᴇ ʏᴏᴜʀ ᴊᴏʙ'
+    lore:
+      - ''
+      - '&7Jobs are a way to earn money while'
+      - '&7doing normal survival tasks. Make sure'
+      - '&7you choose a job which you already'
+      - '&7do regularly on the server!'
+      - ''
+      - '&6Jobs Available: &f12'
+
+
+
+
+  'join_job':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 49
+      - 50
+      - 51
+      - 52
+    update: true
+    display_name: '&a&lᴊᴏɪɴ ᴊᴏʙ'
+    lore:
+      - ''
+      - '&7Click here to join the fisher job.'
+      - '&7You will be employed as a fisher.'
+      - ''
+      - '&6[!] &fYou can always leave this job!'
+      - ''
+      - '&e➥ Left-Click to join'
+    left_click_commands:
+      - "[player] jobs:jobs join fisher"
+      - "[refresh]"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_fisher%"
+          output: "false"
+
+  'leave_job':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 49
+      - 50
+      - 51
+      - 52
+    update: true
+    display_name: '&c&lʟᴇᴀᴠᴇ ᴊᴏʙ'
+    lore:
+      - ''
+      - '&7Click here to leave the fisher job.'
+      - '&7You are currently employed as a fisher.'
+      - ''
+      - '&6[!] &fYou can always join this job again!'
+      - ''
+      - '&e➥ Left-Click to leave'
+    left_click_commands:
+      - "[player] jobs:jobs leave fisher"
+      - "[refresh]"
+    priority: 2
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_fisher%"
+          output: "true"
+
+
+
+
+
+
+
+
+  'page_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] jobs_jobshepherd"
+  'page_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] jobs_jobbrewer"
+
+
+
+
+  'joined_page_crafter':
+    material: PAPER
+    model_data: 5711
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lCrafter Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobcrafter"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_crafter%"
+          output: "true"
+
+  'joined_page_hunter':
+    material: PAPER
+    model_data: 5711
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lHunter Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobhunter"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_hunter%"
+          output: "true"
+
+  'joined_page_shepherd':
+    material: PAPER
+    model_data: 5711
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lShepherd Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobshepherd"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_shepherd%"
+          output: "true"
+
+  'joined_page_fisher':
+    material: PAPER
+    model_data: 5711
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lFisher Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobfisher"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_fisher%"
+          output: "true"
+
+  'joined_page_brewer':
+    material: PAPER
+    model_data: 5711
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lBrewer Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobbrewer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_brewer%"
+          output: "true"
+
+  'joined_page_explorer':
+    material: PAPER
+    model_data: 5711
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lExplorer Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobexplorer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_explorer%"
+          output: "true"
+
+  'joined_page_blacksmith':
+    material: PAPER
+    model_data: 5711
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lBlacksmith Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobblacksmith"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsmenu_isin_blacksmith%"
+          output: "true"
+
+
+
+
+
+
+
+
+
+  'page_crafter':
+    material: CRAFTING_TABLE
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lCrafter Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobcrafter"
+    priority: 2
+
+  'page_hunter':
+    material: BOW
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lHunter Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobhunter"
+    priority: 2
+
+  'page_shepherd':
+    material: SHEARS
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lShepherd Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobshepherd"
+    priority: 2
+
+  'page_fisher':
+    material: FISHING_ROD
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lFisher Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobfisher"
+    priority: 2
+
+  'page_brewer':
+    material: BREWING_STAND
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lBrewer Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobbrewer"
+    priority: 2
+
+  'page_explorer':
+    material: SPYGLASS
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lExplorer Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobexplorer"
+    priority: 2
+
+  'page_blacksmith':
+    material: ANVIL
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lBlacksmith Job'
+    lore:
+      - '&7Job Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_jobblacksmith"
+    priority: 2
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 46
+      - 47
+      - 48
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] jobs_menu"
+
+
+
+

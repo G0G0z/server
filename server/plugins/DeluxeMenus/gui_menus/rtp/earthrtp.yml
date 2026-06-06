@@ -1,0 +1,332 @@
+menu_title: '&f七七七七七七七七⤿'
+open_command: earthrtp
+size: 45
+update_interval: 1
+
+items:
+
+
+
+  'northamerica_teleport':
+    material: paper
+    model_data: 12700
+    slot: 10
+    update: true
+    display_name: '&c&lɴᴏʀᴛʜ ᴀᴍᴇʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the North America region!'
+      - ''
+      - '&cBiomes:'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Plains'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Snowy Tundra'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location northamerica"
+      - "[console] lp user %player_name% permission settemp rtp.northamerica true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.northamerica%"
+          output: "no"
+    priority: 1
+
+  'northamerica_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 10
+    update: true
+    display_name: '&c&lɴᴏʀᴛʜ ᴀᴍᴇʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the North America region!'
+      - ''
+      - '&cBiomes:'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Plains'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Snowy Tundra'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.northamerica%"
+    priority: 2
+
+
+
+  'southamerica_teleport':
+    material: paper
+    model_data: 12700
+    slot: 29
+    update: true
+    display_name: '&a&lsᴏᴜᴛʜ ᴀᴍᴇʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the South America region!'
+      - ''
+      - '&aBiomes:'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Mountains'
+      - ' &8&l∙ &7Badlands'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location southamerica"
+      - "[console] lp user %player_name% permission settemp rtp.southamerica true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.southamerica%"
+          output: "no"
+    priority: 1
+
+  'southamerica_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 29
+    update: true
+    display_name: '&a&lsᴏᴜᴛʜ ᴀᴍᴇʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the South America region!'
+      - ''
+      - '&aBiomes:'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Mountains'
+      - ' &8&l∙ &7Badlands'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.southamerica%"
+    priority: 2
+
+
+
+  'europe_teleport':
+    material: paper
+    model_data: 12700
+    slot: 13
+    update: true
+    display_name: '&e&lᴇᴜʀᴏᴘᴇ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Europe region!'
+      - ''
+      - '&eBiomes:'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Desert'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location europe"
+      - "[console] lp user %player_name% permission settemp rtp.europe true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.europe%"
+          output: "no"
+    priority: 1
+
+  'europe_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 13
+    update: true
+    display_name: '&e&lᴇᴜʀᴏᴘᴇ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Europe region!'
+      - ''
+      - '&eBiomes:'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Flower Forest'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Desert'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.europe%"
+    priority: 2
+
+
+
+  'africa_teleport':
+    material: paper
+    model_data: 12700
+    slot: 31
+    update: true
+    display_name: '&6&lᴀғʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Africa region!'
+      - ''
+      - '&6Biomes:'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Plains'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location africa"
+      - "[console] lp user %player_name% permission settemp rtp.africa true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.africa%"
+          output: "no"
+    priority: 1
+
+  'africa_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 31
+    update: true
+    display_name: '&6&lᴀғʀɪᴄᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Africa region!'
+      - ''
+      - '&6Biomes:'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Plains'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.africa%"
+    priority: 2
+
+
+
+  'asia_teleport':
+    material: paper
+    model_data: 12700
+    slot: 15
+    update: true
+    display_name: '&2&lᴀsɪᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Asia region!'
+      - ''
+      - '&2Biomes:'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Mountains'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Badlands'
+      - ' &8&l∙ &7Plains'
+      - ' &8&l∙ &7Snowy Tundra'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location asia"
+      - "[console] lp user %player_name% permission settemp rtp.asia true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.asia%"
+          output: "no"
+    priority: 1
+
+  'asia_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 15
+    update: true
+    display_name: '&2&lᴀsɪᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Asia region!'
+      - ''
+      - '&2Biomes:'
+      - ' &8&l∙ &7Forest'
+      - ' &8&l∙ &7Taiga'
+      - ' &8&l∙ &7Mountains'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Badlands'
+      - ' &8&l∙ &7Plains'
+      - ' &8&l∙ &7Snowy Tundra'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.asia%"
+    priority: 2
+
+
+
+  'australia_teleport':
+    material: paper
+    model_data: 12700
+    slot: 34
+    update: true
+    display_name: '&3&lᴀᴜsᴛʀᴀʟɪᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Australia region!'
+      - ''
+      - '&3Biomes:'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Desert Lakes'
+      - ' &8&l∙ &7Plains'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location australia"
+      - "[console] lp user %player_name% permission settemp rtp.australia true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.australia%"
+          output: "no"
+    priority: 1
+
+  'australia_cooldown':
+    material: paper
+    model_data: 12700
+    slot: 34
+    update: true
+    display_name: '&3&lᴀᴜsᴛʀᴀʟɪᴀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&7Teleport to a random location in'
+      - '&7the Australia region!'
+      - ''
+      - '&3Biomes:'
+      - ' &8&l∙ &7Desert'
+      - ' &8&l∙ &7Savanna'
+      - ' &8&l∙ &7Jungle'
+      - ' &8&l∙ &7Desert Lakes'
+      - ' &8&l∙ &7Plains'
+      - ""
+      - "&aCooldown: &f%luckperms_inherited_expiry_time_rtp.australia%"
+    priority: 2

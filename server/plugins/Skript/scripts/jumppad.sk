@@ -1,0 +1,8 @@
+on walking on spruce log:
+ if "%region at player%" contains "launchpads":
+  push the player east at force 200
+  push the player upwards at force 1.5
+  wait 0.1 second
+  push the player east at force 200
+  wait 0.1 second
+  push the player east at force 200

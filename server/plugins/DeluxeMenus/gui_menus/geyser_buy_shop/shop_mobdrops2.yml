@@ -1,0 +1,408 @@
+menu_title: '&f七七七七七七七七⤙'
+open_command: geyserbuyshopmobdrops2
+size: 54
+update_interval: 1
+
+items:
+
+
+  'ink_sac':
+    material: ink_sac
+    slot: 19
+    display_name: '&eInk Sac'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$15.4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 15.4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 246.4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 15.4'
+      - '[console] minecraft:give %player_name% ink_sac 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 246.4'
+      - '[console] minecraft:give %player_name% ink_sac 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'ghast_tear':
+    material: ghast_tear
+    slot: 20
+    display_name: '&eGhast Tear'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$120/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 120
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1920
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 120'
+      - '[console] minecraft:give %player_name% ghast_tear 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 1920'
+      - '[console] minecraft:give %player_name% ghast_tear 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'phantom_membrane':
+    material: phantom_membrane
+    slot: 21
+    display_name: '&ePhantom Membrane'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$15.63/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 15.63
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 250.08
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 15.63'
+      - '[console] minecraft:give %player_name% phantom_membrane 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 250.08'
+      - '[console] minecraft:give %player_name% phantom_membrane 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'shulker_shell':
+    material: shulker_shell
+    slot: 22
+    display_name: '&eShulker Shell'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$34.41/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 34.41
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 550.56
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 34.41'
+      - '[console] minecraft:give %player_name% shulker_shell 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 550.56'
+      - '[console] minecraft:give %player_name% shulker_shell 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'magma_cream':
+    material: magma_cream
+    slot: 23
+    display_name: '&eMagma Cream'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$15.63/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 15.63
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 250.08
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 15.63'
+      - '[console] minecraft:give %player_name% magma_cream 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 250.08'
+      - '[console] minecraft:give %player_name% magma_cream 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'glow_ink_sac':
+    material: glow_ink_sac
+    slot: 24
+    display_name: '&eGlow Ink Sac'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$6.25/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 6.25
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 6.25'
+      - '[console] minecraft:give %player_name% glow_ink_sac 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% glow_ink_sac 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_mobdrops1'
+
+
+
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_foods1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_redstone1'
+
+
+
+
+
+
+
+
+  'shop_minerals':
+    material: DIAMOND
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMinerals'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_minerals1'
+
+  'shop_farming':
+    material: WHEAT
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_foods1'
+
+  'shop_mobdrops':
+    material: ROTTEN_FLESH
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMob Drops'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_mobdrops1'
+
+  'shop_redstone':
+    material: PISTON
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lRedstone'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_redstone1'
+
+  'shop_decorations':
+    material: FLOWER_POT
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lDecorations'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_decorations1'
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_misc1'
+
+
+
+

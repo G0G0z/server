@@ -1,0 +1,709 @@
+Builder:
+  fullname: Builder
+  shortname: B
+  FullDescription:
+  - "Earns money for building structures."
+  ChatColour: GOLD
+  chat-display: full
+  max-level: 100
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
+  income-progression-equation: baseincome+(joblevel*0.03)
+  points-progression-equation: basepoints/25
+  experience-progression-equation: baseexperience
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+
+  commands:
+    level20:
+      command: lp user [player] permission set builder.reward.20
+      levelFrom: 20
+      levelUntil: 20
+    level40:
+      command: lp user [player] permission set builder.reward.40
+      levelFrom: 40
+      levelUntil: 40
+    level60:
+      command: lp user [player] permission set builder.reward.60
+      levelFrom: 60
+      levelUntil: 60
+    level80:
+      command: lp user [player] permission set builder.reward.80
+      levelFrom: 80
+      levelUntil: 80
+    level100:
+      command: lp user [player] permission set builder.reward.100
+      levelFrom: 100
+      levelUntil: 100
+
+  Gui:
+    Item: brick_stairs
+
+  Place:
+    stone:
+      income: 1
+      points: 1
+      experience: 1
+    andesite:
+      income: 1
+      points: 1
+      experience: 1
+    granite:
+      income: 1
+      points: 1
+      experience: 1
+    diorite:
+      income: 1
+      points: 1
+      experience: 1
+    cobblestone:
+      income: 1
+      points: 1
+      experience: 1
+    oak_planks:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_planks:
+      income: 1
+      points: 1
+      experience: 1
+    birch_planks:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_planks:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_planks:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_planks:
+      income: 1
+      points: 1
+      experience: 1
+    wool:
+      income: 1
+      points: 1
+      experience: 1
+    gold_block:
+      income: 1
+      points: 1
+      experience: 1
+    iron_block:
+      income: 1
+      points: 1
+      experience: 1
+    oak_slab:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_slab:
+      income: 1
+      points: 1
+      experience: 1
+    birch_slab:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_slab:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_slab:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_slab:
+      income: 1
+      points: 1
+      experience: 1
+    stone_slab:
+      income: 1
+      points: 1
+      experience: 1
+    sandstone_slab:
+      income: 1
+      points: 1
+      experience: 1
+    petrified_oak_slab:
+      income: 1
+      points: 1
+      experience: 1
+    cobblestone_slab:
+      income: 1
+      points: 1
+      experience: 1
+    brick_slab:
+      income: 1
+      points: 1
+      experience: 1
+    stone_brick_slab:
+      income: 1
+      points: 1
+      experience: 1
+    nether_brick_slab:
+      income: 1
+      points: 1
+      experience: 1
+    quartz_slab:
+      income: 1
+      points: 1
+      experience: 1
+    red_sandstone_slab:
+      income: 1
+      points: 1
+      experience: 1
+    purpur_slab:
+      income: 1
+      points: 1
+      experience: 1
+    bricks:
+      income: 1
+      points: 1
+      experience: 1
+    bookshelf:
+      income: 1
+      points: 1
+      experience: 1
+    mossy_cobblestone:
+      income: 1
+      points: 1
+      experience: 1
+    obsidian:
+      income: 1
+      points: 1
+      experience: 1
+    cobblestone_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    birch_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    brick_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    dark_prismarine_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    oak_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    prismarine_brick_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    prismarine_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    purpur_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    quartz_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    red_sandstone_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    sandstone_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    stone_brick_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    chest:
+      income: 1
+      points: 1
+      experience: 1
+    diamond_block:
+      income: 1
+      points: 1
+      experience: 1
+    crafting_table:
+      income: 1
+      points: 1
+      experience: 1
+    furnace:
+      income: 1
+      points: 1
+      experience: 1
+    ladder:
+      income: 1
+      points: 1
+      experience: 1
+    ice:
+      income: 1
+      points: 1
+      experience: 1
+    snow_block:
+      income: 1.0
+      points: 1.0
+      experience: 1
+    jukebox:
+      income: 1.0
+      points: 1.0
+      experience: 1
+    oak_fence:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_fence:
+      income: 1
+      points: 1
+      experience: 1
+    birch_fence:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_fence:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_fence:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_fence:
+      income: 1
+      points: 1
+      experience: 1
+    oak_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    birch_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_fence_gate:
+      income: 1
+      points: 1
+      experience: 1
+    glowstone:
+      income: 1
+      points: 1
+      experience: 1
+    glass:
+      income: 1
+      points: 1
+      experience: 1
+    white_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    orange_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    magenta_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    light_blue_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    yellow_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    lime_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    pink_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    gray_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    light_gray_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    cyan_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    purple_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    blue_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    brown_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    green_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    red_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    black_stained_glass:
+      income: 1
+      points: 1
+      experience: 1
+    iron_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    oak_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    birch_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_trapdoor:
+      income: 1
+      points: 1
+      experience: 1
+    stone_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    mossy_stone_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    cracked_stone_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    chiseled_stone_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    iron_bars:
+      income: 1
+      points: 1
+      experience: 1
+    glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    white_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    orange_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    magenta_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    light_blue_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    yellow_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    lime_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    pink_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    gray_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    light_gray_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    cyan_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    purple_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    blue_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    brown_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    green_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    red_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    black_stained_glass_pane:
+      income: 1
+      points: 1
+      experience: 1
+    nether_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    nether_brick_fence:
+      income: 1
+      points: 1
+      experience: 1
+    nether_brick_stairs:
+      income: 1
+      points: 1
+      experience: 1
+    enchanting_table:
+      income: 1
+      points: 1
+      experience: 1
+    end_portal_frame:
+      income: 1
+      points: 1
+      experience: 1
+    redstone_lamp:
+      income: 1.0
+      points: 1.0
+      experience: 1
+    ender_chest:
+      income: 1
+      points: 1
+      experience: 1
+    emerald_block:
+      income: 1
+      points: 1
+      experience: 1
+    cobblestone_wall:
+      income: 1
+      points: 1
+      experience: 1
+    mossy_cobblestone_wall:
+      income: 1
+      points: 1
+      experience: 1
+    trapped_chest:
+      income: 1
+      points: 1
+      experience: 1
+    redstone_block:
+      income: 1
+      points: 1
+      experience: 1
+    hopper:
+      income: 1
+      points: 1
+      experience: 1
+    quartz_block:
+      income: 1
+      points: 1
+      experience: 1
+    smooth_quartz:
+      income: 1
+      points: 1
+      experience: 1
+    quartz_pillar:
+      income: 1
+      points: 1
+      experience: 1
+    chiseled_quartz_block:
+      income: 1
+      points: 1
+      experience: 1
+    terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    white_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    orange_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    magenta_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    light_blue_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    yellow_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    lime_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    pink_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    gray_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    light_gray_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    cyan_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    purple_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    blue_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    brown_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    green_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    red_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    black_terracotta:
+      income: 1
+      points: 1
+      experience: 1
+    oak_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    birch_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    jungle_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    acacia_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    dark_oak_leaves:
+      income: 1
+      points: 1
+      experience: 1
+    prismarine:
+      income: 1
+      points: 1
+      experience: 1
+    prismarine_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    dark_prismarine:
+      income: 1
+      points: 1
+      experience: 1
+    sea_lantern:
+      income: 1
+      points: 1
+      experience: 1
+    hay_block:
+      income: 1
+      points: 1
+      experience: 1
+    coal_block:
+      income: 1
+      points: 1
+      experience: 1
+    packed_ice:
+      income: 1
+      points: 1
+      experience: 1
+    red_sandstone:
+      income: 1
+      points: 1
+      experience: 1
+    chiseled_red_sandstone:
+      income: 1
+      points: 1
+      experience: 1
+    cut_red_sandstone:
+      income: 1
+      points: 1
+      experience: 1

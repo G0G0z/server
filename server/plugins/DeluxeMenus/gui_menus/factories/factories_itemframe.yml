@@ -1,0 +1,728 @@
+menu_title: '&f七七七七七七七七㊕'
+open_command: factoriesitemframe
+size: 45
+update_interval: 1
+
+items:
+
+
+  'factories_1_ongoing':
+    material: ITEM_FRAME
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f25x Item Frame'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesitemframe%'
+    priority: 1
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.1
+        started:
+          type: "has permission"
+          permission: factory.itemframe.ongoing.1
+
+  'factories_1_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.1
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.1
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.itemframe.started.1"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% ITEM_FRAME 25"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_1_alreadyproducing':
+    material: BARRIER
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.2
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.itemframe.started.3
+          optional: true
+
+  'factories_1_productionlimit':
+    material: BARRIER
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_1_start':
+    material: ITEM_FRAME
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f25x Item Frame'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f20x Oak Log'
+      - ' &8&l∙ &f10x Leather'
+      - ' &8&l∙ &f2x Slime Ball'
+      - ' &8&l∙ &f5x Oil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&6Production Time: &715m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.1
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.started.1
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factoriesitemframe 900s"
+      - "[console] lp user %player_name% permission settemp factory.itemframe.ongoing.1 true 900s"
+      - "[console] lp user %player_name% permission set factory.itemframe.started.1"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_log 20"
+      - "[console] minecraft:clear %player_name% leather 10"
+      - "[console] minecraft:clear %player_name% slime_ball 2"
+      - '[console] minecraft:clear %player_name% minecraft:paper[minecraft:custom_model_data={floats:[11067]}] 5'
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_LOG"
+          amount: 20
+        item2:
+          type: has item
+          material: "LEATHER"
+          amount: 10
+        item3:
+          type: has item
+          material: "SLIME_BALL"
+          amount: 2
+        item4:
+          type: has item
+          material: "PAPER"
+          amount: 5
+          modeldata: 11067
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'factories_2_purchase':
+    material: PAPER
+    model_data: 11065
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f50x Item Frame'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f40x Oak Log'
+      - ' &8&l∙ &f20x Leather'
+      - ' &8&l∙ &f4x Slime Ball'
+      - ' &8&l∙ &f10x Oil'
+      - ''
+      - '&6Production Time: &720m'
+      - ''
+      - '&#D85300Purchase Price: &f$1,500,000'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 1
+    view_requirement:
+      requirements:
+        permission1:
+          type: "!has permission"
+          permission: factory.purchased.itemframe.2
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.purchased.itemframe.2"
+      - "[console] eco take %player_name% 1500000"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingI
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        permission2:
+          type: "!has permission"
+          permission: factory.research.ongoing.AccountingI
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        money:
+          type: has money
+          amount: 1500000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+
+  'factories_2_ongoing':
+    material: ITEM_FRAME
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f50x Item Frame'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesitemframe%'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.2
+        started:
+          type: "has permission"
+          permission: factory.itemframe.ongoing.2
+
+  'factories_2_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.2
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.2
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.itemframe.started.2"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% ITEM_FRAME 50"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_2_alreadyproducing':
+    material: BARRIER
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.1
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.itemframe.started.3
+          optional: true
+
+  'factories_2_productionlimit':
+    material: BARRIER
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_2_start':
+    material: ITEM_FRAME
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f50x Item Frame'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f40x Oak Log'
+      - ' &8&l∙ &f20x Leather'
+      - ' &8&l∙ &f4x Slime Ball'
+      - ' &8&l∙ &f10x Oil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&6Production Time: &720m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 6
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.2
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.started.2
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factoriesitemframe 1200s"
+      - "[console] lp user %player_name% permission settemp factory.itemframe.ongoing.2 true 1200s"
+      - "[console] lp user %player_name% permission set factory.itemframe.started.2"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_log 40"
+      - "[console] minecraft:clear %player_name% leather 20"
+      - "[console] minecraft:clear %player_name% slime_ball 4"
+      - '[console] minecraft:clear %player_name% minecraft:paper[minecraft:custom_model_data={floats:[11067]}] 10'
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_LOG"
+          amount: 40
+        item2:
+          type: has item
+          material: "LEATHER"
+          amount: 20
+        item3:
+          type: has item
+          material: "SLIME_BALL"
+          amount: 4
+        item4:
+          type: has item
+          material: "PAPER"
+          amount: 10
+          modeldata: 11067
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'factories_3_purchase':
+    material: PAPER
+    model_data: 11065
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f100x Item Frame'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f75x Oak Log'
+      - ' &8&l∙ &f30x Leather'
+      - ' &8&l∙ &f6x Slime Ball'
+      - ' &8&l∙ &f15x Oil'
+      - ''
+      - '&6Production Time: &730m'
+      - ''
+      - '&#D85300Purchase Price: &f$4,500,000'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 1
+    view_requirement:
+      requirements:
+        permission1:
+          type: "!has permission"
+          permission: factory.purchased.itemframe.3
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.purchased.itemframe.3"
+      - "[console] eco take %player_name% 4500000"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        permission2:
+          type: "!has permission"
+          permission: factory.research.ongoing.AccountingII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        money:
+          type: has money
+          amount: 4500000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+
+  'factories_3_ongoing':
+    material: ITEM_FRAME
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f100x Item Frame'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesitemframe%'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.3
+        started:
+          type: "has permission"
+          permission: factory.itemframe.ongoing.3
+
+  'factories_3_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.3
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.3
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.itemframe.started.3"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% ITEM_FRAME 100"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_3_alreadyproducing':
+    material: BARRIER
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.itemframe.started.1
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.itemframe.started.2
+          optional: true
+
+  'factories_3_productionlimit':
+    material: BARRIER
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_3_start':
+    material: ITEM_FRAME
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f100x Item Frame'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f75x Oak Log'
+      - ' &8&l∙ &f30x Leather'
+      - ' &8&l∙ &f6x Slime Ball'
+      - ' &8&l∙ &f15x Oil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&6Production Time: &730m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 6
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.itemframe.ongoing.3
+        started:
+          type: "!has permission"
+          permission: factory.itemframe.started.3
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factoriesitemframe 1800s"
+      - "[console] lp user %player_name% permission settemp factory.itemframe.ongoing.3 true 1800s"
+      - "[console] lp user %player_name% permission set factory.itemframe.started.3"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_log 75"
+      - "[console] minecraft:clear %player_name% leather 30"
+      - "[console] minecraft:clear %player_name% slime_ball 6"
+      - '[console] minecraft:clear %player_name% minecraft:paper[minecraft:custom_model_data={floats:[11067]}] 15'
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_LOG"
+          amount: 75
+        item2:
+          type: has item
+          material: "LEATHER"
+          amount: 30
+        item3:
+          type: has item
+          material: "SLIME_BALL"
+          amount: 6
+        item4:
+          type: has item
+          material: "PAPER"
+          amount: 15
+          modeldata: 11067
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] factories_menu_itemframe"

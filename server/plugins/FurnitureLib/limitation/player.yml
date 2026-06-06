@@ -1,0 +1,88 @@
+# This is the PlayerLimitation file
+# You can limit the max amount of Furnitures each Player
+# total.enable = (bool) | set default value for each project
+# total.global = (bool) | override the project limit and force use total.amount for each project
+# ----------------------------------------------
+# These Limitation type support permission Kits!
+# PermissionKit:
+# 	<kitName>:
+# 		chair: -1
+# 		total:
+# 			enable: false
+# 			amount: -1
+# ----------------------------------------------
+# the permission for these kit is furniture.limit.player.<kitName>
+
+PlayerLimit:
+  projects:
+    Streetlamp: 10
+    Well: 10
+    WeaponStand: 10
+    WaxCandle: 10
+    Washstand: 10
+    WashingMachine: 10
+    TV: 10
+    Trunk: 10
+    TrashCan: 10
+    TornTableA: 10
+    Toilet: 10
+    Tent2: 10
+    Tent1: 10
+    Table: 10
+    Sunshade: 10
+    Studio: 10
+    StreetLamp3: 10
+    StreetLamp2: 10
+    StreetLamp: 10
+    Sofa3: 10
+    Sofa2: 10
+    Sofa: 10
+    SnowGolem: 10
+    SleepingBag: 10
+    SimplePlate: 10
+    SimpleChoppingBoard: 10
+    Sidetable: 10
+    shelf2: 10
+    SchoolTable: 10
+    SchoolChair: 10
+    Scarecrow: 10
+    Rennwagen: 10
+    Refrigerator: 10
+    Piano: 10
+    MailBox: 10
+    LargeTable: 10
+    Lantern: 10
+    HumanSkeleton: 10
+    Hammock: 10
+    Guillotine: 10
+    GraveStone: 10
+    GasCooker: 10
+    GamingDesk: 10
+    FlowerPot: 10
+    Flag: 10
+    FireworkLauncher: 10
+    Fireplace: 10
+    Fence: 10
+    dog: 10
+    Crossbow: 10
+    Computer: 10
+    ChristmasTree: 10
+    Chair2: 10
+    Chair: 10
+    Catapult: 10
+    CandyCane: 10
+    Campfire: 10
+    CampChair: 10
+    Camera: 10
+    CactusPlant: 10
+    BlackBoard: 10
+    BeverageMachine: 10
+    Bench: 10
+    Bed: 10
+    BearTrap: 10
+    Barrels: 10
+    AdventCalender: 10
+  total:
+    enable: false
+    amount: -1
+    global: false

@@ -1,0 +1,579 @@
+# FAQ
+# Q) How can I deny the player's permissions?
+# A) Use your permissions plugin like LuckPerms, You can run /lp user {player} permission set your_permission
+
+# Q) Do I need everything in this config?
+# A) No, You can view PlayerHead.yml for an example whereas much as possible can be removed.
+
+###################################
+#             Items: Options
+# Item: <ID:MD> - You can choose the item with its id and meta data.
+# Amount: <Number> - Choose how many of the item you get.
+# Name: <Name> - The display name that goes on the item.
+# Lore: <Line 1>,<Line 2>,<Line 3>,<Line 4> - The lore that will go under the enchantments. Split lines with a ','
+# <Enchantment>:<Level> - Choose the enchantment you want to add to the item. You can use the in-game names of the enchantment if you want. Replace the spaces in the name with a "_".
+###################################################################
+#                         Firework Colors:                        #
+#      Aqua, Black, Blue, Fuchsia, Gray, Green, Lime, Maroon,     #
+#  Navy, Olive, Orange, Purple, Red, Silver, Teal, White, Yellow  #
+###################################################################
+
+
+
+voucher:
+  item: 'BOOK'
+  name: '<dark_aqua>⛏ <aqua><bold>Random Toolskin <reset><dark_aqua>⛏'
+  lore:
+  - '<dark_gray>Toolskin Voucher'
+  - ''
+  - '<gray>Claim this voucher to'
+  - '<gray>receive a random toolskin!'
+  - ''
+  - '<yellow>➥ Left-Click to claim'
+  glowing: true
+  custom-model-data: -1
+  random-commands:
+    "1":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisSword {player}"
+    "2":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialSword {player}"
+    "3":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonSword {player}"
+    "4":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilSword {player}"
+    "5":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldSword {player}"
+    "6":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenSword {player}"
+    "7":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenSword {player}"
+    "8":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterSword {player}"
+    "9":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonSword {player}"
+    "10":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudSword {player}"
+    "11":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherSword {player}"
+    "12":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherSword {player}"
+    "13":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusSword {player}"
+    "14":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantSword {player}"
+    "15":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderSword {player}"
+    "16":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightSword {player}"
+    "17":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorSword {player}"
+    "18":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisPickaxe {player}"
+    "19":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialPickaxe {player}"
+    "20":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonPickaxe {player}"
+    "21":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilPickaxe {player}"
+    "22":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldPickaxe {player}"
+    "23":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenPickaxe {player}"
+    "24":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenPickaxe {player}"
+    "25":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterPickaxe {player}"
+    "26":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonPickaxe {player}"
+    "27":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudPickaxe {player}"
+    "28":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherPickaxe {player}"
+    "29":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherPickaxe {player}"
+    "30":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusPickaxe {player}"
+    "31":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantPickaxe {player}"
+    "32":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderPickaxe {player}"
+    "33":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightPickaxe {player}"
+    "34":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorPickaxe {player}"
+    "35":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisAxe {player}"
+    "36":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialAxe {player}"
+    "37":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonAxe {player}"
+    "38":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilAxe {player}"
+    "39":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldAxe {player}"
+    "40":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenAxe {player}"
+    "41":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenAxe {player}"
+    "42":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterAxe {player}"
+    "43":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonAxe {player}"
+    "44":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudAxe {player}"
+    "45":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherAxe {player}"
+    "46":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherAxe {player}"
+    "47":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusAxe {player}"
+    "48":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantAxe {player}"
+    "49":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderAxe {player}"
+    "50":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightAxe {player}"
+    "51":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorAxe {player}"
+    "52":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisShovel {player}"
+    "53":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialShovel {player}"
+    "54":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonShovel {player}"
+    "55":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilShovel {player}"
+    "56":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldShovel {player}"
+    "57":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenShovel {player}"
+    "58":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenShovel {player}"
+    "59":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterShovel {player}"
+    "60":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonShovel {player}"
+    "61":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudShovel {player}"
+    "62":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherShovel {player}"
+    "63":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherShovel {player}"
+    "64":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusShovel {player}"
+    "65":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantShovel {player}"
+    "66":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderShovel {player}"
+    "67":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightShovel {player}"
+    "68":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorShovel {player}"
+    "69":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisHoe {player}"
+    "70":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialHoe {player}"
+    "71":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonHoe {player}"
+    "72":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilHoe {player}"
+    "73":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldHoe {player}"
+    "74":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenHoe {player}"
+    "75":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenHoe {player}"
+    "76":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterHoe {player}"
+    "77":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonHoe {player}"
+    "78":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudHoe {player}"
+    "79":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherHoe {player}"
+    "80":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherHoe {player}"
+    "81":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusHoe {player}"
+    "82":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantHoe {player}"
+    "83":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderHoe {player}"
+    "84":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightHoe {player}"
+    "85":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorHoe {player}"
+    "86":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisBow {player}"
+    "87":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialBow {player}"
+    "88":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonBow {player}"
+    "89":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilBow {player}"
+    "90":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldBow {player}"
+    "91":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenBow {player}"
+    "92":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenBow {player}"
+    "93":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterBow {player}"
+    "94":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonBow {player}"
+    "95":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudBow {player}"
+    "96":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherBow {player}"
+    "97":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherBow {player}"
+    "98":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusBow {player}"
+    "99":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantBow {player}"
+    "100":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderBow {player}"
+    "101":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightBow {player}"
+    "102":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorBow {player}"
+    "103":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisCrossbow {player}"
+    "104":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialCrossbow {player}"
+    "105":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonCrossbow {player}"
+    "106":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilCrossbow {player}"
+    "107":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldCrossbow {player}"
+    "108":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenCrossbow {player}"
+    "109":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenCrossbow {player}"
+    "110":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterCrossbow {player}"
+    "111":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonCrossbow {player}"
+    "112":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudCrossbow {player}"
+    "113":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherCrossbow {player}"
+    "114":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherCrossbow {player}"
+    "115":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusCrossbow {player}"
+    "116":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantCrossbow {player}"
+    "117":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderCrossbow {player}"
+    "118":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightCrossbow {player}"
+    "119":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorCrossbow {player}"
+    "120":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsAtlantisFishingRod {player}"
+    "121":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCelestialFishingRod {player}"
+    "122":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsCrimsonFishingRod {player}"
+    "123":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsDevilFishingRod {player}"
+    "124":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsEmeraldFishingRod {player}"
+    "125":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHalloweenFishingRod {player}"
+    "126":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsHeavenFishingRod {player}"
+    "127":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMonsterFishingRod {player}"
+    "128":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMoonFishingRod {player}"
+    "129":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsMudFishingRod {player}"
+    "130":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsNetherFishingRod {player}"
+    "131":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPantherFishingRod {player}"
+    "132":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsPegasusFishingRod {player}"
+    "133":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsRadiantFishingRod {player}"
+    "134":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsThunderFishingRod {player}"
+    "135":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsTwilightFishingRod {player}"
+    "136":
+      weight: 100.0
+      commands:
+        - "giverandomtoolskin toolskinsWarriorFishingRod {player}"

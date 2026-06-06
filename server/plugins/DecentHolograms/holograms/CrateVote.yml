@@ -1,0 +1,18 @@
+location: spawn:22.500:103.6:-31.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lVote Crate'
+    height: 0.3
+  - content: '&fRarity: '
+    height: 0.5
+  - content: '&fLeft-Click to Preview'
+    height: 0.3
+  - content: '&6&nGet Keys From: /coinshop'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,259 @@
+menu_title: '&f七七七七七七七七⤾'
+open_command:
+  - rtp
+  - worlds
+size: 45
+update_interval: 1
+
+items:
+
+
+  'rtp_world_available':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴇᴀʀᴛʜ ᴡᴏʀʟᴅ'
+    lore:
+      - ''
+      - '&aWorld Information:'
+      - ' &8&l∙ &7Size: &f24k x 12k'
+      - ' &8&l∙ &7Land Claiming: &fEnabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ''
+      - '&e➥ Left-Click to open'
+    priority: 2
+    left_click_commands:
+      - "[openguimenu] earthrtp"
+
+
+
+
+
+
+  'mining_teleport':
+    material: paper
+    model_data: 110007
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+      - 14
+      - 15
+      - 16
+      - 17
+    update: true
+    display_name: '&e&lᴍɪɴɪɴɢ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&eWorld Information:'
+      - ' &8&l∙ &7Size: &f5k x 5k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location mining"
+      - "[console] lp user %player_name% permission settemp rtp.mining true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.mining%"
+          output: "no"
+    priority: 1
+
+  'mining_cooldown':
+    material: paper
+    model_data: 110007
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+      - 14
+      - 15
+      - 16
+      - 17
+    update: true
+    display_name: '&e&lᴍɪɴɪɴɢ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&eWorld Information:'
+      - ' &8&l∙ &7Size: &f5k x 5k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&eCooldown: &f%luckperms_inherited_expiry_time_rtp.mining%"
+    priority: 2
+
+
+
+
+
+  'nether_teleport':
+    material: paper
+    model_data: 110007
+    slots:
+      - 18
+      - 19
+      - 20
+      - 21
+      - 27
+      - 28
+      - 29
+      - 30
+      - 36
+      - 37
+      - 38
+      - 39
+    update: true
+    display_name: '&c&lɴᴇᴛʜᴇʀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&cWorld Information:'
+      - ' &8&l∙ &7Size: &f10k x 10k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location nether"
+      - "[console] lp user %player_name% permission settemp rtp.nether true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.nether%"
+          output: "no"
+    priority: 1
+
+  'nether_cooldown':
+    material: paper
+    model_data: 110007
+    slots:
+      - 18
+      - 19
+      - 20
+      - 21
+      - 27
+      - 28
+      - 29
+      - 30
+      - 36
+      - 37
+      - 38
+      - 39
+    update: true
+    display_name: '&c&lɴᴇᴛʜᴇʀ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&cWorld Information:'
+      - ' &8&l∙ &7Size: &f10k x 10k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&cCooldown: &f%luckperms_inherited_expiry_time_rtp.nether%"
+    priority: 2
+
+
+
+
+
+  'the_end_teleport':
+    material: paper
+    model_data: 110007
+    slots:
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+    update: true
+    display_name: '&b&lᴇɴᴅ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&bWorld Information:'
+      - ' &8&l∙ &7Size: &f5k x 5k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&e➥ Left-Click to teleport"
+    click_commands:
+      - "[player] betterrtp location the_end"
+      - "[console] lp user %player_name% permission settemp rtp.the_end true 1m"
+      - "[close]"
+    view_requirement:
+      requirements:
+        req1:
+          type: string contains
+          input: "%luckperms_inherits_permission_rtp.the_end%"
+          output: "no"
+    priority: 1
+
+  'the_end_cooldown':
+    material: paper
+    model_data: 110007
+    slots:
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+    update: true
+    display_name: '&b&lᴇɴᴅ ʀᴛᴘ'
+    lore:
+      - ""
+      - '&bWorld Information:'
+      - ' &8&l∙ &7Size: &f5k x 5k'
+      - ' &8&l∙ &7Land Claiming: &fDisabled'
+      - ' &8&l∙ &7Keep Inventory: &fDisabled'
+      - ' &8&l∙ &7Pvp: &fDisabled'
+      - ""
+      - "&bCooldown: &f%luckperms_inherited_expiry_time_rtp.the_end%"
+    priority: 2
+
+
+

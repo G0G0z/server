@@ -1,0 +1,1076 @@
+menu_title: '&f七七七七七七七七⤙'
+open_command: geysersellshopmobdrops1
+size: 54
+update_interval: 1
+
+items:
+
+
+  'rotten_flesh':
+    material: rotten_flesh
+    slot: 19
+    display_name: '&eRotten Flesh'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.94/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rotten_flesh'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rotten_flesh'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.94'
+      - '[console] minecraft:clear %player_name% rotten_flesh 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 15.04'
+      - '[console] minecraft:clear %player_name% rotten_flesh 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'gunpowder':
+    material: gunpowder
+    slot: 20
+    display_name: '&eGunpowder'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$9.38/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'gunpowder'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'gunpowder'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 9.38'
+      - '[console] minecraft:clear %player_name% gunpowder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 150.08'
+      - '[console] minecraft:clear %player_name% gunpowder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'ender_pearl':
+    material: ender_pearl
+    slot: 21
+    display_name: '&eEnder Pearl'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$2.34/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'ender_pearl'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'ender_pearl'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 2.34'
+      - '[console] minecraft:clear %player_name% ender_pearl 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 37.44'
+      - '[console] minecraft:clear %player_name% ender_pearl 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'spider_eye':
+    material: spider_eye
+    slot: 22
+    display_name: '&eSpider Eye'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$1.09/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'spider_eye'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'spider_eye'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 1.09'
+      - '[console] minecraft:clear %player_name% spider_eye 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 17.44'
+      - '[console] minecraft:clear %player_name% spider_eye 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'string':
+    material: string
+    slot: 23
+    display_name: '&eString'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.31/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'string'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'string'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.31'
+      - '[console] minecraft:clear %player_name% string 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 4.96'
+      - '[console] minecraft:clear %player_name% string 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'arrow':
+    material: arrow
+    slot: 24
+    display_name: '&eArrow'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$1.88/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'arrow'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'arrow'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 1.88'
+      - '[console] minecraft:clear %player_name% arrow 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 30.08'
+      - '[console] minecraft:clear %player_name% arrow 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'bone':
+    material: bone
+    slot: 25
+    display_name: '&eBone'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.94/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'bone'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'bone'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.94'
+      - '[console] minecraft:clear %player_name% bone 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 15.36'
+      - '[console] minecraft:clear %player_name% bone 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'slime_ball':
+    material: slime_ball
+    slot: 28
+    display_name: '&eSlime Ball'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.63/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'slime_ball'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'slime_ball'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.63'
+      - '[console] minecraft:clear %player_name% slime_ball 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 10.08'
+      - '[console] minecraft:clear %player_name% slime_ball 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'blaze_rod':
+    material: blaze_rod
+    slot: 29
+    display_name: '&eBlaze Rod'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$4.69/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'blaze_rod'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'blaze_rod'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 4.69'
+      - '[console] minecraft:clear %player_name% blaze_rod 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 75.04'
+      - '[console] minecraft:clear %player_name% blaze_rod 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'leather':
+    material: leather
+    slot: 30
+    display_name: '&eLeather'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.47/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'leather'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'leather'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.47'
+      - '[console] minecraft:clear %player_name% leather 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 7.52'
+      - '[console] minecraft:clear %player_name% leather 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'rabbit_hide':
+    material: rabbit_hide
+    slot: 31
+    display_name: '&eRabbit Hide'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.39/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit_hide'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit_hide'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.39'
+      - '[console] minecraft:clear %player_name% rabbit_hide 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 6.24'
+      - '[console] minecraft:clear %player_name% rabbit_hide 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'rabbit_foot':
+    material: rabbit_foot
+    slot: 32
+    display_name: '&eRabbit Foot'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$3/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit_foot'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit_foot'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 3'
+      - '[console] minecraft:clear %player_name% rabbit_foot 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 48'
+      - '[console] minecraft:clear %player_name% rabbit_foot 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'feather':
+    material: feather
+    slot: 33
+    display_name: '&eFeather'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$0.31/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'feather'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'feather'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 0.31'
+      - '[console] minecraft:clear %player_name% feather 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 4.96'
+      - '[console] minecraft:clear %player_name% feather 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'prismarine_shard':
+    material: prismarine_shard
+    slot: 34
+    display_name: '&ePrismarine Shard'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$2.1/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'prismarine_shard'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'prismarine_shard'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 2.1'
+      - '[console] minecraft:clear %player_name% prismarine_shard 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 33.6'
+      - '[console] minecraft:clear %player_name% prismarine_shard 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'prismarine_crystals':
+    material: prismarine_crystals
+    slot: 37
+    display_name: '&ePrismarine Crystals'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$3.4/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'prismarine_crystals'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'prismarine_crystals'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 3.4'
+      - '[console] minecraft:clear %player_name% prismarine_crystals 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 54.4'
+      - '[console] minecraft:clear %player_name% prismarine_crystals 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'beef':
+    material: beef
+    slot: 38
+    display_name: '&eBeef'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$16/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'beef'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'beef'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 16'
+      - '[console] minecraft:clear %player_name% beef 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 256'
+      - '[console] minecraft:clear %player_name% beef 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'rabbit':
+    material: rabbit
+    slot: 39
+    display_name: '&eRabbit'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$13/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'rabbit'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 13'
+      - '[console] minecraft:clear %player_name% rabbit 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 208'
+      - '[console] minecraft:clear %player_name% rabbit 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'porkchop':
+    material: porkchop
+    slot: 40
+    display_name: '&ePorkchop'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$16/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'porkchop'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'porkchop'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 16'
+      - '[console] minecraft:clear %player_name% porkchop 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 256'
+      - '[console] minecraft:clear %player_name% porkchop 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'chicken':
+    material: chicken
+    slot: 41
+    display_name: '&eChicken'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$20/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'chicken'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'chicken'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 20'
+      - '[console] minecraft:clear %player_name% chicken 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 320'
+      - '[console] minecraft:clear %player_name% chicken 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'mutton':
+    material: mutton
+    slot: 42
+    display_name: '&eMutton'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$15/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'mutton'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'mutton'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 15'
+      - '[console] minecraft:clear %player_name% mutton 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 240'
+      - '[console] minecraft:clear %player_name% mutton 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'gold_nugget':
+    material: gold_nugget
+    slot: 43
+    display_name: '&eGold Nugget'
+    lore:
+      - ''
+      - "&8• &fSell for: &c$2.4/ea"
+      - ''
+      - '&e➥ &cLeft-Click to sell 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'gold_nugget'
+          amount: 1
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: 'gold_nugget'
+          amount: 16
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have the items to sell.'
+    left_click_commands:
+      - '[console] eco give %player_name% 2.4'
+      - '[console] minecraft:clear %player_name% gold_nugget 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco give %player_name% 38.4'
+      - '[console] minecraft:clear %player_name% gold_nugget 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have sold these items!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_mobdrops2'
+
+
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_foods1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_redstone1'
+
+
+
+
+
+
+
+
+  'shop_minerals':
+    material: DIAMOND
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMinerals'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_minerals1'
+
+  'shop_farming':
+    material: WHEAT
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_foods1'
+
+  'shop_mobdrops':
+    material: ROTTEN_FLESH
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMob Drops'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_mobdrops1'
+
+  'shop_redstone':
+    material: PISTON
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lRedstone'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_redstone1'
+
+  'shop_decorations':
+    material: FLOWER_POT
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lDecorations'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_decorations1'
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_misc1'
+
+
+
+

@@ -1,0 +1,63 @@
+command /coinshop:
+ trigger:
+  make player execute command "/dm open coinshop_menu"
+
+command /rewards:
+ trigger:
+  make player execute command "/dm open rewards_menu"
+
+command /warps:
+ trigger:
+  make player execute command "/dm open warps"
+
+command /help:
+ trigger:
+  make player execute command "/dm open serverguide_menu"
+
+command /tutorial:
+ trigger:
+  make player execute command "/dm open serverguide_menu"
+
+command /serverguide:
+ trigger:
+  make player execute command "/dm open serverguide_menu"
+
+command /worlds:
+ trigger:
+  make player execute command "/dm open rtp_allworlds"
+
+command /teams:
+ trigger:
+  make player execute command "/dm open teams"
+
+command /factories:
+ trigger:
+  make player execute command "/dm open factories_menu_wood"
+
+command /levels:
+ trigger:
+  make player execute command "/dm open levels_1"
+
+command /toolskins:
+ trigger:
+  make player execute command "/dm open toolskins_sword"
+
+command /leaderboards:
+ trigger:
+  make player execute command "/dm open leaderboards_menu"
+
+command /settings:
+ trigger:
+  make player execute command "/dm open settings_1"
+
+command /nationtags:
+ trigger:
+  make player execute command "/dm open all_nationtags_1"
+
+command /enchants:
+ trigger:
+  make player execute command "/excellentenchants list"
+
+command /dungeons:
+ trigger:
+  make player execute command "/dm open dungeons_1"

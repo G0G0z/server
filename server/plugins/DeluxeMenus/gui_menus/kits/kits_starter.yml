@@ -1,0 +1,250 @@
+menu_title: '&f七七七七七七七七し'
+open_command: kitsstarter
+size: 27
+update_interval: 1
+
+items:
+
+
+  'kit_tools_claimed':
+    material: BARRIER
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Tools'
+    lore:
+      - ''
+      - '&7The tool kit contains tools that'
+      - '&7will help you get started!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fOn Cooldown (%essentials_kit_time_until_available_tools%)'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis kit is on cooldown!"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_tools%"
+          output: "no"
+    priority: 1
+
+  'kit_tools':
+    material: STONE_PICKAXE
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Tools'
+    lore:
+      - ''
+      - '&7The tool kit contains tools that'
+      - '&7will help you get started!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+    click_commands:
+      - "[player] essentials:kit tools"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    priority: 2
+
+
+
+
+  'kit_food_claimed':
+    material: BARRIER
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Food'
+    lore:
+      - ''
+      - '&7The food kit contains a variety of food'
+      - '&7which will help you avoid starvation!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fOn Cooldown (%essentials_kit_time_until_available_food%)'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis kit is on cooldown!"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_food%"
+          output: "no"
+    priority: 1
+
+  'kit_food':
+    material: COOKED_BEEF
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Food'
+    lore:
+      - ''
+      - '&7The food kit contains a variety of food'
+      - '&7which will help you avoid starvation!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+    click_commands:
+      - "[player] essentials:kit food"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    priority: 2
+
+
+
+
+  'kit_pvp_claimed':
+    material: BARRIER
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit PVP'
+    lore:
+      - ''
+      - '&7The PVP kit will prepare you'
+      - '&7for war in the arena!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fOn Cooldown (%essentials_kit_time_until_available_pvp%)'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis kit is on cooldown!"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_pvp%"
+          output: "no"
+    priority: 1
+
+  'kit_pvp':
+    material: BOW
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit PVP'
+    lore:
+      - ''
+      - '&7The PVP kit will prepare you'
+      - '&7for war in the arena!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+    click_commands:
+      - "[player] essentials:kit pvp"
+      - "[console] codex unlock %player_name% objectives claim_pvp_kit"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    priority: 2
+
+
+
+
+  'kit_claim_claimed':
+    material: BARRIER
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Claim'
+    lore:
+      - ''
+      - '&7The claim kit contains a golden shovel'
+      - '&7which can be used for claiming!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fOn Cooldown (%essentials_kit_time_until_available_claim%)'
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis kit is on cooldown!"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_claim%"
+          output: "no"
+    priority: 1
+
+  'kit_claim':
+    material: GOLDEN_SHOVEL
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Claim'
+    lore:
+      - ''
+      - '&7The claim kit contains a golden shovel'
+      - '&7which can be used for claiming!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 5 minutes'
+      - '&6Status: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+    click_commands:
+      - "[player] essentials:kit claim"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    priority: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 19
+      - 20
+      - 21
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] kits"
+
+
+
+
+

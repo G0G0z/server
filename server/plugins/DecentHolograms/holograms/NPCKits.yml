@@ -1,0 +1,16 @@
+location: spawn:-30.500:101.9:-44
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&c&lKits&f'
+    height: 0.3
+  - content: '&7(/kits)'
+    height: 0.5
+  actions: {}

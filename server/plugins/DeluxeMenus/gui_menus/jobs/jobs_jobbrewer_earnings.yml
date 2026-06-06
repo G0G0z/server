@@ -1,0 +1,71 @@
+menu_title: '&f七七七七七七七七⇮'
+open_command: jobsjobbrewerearnings
+size: 54
+update_interval: 1
+
+items:
+
+
+  'brewing_1':
+    material: BREWING_STAND
+    slot: 10
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lBrewing'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fNether Wart &8&l▪ &a$%math_6+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_6*0.04% pts &66exp'
+      - '&fRedstone &8&l▪ &a$%math_6+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_6*0.04% pts &66exp'
+      - '&fGlowstone Dust &8&l▪ &a$%math_8+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_8*0.04% pts &68exp'
+      - '&fFermented Spider Eye &8&l▪ &a$%math_12+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_12*0.04% pts &612exp'
+      - '&fGunpowder &8&l▪ &a$%math_6+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_6*0.04% pts &66exp'
+      - '&fDragon Breath &8&l▪ &a$%math_25+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_25*0.04% pts &625exp'
+      - '&fSugar &8&l▪ &a$%math_7+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_7*0.04% pts &67exp'
+      - '&fRabbit Foot &8&l▪ &a$%math_18+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_18*0.04% pts &618exp'
+      - '&fGlistering Melon Slice &8&l▪ &a$%math_10+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_10*0.04% pts &610exp'
+      - '&fSpider Eye &8&l▪ &a$%math_9+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_9*0.04% pts &69exp'
+
+
+  'brewing_2':
+    material: BREWING_STAND
+    slot: 11
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lBrewing'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fPufferfish &8&l▪ &a$%math_14+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_14*0.04% pts &61exp'
+      - '&fMagma Cream &8&l▪ &a$%math_12+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_12*0.04% pts &612exp'
+      - '&fGolden Carrot &8&l▪ &a$%math_14+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_14*0.04% pts &614exp'
+      - '&fBlaze Powder &8&l▪ &a$%math_12+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_12*0.04% pts &612exp'
+      - '&fGhast Tear &8&l▪ &a$%math_22+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_22*0.04% pts &622exp'
+      - '&fTurtle Helmet &8&l▪ &a$%math_12+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_12*0.04% pts &612exp'
+      - '&fPhantom Membrane &8&l▪ &a$%math_12+({jobsr_user_jlevel_blacksmith}*0.03)% &b%math_2_12*0.04% pts &612exp'
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 46
+      - 47
+      - 48
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] jobs_jobbrewer"
+
+
+

@@ -1,0 +1,714 @@
+menu_title: '&f七七七七七七七七ღ'
+open_command: coinshopprojectileeffects
+size: 36
+update_interval: 1
+
+items:
+
+
+  'buy_Rainbow':
+    material: LIME_WOOL
+    amount: 1
+    slot: 0
+    update: true
+    display_name: '&6&lRainbow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Rainbow"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Rainbow
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Christmas':
+    material: SNOW_BLOCK
+    amount: 1
+    slot: 1
+    update: true
+    display_name: '&6&lChristmas'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Christmas"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Christmas
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Spark':
+    material: FIREWORK_ROCKET
+    amount: 1
+    slot: 2
+    update: true
+    display_name: '&6&lSpark'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Spark"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Spark
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Redstone':
+    material: REDSTONE
+    amount: 1
+    slot: 3
+    update: true
+    display_name: '&6&lRedstone'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Redstone"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Redstone
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Flame':
+    material: TORCH
+    amount: 1
+    slot: 4
+    update: true
+    display_name: '&6&lFlame'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Flame"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Flame
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Water':
+    material: WATER_BUCKET
+    amount: 1
+    slot: 5
+    update: true
+    display_name: '&6&lWater'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Water"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Water
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Witch':
+    material: BREWING_STAND
+    amount: 1
+    slot: 9
+    update: true
+    display_name: '&6&lWitch'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Witch"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Witch
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Emerald':
+    material: EMERALD
+    amount: 1
+    slot: 10
+    update: true
+    display_name: '&6&lEmerald'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Emerald"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Emerald
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Note':
+    material: NOTE_BLOCK
+    amount: 1
+    slot: 11
+    update: true
+    display_name: '&6&lNote'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Note"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Note
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Love':
+    material: PINK_WOOL
+    amount: 1
+    slot: 12
+    update: true
+    display_name: '&6&lLove'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Love"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Love
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Lava':
+    material: LAVA_BUCKET
+    amount: 1
+    slot: 13
+    update: true
+    display_name: '&6&lLava'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Lava"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Lava
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Snow':
+    material: SNOWBALL
+    amount: 1
+    slot: 14
+    update: true
+    display_name: '&6&lSnow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Snow"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Snow
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Slime':
+    material: SLIME_BALL
+    amount: 1
+    slot: 18
+    update: true
+    display_name: '&6&lSlime'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Slime"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Slime
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Crit':
+    material: IRON_SWORD
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&6&lCrit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Crit"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Crit
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Explosion':
+    material: TNT
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&6&lExplosion'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Explosion"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Explosion
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Cloud':
+    material: WHITE_WOOL
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&6&lCloud'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Cloud"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Cloud
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Smoke':
+    material: GRAY_WOOL
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&6&lSmoke'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Smoke"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Smoke
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+  'buy_Portal':
+    material: OBSIDIAN
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&6&lPortal'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f25 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[givepermission] ultracosmetics.projectileeffects.Portal"
+      - "[console] coins take %player_name% 25"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f25 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 25'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f25 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Portal
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou already own this item."
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'coins':
+    material: PAPER
+    model_data: 110007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴄᴏɪɴs'
+    lore:
+      - '&8Information'
+      - ''
+      - '&7Coins is a premium currency'
+      - '&7on our server which can be'
+      - '&7bought in the server store!'
+      - ''
+      - '&6Your Coins: &f%coinsengine_balance_coins%'
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] coinshop_menu"
+

@@ -1,0 +1,23 @@
+command /store:
+ trigger:
+  message ""
+  message " &b&lStore &8&l▪ &fThanks for supporting our server!"
+  message ""
+  message "<##8CC0CC>Hey &f%player%<##8CC0CC>! Are you enjoying your time on the server?"
+  message "<##8CC0CC>Check out our &fstore<##8CC0CC>! Your purchases allow us to continue"
+  message "<##8CC0CC>to provide you with the &fbest possible experience<##8CC0CC>!"
+  message ""
+  message "      &b<link:https://store.example.com>store.example.com/category/survival &f"
+  message ""
+
+command /website:
+ trigger:
+  message ""
+  message " &b&lStore &8&l▪ &fThanks for supporting our server!"
+  message ""
+  message "<##8CC0CC>Hey &f%player%<##8CC0CC>! Are you enjoying your time on the server?"
+  message "<##8CC0CC>Check out our &fstore<##8CC0CC>! Your purchases allow us to continue"
+  message "<##8CC0CC>to provide you with the &fbest possible experience<##8CC0CC>!"
+  message ""
+  message "      &b<link:https://store.example.com>store.example.com/category/survival &f"
+  message ""

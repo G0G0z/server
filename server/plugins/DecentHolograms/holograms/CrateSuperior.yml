@@ -1,0 +1,18 @@
+location: spawn:22.500:103.6:-47.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lSuperior Crate'
+    height: 0.3
+  - content: '&fRarity: '
+    height: 0.5
+  - content: '&fLeft-Click to Preview'
+    height: 0.3
+  - content: '&e&nGet Keys From: /coinshop'
+    height: 0.3
+  actions: {}

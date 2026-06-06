@@ -1,0 +1,817 @@
+# DeluxeMenus 1.14.1-DEV-184 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  
+  
+  warps:
+    file: warps/warps.yml
+  
+  
+  
+  kits:
+    file: kits/kits.yml
+  kits_starter:
+    file: kits/kits_starter.yml
+  kits_ranked:
+    file: kits/kits_ranked.yml
+  kits_previewknight:
+    file: kits/kits_previewknight.yml
+  kits_previewlord:
+    file: kits/kits_previewlord.yml
+  kits_previewpaladin:
+    file: kits/kits_previewpaladin.yml
+  kits_previewduke:
+    file: kits/kits_previewduke.yml
+  kits_previewking:
+    file: kits/kits_previewking.yml
+  
+  
+  
+  serverguide_menu:
+    file: serverguide/serverguide_menu.yml
+  serverguide_extended:
+    file: serverguide/serverguide_extended.yml
+  
+  
+  
+  settings_1:
+    file: settings/settings_1.yml
+  settings_2:
+    file: settings/settings_2.yml
+  
+  
+  
+  shop_blocks1:
+    file: shop/shop_blocks1.yml
+  shop_blocks2:
+    file: shop/shop_blocks2.yml
+  shop_blocks3:
+    file: shop/shop_blocks3.yml
+  shop_blocks4:
+    file: shop/shop_blocks4.yml
+  shop_blocks5:
+    file: shop/shop_blocks5.yml
+  shop_blocks6:
+    file: shop/shop_blocks6.yml
+  
+  shop_wood1:
+    file: shop/shop_wood1.yml
+  shop_wood2:
+    file: shop/shop_wood2.yml
+  shop_wood3:
+    file: shop/shop_wood3.yml
+  
+  shop_colors1:
+    file: shop/shop_colors1.yml
+  shop_colors2:
+    file: shop/shop_colors2.yml
+  shop_colors3:
+    file: shop/shop_colors3.yml
+  shop_colors4:
+    file: shop/shop_colors4.yml
+  shop_colors5:
+    file: shop/shop_colors5.yml
+  
+  shop_minerals1:
+    file: shop/shop_minerals1.yml
+  shop_minerals2:
+    file: shop/shop_minerals2.yml
+  
+  shop_farming1:
+    file: shop/shop_farming1.yml
+  shop_farming2:
+    file: shop/shop_farming2.yml
+  
+  shop_foods1:
+    file: shop/shop_foods1.yml
+  
+  shop_mobdrops1:
+    file: shop/shop_mobdrops1.yml
+  shop_mobdrops2:
+    file: shop/shop_mobdrops2.yml
+  
+  shop_redstone1:
+    file: shop/shop_redstone1.yml
+  shop_redstone2:
+    file: shop/shop_redstone2.yml
+  
+  shop_decorations1:
+    file: shop/shop_decorations1.yml
+  shop_decorations2:
+    file: shop/shop_decorations2.yml
+  shop_decorations3:
+    file: shop/shop_decorations3.yml
+  shop_decorations4:
+    file: shop/shop_decorations4.yml
+  shop_decorations5:
+    file: shop/shop_decorations5.yml
+  
+  shop_misc1:
+    file: shop/shop_misc1.yml
+  shop_misc2:
+    file: shop/shop_misc2.yml
+  
+  
+  
+  coinshop_menu:
+    file: coinshop/coinshop_menu.yml
+  coinshop_keys:
+    file: coinshop/coinshop_keys.yml
+  coinshop_ranks:
+    file: coinshop/coinshop_ranks.yml
+  coinshop_backpacks:
+    file: coinshop/coinshop_backpacks.yml
+  coinshop_claimblocks:
+    file: coinshop/coinshop_claimblocks.yml
+  coinshop_commands:
+    file: coinshop/coinshop_commands.yml
+  coinshop_toolskins:
+    file: coinshop/coinshop_toolskins.yml
+  coinshop_furniture:
+    file: coinshop/coinshop_furniture.yml
+  coinshop_pets:
+    file: coinshop/coinshop_pets.yml
+  coinshop_hats:
+    file: coinshop/coinshop_hats.yml
+  coinshop_particles:
+    file: coinshop/coinshop_particles.yml
+  coinshop_projectileeffects:
+    file: coinshop/coinshop_projectileeffects.yml
+  coinshop_deatheffects:
+    file: coinshop/coinshop_deatheffects.yml
+  
+  
+  
+  factories_menu_arrow:
+    file: factories/factories_menu_arrow.yml
+  factories_menu_book:
+    file: factories/factories_menu_book.yml
+  factories_menu_brick:
+    file: factories/factories_menu_brick.yml
+  factories_menu_charcoal:
+    file: factories/factories_menu_charcoal.yml
+  factories_menu_copperingot:
+    file: factories/factories_menu_copperingot.yml
+  factories_menu_diamond:
+    file: factories/factories_menu_diamond.yml
+  factories_menu_firework:
+    file: factories/factories_menu_firework.yml
+  factories_menu_gasoline:
+    file: factories/factories_menu_gasoline.yml
+  factories_menu_goldingot:
+    file: factories/factories_menu_goldingot.yml
+  factories_menu_hydrogen:
+    file: factories/factories_menu_hydrogen.yml
+  factories_menu_ironingot:
+    file: factories/factories_menu_ironingot.yml
+  factories_menu_itemframe:
+    file: factories/factories_menu_itemframe.yml
+  factories_menu_netheriteingot:
+    file: factories/factories_menu_netheriteingot.yml
+  factories_menu_netherstar:
+    file: factories/factories_menu_netherstar.yml
+  factories_menu_oil:
+    file: factories/factories_menu_oil.yml
+  factories_menu_quartz:
+    file: factories/factories_menu_quartz.yml
+  factories_menu_string:
+    file: factories/factories_menu_string.yml
+  factories_menu_uranium:
+    file: factories/factories_menu_uranium.yml
+  factories_menu_wheat:
+    file: factories/factories_menu_wheat.yml
+  factories_menu_wood:
+    file: factories/factories_menu_wood.yml
+  factories_arrow:
+    file: factories/factories_arrow.yml
+  factories_book:
+    file: factories/factories_book.yml
+  factories_brick:
+    file: factories/factories_brick.yml
+  factories_charcoal:
+    file: factories/factories_charcoal.yml
+  factories_copperingot:
+    file: factories/factories_copperingot.yml
+  factories_diamond:
+    file: factories/factories_diamond.yml
+  factories_firework:
+    file: factories/factories_firework.yml
+  factories_gasoline:
+    file: factories/factories_gasoline.yml
+  factories_goldingot:
+    file: factories/factories_goldingot.yml
+  factories_hydrogen:
+    file: factories/factories_hydrogen.yml
+  factories_ironingot:
+    file: factories/factories_ironingot.yml
+  factories_itemframe:
+    file: factories/factories_itemframe.yml
+  factories_netheriteingot:
+    file: factories/factories_netheriteingot.yml
+  factories_netherstar:
+    file: factories/factories_netherstar.yml
+  factories_oil:
+    file: factories/factories_oil.yml
+  factories_quartz:
+    file: factories/factories_quartz.yml
+  factories_string:
+    file: factories/factories_string.yml
+  factories_uranium:
+    file: factories/factories_uranium.yml
+  factories_wheat:
+    file: factories/factories_wheat.yml
+  factories_wood:
+    file: factories/factories_wood.yml
+  factories_all1:
+    file: factories/factories_all1.yml
+  factories_all2:
+    file: factories/factories_all2.yml
+  factories_research1:
+    file: factories/factories_research1.yml
+  factories_research2:
+    file: factories/factories_research2.yml
+  factories_research3:
+    file: factories/factories_research3.yml
+  factories_rewards:
+    file: factories/factories_rewards.yml
+  
+  
+  
+  jobs_menu:
+    file: jobs/jobs_menu.yml
+  jobs_jobminer:
+    file: jobs/jobs_jobminer.yml
+  jobs_joblumberjack:
+    file: jobs/jobs_joblumberjack.yml
+  jobs_jobdigger:
+    file: jobs/jobs_jobdigger.yml
+  jobs_jobfarmer:
+    file: jobs/jobs_jobfarmer.yml
+  jobs_jobbuilder:
+    file: jobs/jobs_jobbuilder.yml
+  jobs_jobcrafter:
+    file: jobs/jobs_jobcrafter.yml
+  jobs_jobhunter:
+    file: jobs/jobs_jobhunter.yml
+  jobs_jobshepherd:
+    file: jobs/jobs_jobshepherd.yml
+  jobs_jobfisher:
+    file: jobs/jobs_jobfisher.yml
+  jobs_jobbrewer:
+    file: jobs/jobs_jobbrewer.yml
+  jobs_jobexplorer:
+    file: jobs/jobs_jobexplorer.yml
+  jobs_jobblacksmith:
+    file: jobs/jobs_jobblacksmith.yml
+  jobs_jobminer_earnings:
+    file: jobs/jobs_jobminer_earnings.yml
+  jobs_joblumberjack_earnings:
+    file: jobs/jobs_joblumberjack_earnings.yml
+  jobs_jobdigger_earnings:
+    file: jobs/jobs_jobdigger_earnings.yml
+  jobs_jobfarmer_earnings:
+    file: jobs/jobs_jobfarmer_earnings.yml
+  jobs_jobbuilder_earnings:
+    file: jobs/jobs_jobbuilder_earnings.yml
+  jobs_jobcrafter_earnings:
+    file: jobs/jobs_jobcrafter_earnings.yml
+  jobs_jobhunter_earnings:
+    file: jobs/jobs_jobhunter_earnings.yml
+  jobs_jobshepherd_earnings:
+    file: jobs/jobs_jobshepherd_earnings.yml
+  jobs_jobfisher_earnings:
+    file: jobs/jobs_jobfisher_earnings.yml
+  jobs_jobbrewer_earnings:
+    file: jobs/jobs_jobbrewer_earnings.yml
+  jobs_jobexplorer_earnings:
+    file: jobs/jobs_jobexplorer_earnings.yml
+  jobs_jobblacksmith_earnings:
+    file: jobs/jobs_jobblacksmith_earnings.yml
+  jobs_pointshop_valuables:
+    file: jobs/jobs_pointshop_valuables.yml
+  jobs_pointshop_weapons:
+    file: jobs/jobs_pointshop_weapons.yml
+  jobs_pointshop_tools:
+    file: jobs/jobs_pointshop_tools.yml
+  jobs_pointshop_armor:
+    file: jobs/jobs_pointshop_armor.yml
+  jobs_pointshop_potions:
+    file: jobs/jobs_pointshop_potions.yml
+  jobs_levelsminer:
+    file: jobs/jobs_levelsminer.yml
+  jobs_levelslumberjack:
+    file: jobs/jobs_levelslumberjack.yml
+  jobs_levelsdigger:
+    file: jobs/jobs_levelsdigger.yml
+  jobs_levelsfarmer:
+    file: jobs/jobs_levelsfarmer.yml
+  jobs_levelsbuilder:
+    file: jobs/jobs_levelsbuilder.yml
+  jobs_levelscrafter:
+    file: jobs/jobs_levelscrafter.yml
+  jobs_levelshunter:
+    file: jobs/jobs_levelshunter.yml
+  jobs_levelsshepherd:
+    file: jobs/jobs_levelsshepherd.yml
+  jobs_levelsfisher:
+    file: jobs/jobs_levelsfisher.yml
+  jobs_levelsbrewer:
+    file: jobs/jobs_levelsbrewer.yml
+  jobs_levelsexplorer:
+    file: jobs/jobs_levelsexplorer.yml
+  jobs_levelsblacksmith:
+    file: jobs/jobs_levelsblacksmith.yml
+  
+  
+  
+  leaderboards_menu:
+    file: leaderboards/leaderboards_menu.yml
+  
+  
+  
+  lottery_buy:
+    file: lottery/lottery_buy.yml
+  lottery_menu:
+    file: lottery/lottery_menu.yml
+  
+  
+  
+  levels_1:
+    file: levels/levels_1.yml
+  levels_2:
+    file: levels/levels_2.yml
+  
+  
+  
+  rewards_menu:
+    file: rewards/rewards_menu.yml
+  
+  
+  
+  rtp_allworlds:
+    file: rtp/rtp_allworlds.yml
+  
+  
+  
+  
+  cosmetics_pets_1:
+    file: cosmetics/cosmetics_pets_1.yml
+  cosmetics_hats_1:
+    file: cosmetics/cosmetics_hats_1.yml
+  cosmetics_particles_1:
+    file: cosmetics/cosmetics_particles_1.yml
+  cosmetics_projectileeffects_1:
+    file: cosmetics/cosmetics_projectileeffects_1.yml
+  cosmetics_deatheffects_1:
+    file: cosmetics/cosmetics_deatheffects_1.yml
+  
+  
+  
+  toolskins_sword:
+    file: toolskins/toolskins_sword.yml
+  toolskins_pickaxe:
+    file: toolskins/toolskins_pickaxe.yml
+  toolskins_axe:
+    file: toolskins/toolskins_axe.yml
+  toolskins_shovel:
+    file: toolskins/toolskins_shovel.yml
+  toolskins_hoe:
+    file: toolskins/toolskins_hoe.yml
+  toolskins_bow:
+    file: toolskins/toolskins_bow.yml
+  toolskins_crossbow:
+    file: toolskins/toolskins_crossbow.yml
+  toolskins_fishingrod:
+    file: toolskins/toolskins_fishingrod.yml
+  
+  
+  
+  ranks_knight:
+    file: ranks/ranks_knight.yml
+  ranks_lord:
+    file: ranks/ranks_lord.yml
+  ranks_paladin:
+    file: ranks/ranks_paladin.yml
+  ranks_duke:
+    file: ranks/ranks_duke.yml
+  ranks_king:
+    file: ranks/ranks_king.yml
+  
+  
+  
+  teams:
+    file: teams/teams.yml
+  
+  
+  
+  all_nationtags_1:
+    file: nationtags/all_nationtags_1.yml
+  all_nationtags_2:
+    file: nationtags/all_nationtags_2.yml
+  all_nationtags_3:
+    file: nationtags/all_nationtags_3.yml
+  all_nationtags_4:
+    file: nationtags/all_nationtags_4.yml
+  all_nationtags_5:
+    file: nationtags/all_nationtags_5.yml
+  all_nationtags_6:
+    file: nationtags/all_nationtags_6.yml
+  all_nationtags_7:
+    file: nationtags/all_nationtags_7.yml
+  all_nationtags_8:
+    file: nationtags/all_nationtags_8.yml
+  
+  northamerica_nationtags_1:
+    file: nationtags/northamerica_nationtags_1.yml
+  
+  southamerica_nationtags_1:
+    file: nationtags/southamerica_nationtags_1.yml
+  
+  europe_nationtags_1:
+    file: nationtags/europe_nationtags_1.yml
+  europe_nationtags_2:
+    file: nationtags/europe_nationtags_2.yml
+  
+  africa_nationtags_1:
+    file: nationtags/africa_nationtags_1.yml
+  africa_nationtags_2:
+    file: nationtags/africa_nationtags_2.yml
+  africa_nationtags_3:
+    file: nationtags/africa_nationtags_3.yml
+  
+  asia_nationtags_1:
+    file: nationtags/asia_nationtags_1.yml
+  asia_nationtags_2:
+    file: nationtags/asia_nationtags_2.yml
+  
+  australia_nationtags_1:
+    file: nationtags/australia_nationtags_1.yml
+  
+  earthrtp:
+    file: rtp/earthrtp.yml
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # [!]
+  # [!] IGNORE THE CONFIG BELOW IF YOU DONT HAVE THE DUNGEONS ADDON!
+  # [!]
+
+  
+  
+  
+  
+  
+  dungeons_1:
+    file: dungeons/dungeons_1.yml
+  dungeons_2:
+    file: dungeons/dungeons_2.yml
+  
+  dungeons_jungletemple:
+    file: dungeons/dungeons_jungletemple.yml
+  dungeons_jungletemple_quests:
+    file: dungeons/dungeons_jungletemple_quests.yml
+  
+  dungeons_piratecave:
+    file: dungeons/dungeons_piratecave.yml
+  dungeons_piratecave_quests:
+    file: dungeons/dungeons_piratecave_quests.yml
+  
+  dungeons_eternalfortress:
+    file: dungeons/dungeons_eternalfortress.yml
+  dungeons_eternalfortress_quests:
+    file: dungeons/dungeons_eternalfortress_quests.yml
+  
+  dungeons_underwaterdeep:
+    file: dungeons/dungeons_underwaterdeep.yml
+  dungeons_underwaterdeep_quests:
+    file: dungeons/dungeons_underwaterdeep_quests.yml
+  
+  dungeons_ancientmirage:
+    file: dungeons/dungeons_ancientmirage.yml
+  dungeons_ancientmirage_quests:
+    file: dungeons/dungeons_ancientmirage_quests.yml
+  
+  dungeons_lostlibrary:
+    file: dungeons/dungeons_lostlibrary.yml
+  dungeons_lostlibrary_quests:
+    file: dungeons/dungeons_lostlibrary_quests.yml
+  
+  dungeons_hauntedmansion:
+    file: dungeons/dungeons_hauntedmansion.yml
+  dungeons_hauntedmansion_quests:
+    file: dungeons/dungeons_hauntedmansion_quests.yml
+  
+  dungeons_lavachambers:
+    file: dungeons/dungeons_lavachambers.yml
+  dungeons_lavachambers_quests:
+    file: dungeons/dungeons_lavachambers_quests.yml
+  
+  
+  
+  
+  
+  # [!]
+  # [!] IGNORE THE CONFIG BELOW IF YOU DONT HAVE THE GEYSER ADDON!
+  # [!]
+
+  
+  
+  
+  
+  geyser_buy_shop_blocks1:
+    file: geyser_buy_shop/shop_blocks1.yml
+  geyser_buy_shop_blocks2:
+    file: geyser_buy_shop/shop_blocks2.yml
+  geyser_buy_shop_blocks3:
+    file: geyser_buy_shop/shop_blocks3.yml
+  geyser_buy_shop_blocks4:
+    file: geyser_buy_shop/shop_blocks4.yml
+  geyser_buy_shop_blocks5:
+    file: geyser_buy_shop/shop_blocks5.yml
+  geyser_buy_shop_blocks6:
+    file: geyser_buy_shop/shop_blocks6.yml
+  
+  geyser_buy_shop_wood1:
+    file: geyser_buy_shop/shop_wood1.yml
+  geyser_buy_shop_wood2:
+    file: geyser_buy_shop/shop_wood2.yml
+  geyser_buy_shop_wood3:
+    file: geyser_buy_shop/shop_wood3.yml
+  
+  geyser_buy_shop_colors1:
+    file: geyser_buy_shop/shop_colors1.yml
+  geyser_buy_shop_colors2:
+    file: geyser_buy_shop/shop_colors2.yml
+  geyser_buy_shop_colors3:
+    file: geyser_buy_shop/shop_colors3.yml
+  geyser_buy_shop_colors4:
+    file: geyser_buy_shop/shop_colors4.yml
+  geyser_buy_shop_colors5:
+    file: geyser_buy_shop/shop_colors5.yml
+  
+  geyser_buy_shop_minerals1:
+    file: geyser_buy_shop/shop_minerals1.yml
+  geyser_buy_shop_minerals2:
+    file: geyser_buy_shop/shop_minerals2.yml
+  
+  geyser_buy_shop_farming1:
+    file: geyser_buy_shop/shop_farming1.yml
+  geyser_buy_shop_farming2:
+    file: geyser_buy_shop/shop_farming2.yml
+  
+  geyser_buy_shop_foods1:
+    file: geyser_buy_shop/shop_foods1.yml
+  
+  geyser_buy_shop_mobdrops1:
+    file: geyser_buy_shop/shop_mobdrops1.yml
+  geyser_buy_shop_mobdrops2:
+    file: geyser_buy_shop/shop_mobdrops2.yml
+  
+  geyser_buy_shop_redstone1:
+    file: geyser_buy_shop/shop_redstone1.yml
+  geyser_buy_shop_redstone2:
+    file: geyser_buy_shop/shop_redstone2.yml
+  
+  geyser_buy_shop_decorations1:
+    file: geyser_buy_shop/shop_decorations1.yml
+  geyser_buy_shop_decorations2:
+    file: geyser_buy_shop/shop_decorations2.yml
+  geyser_buy_shop_decorations3:
+    file: geyser_buy_shop/shop_decorations3.yml
+  geyser_buy_shop_decorations4:
+    file: geyser_buy_shop/shop_decorations4.yml
+  geyser_buy_shop_decorations5:
+    file: geyser_buy_shop/shop_decorations5.yml
+  
+  geyser_buy_shop_misc1:
+    file: geyser_buy_shop/shop_misc1.yml
+  geyser_buy_shop_misc2:
+    file: geyser_buy_shop/shop_misc2.yml
+  
+  
+  
+  
+  
+  
+  geyser_sell_shop_blocks1:
+    file: geyser_sell_shop/shop_blocks1.yml
+  geyser_sell_shop_blocks2:
+    file: geyser_sell_shop/shop_blocks2.yml
+  geyser_sell_shop_blocks3:
+    file: geyser_sell_shop/shop_blocks3.yml
+  geyser_sell_shop_blocks4:
+    file: geyser_sell_shop/shop_blocks4.yml
+  geyser_sell_shop_blocks5:
+    file: geyser_sell_shop/shop_blocks5.yml
+  geyser_sell_shop_blocks6:
+    file: geyser_sell_shop/shop_blocks6.yml
+  
+  geyser_sell_shop_wood1:
+    file: geyser_sell_shop/shop_wood1.yml
+  geyser_sell_shop_wood2:
+    file: geyser_sell_shop/shop_wood2.yml
+  geyser_sell_shop_wood3:
+    file: geyser_sell_shop/shop_wood3.yml
+  
+  geyser_sell_shop_colors1:
+    file: geyser_sell_shop/shop_colors1.yml
+  geyser_sell_shop_colors2:
+    file: geyser_sell_shop/shop_colors2.yml
+  geyser_sell_shop_colors3:
+    file: geyser_sell_shop/shop_colors3.yml
+  geyser_sell_shop_colors4:
+    file: geyser_sell_shop/shop_colors4.yml
+  geyser_sell_shop_colors5:
+    file: geyser_sell_shop/shop_colors5.yml
+  
+  geyser_sell_shop_minerals1:
+    file: geyser_sell_shop/shop_minerals1.yml
+  geyser_sell_shop_minerals2:
+    file: geyser_sell_shop/shop_minerals2.yml
+  
+  geyser_sell_shop_farming1:
+    file: geyser_sell_shop/shop_farming1.yml
+  geyser_sell_shop_farming2:
+    file: geyser_sell_shop/shop_farming2.yml
+  
+  geyser_sell_shop_foods1:
+    file: geyser_sell_shop/shop_foods1.yml
+  
+  geyser_sell_shop_mobdrops1:
+    file: geyser_sell_shop/shop_mobdrops1.yml
+  geyser_sell_shop_mobdrops2:
+    file: geyser_sell_shop/shop_mobdrops2.yml
+  
+  geyser_sell_shop_redstone1:
+    file: geyser_sell_shop/shop_redstone1.yml
+  geyser_sell_shop_redstone2:
+    file: geyser_sell_shop/shop_redstone2.yml
+  
+  geyser_sell_shop_decorations1:
+    file: geyser_sell_shop/shop_decorations1.yml
+  geyser_sell_shop_decorations2:
+    file: geyser_sell_shop/shop_decorations2.yml
+  geyser_sell_shop_decorations3:
+    file: geyser_sell_shop/shop_decorations3.yml
+  geyser_sell_shop_decorations4:
+    file: geyser_sell_shop/shop_decorations4.yml
+  geyser_sell_shop_decorations5:
+    file: geyser_sell_shop/shop_decorations5.yml
+  
+  geyser_sell_shop_misc1:
+    file: geyser_sell_shop/shop_misc1.yml
+  geyser_sell_shop_misc2:
+    file: geyser_sell_shop/shop_misc2.yml
+  
+  
+  
+  
+  
+  # [!]
+  # [!] IGNORE THE CONFIG BELOW IF YOU DONT HAVE THE RPG ADDON!
+  # [!]
+
+  
+  
+  
+  
+  classes_warrior:
+    file: rpg/classes/warrior.yml
+  classes_assassin:
+    file: rpg/classes/assassin.yml
+  classes_wizard:
+    file: rpg/classes/wizard.yml
+  classes_archer:
+    file: rpg/classes/archer.yml
+  classes_ninja:
+    file: rpg/classes/ninja.yml
+  classes_barbarian:
+    file: rpg/classes/barbarian.yml
+  classes_cleric:
+    file: rpg/classes/cleric.yml
+  classes_viking:
+    file: rpg/classes/viking.yml
+  classes_alchemist:
+    file: rpg/classes/alchemist.yml
+  classes_scout:
+    file: rpg/classes/scout.yml
+  classes_marine:
+    file: rpg/classes/marine.yml
+  classes_valkyrie:
+    file: rpg/classes/valkyrie.yml
+  
+  classes_levels_warrior:
+    file: rpg/classes/levels/levels_warrior.yml
+  classes_levels_assassin:
+    file: rpg/classes/levels/levels_assassin.yml
+  classes_levels_wizard:
+    file: rpg/classes/levels/levels_wizard.yml
+  classes_levels_archer:
+    file: rpg/classes/levels/levels_archer.yml
+  classes_levels_ninja:
+    file: rpg/classes/levels/levels_ninja.yml
+  classes_levels_barbarian:
+    file: rpg/classes/levels/levels_barbarian.yml
+  classes_levels_cleric:
+    file: rpg/classes/levels/levels_cleric.yml
+  classes_levels_viking:
+    file: rpg/classes/levels/levels_viking.yml
+  classes_levels_alchemist:
+    file: rpg/classes/levels/levels_alchemist.yml
+  classes_levels_scout:
+    file: rpg/classes/levels/levels_scout.yml
+  classes_levels_marine:
+    file: rpg/classes/levels/levels_marine.yml
+  classes_levels_valkyrie:
+    file: rpg/classes/levels/levels_valkyrie.yml
+  
+  
+  
+  gt_npcs_mayor_1:
+    file: rpg/gt_npcs/mayor_1.yml
+  gt_npcs_mayor_2:
+    file: rpg/gt_npcs/mayor_2.yml
+  gt_npcs_mayor_3:
+    file: rpg/gt_npcs/mayor_3.yml
+  
+  gt_npcs_courier_1:
+    file: rpg/gt_npcs/courier_1.yml
+  
+  gt_npcs_weaponsmith_upgrade:
+    file: rpg/gt_npcs/weaponsmith_upgrade.yml
+  gt_npcs_weaponsmith_repair:
+    file: rpg/gt_npcs/weaponsmith_repair.yml
+  gt_npcs_weaponsmith_none:
+    file: rpg/gt_npcs/weaponsmith_none.yml
+  
+  gt_npcs_merchant_1:
+    file: rpg/gt_npcs/merchant_1.yml
+  
+  gt_npcs_farmer_1:
+    file: rpg/gt_npcs/farmer_1.yml
+  
+  gt_npcs_artist_1:
+    file: rpg/gt_npcs/artist_1.yml
+  gt_npcs_artist_2:
+    file: rpg/gt_npcs/artist_2.yml
+  gt_npcs_artist_3:
+    file: rpg/gt_npcs/artist_3.yml
+  gt_npcs_artist_4:
+    file: rpg/gt_npcs/artist_4.yml
+  
+  gt_npcs_witch_1:
+    file: rpg/gt_npcs/witch_1.yml
+  
+  gt_npcs_butcher_1:
+    file: rpg/gt_npcs/butcher_1.yml
+  
+  gt_npcs_jaspergloomveil_1:
+    file: rpg/gt_npcs/jaspergloomveil_1.yml
+  gt_npcs_jaspergloomveil_2:
+    file: rpg/gt_npcs/jaspergloomveil_2.yml
+  
+  gt_npcs_helenahollow_1:
+    file: rpg/gt_npcs/helenahollow_1.yml
+  gt_npcs_helenahollow_2:
+    file: rpg/gt_npcs/helenahollow_2.yml
+  gt_npcs_helenahollow_3:
+    file: rpg/gt_npcs/helenahollow_3.yml
+  
+  gt_npcs_johnirving_1:
+    file: rpg/gt_npcs/johnirving_1.yml
+  gt_npcs_johnirving_2:
+    file: rpg/gt_npcs/johnirving_2.yml
+  
+  gt_npcs_sheriff_1:
+    file: rpg/gt_npcs/sheriff_1.yml
+  
+  gt_npcs_knight_1:
+    file: rpg/gt_npcs/knight_1.yml
+
+
+
+
+
+
+
+
+
+

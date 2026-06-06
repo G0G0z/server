@@ -1,0 +1,34 @@
+player:
+  no-permission: '{prefix}<red>You do not have permission to use that command!'
+  voucher:
+    no-permission: '{prefix}<red>You do not have permission to use that voucher.'
+    no-permission-offhand: '{prefix}<red>You do not have permission to use vouchers in your off hand.'
+    cant-put-in-crafting-table: '{prefix}<red>You cannot put vouchers in the crafting table.'
+  survival-only: '{prefix}<red>You must be in survival mode to use vouchers.'
+  target-not-online: '{prefix}<red>That player is not online.'
+  two-step-authentication: '{prefix}<gray>Right click again to confirm that you want to use this voucher.'
+  hit-limit: '{prefix}<red>You have hit your limit for using this voucher.'
+voucher:
+  requirements:
+    not-a-number: '{prefix}<red>{arg} is not a number.'
+    not-a-voucher: '{prefix}<red>That is not a Voucher Type.'
+    not-in-world: '{prefix}<red>You can not use that voucher here as you are not in a whitelisted world for this voucher.'
+    un-stack-item: '{prefix}<red>You need to unstack that item before you can use it.'
+    has-blacklist-perm: '{prefix}<red>Sorry but you can not use this voucher because you have a black-listed permission.'
+  code:
+    used: '{prefix}<red>The voucher code <gold>{arg} <red>has already been redeemed.'
+    unavailable: '{prefix}<red>The voucher code <gold>{arg} <red>has already been redeemed.'
+  sent-voucher: '{prefix}<aqua>You have just given <gold>{player} <aqua>a <gold>{voucher} <aqua>voucher.'
+  sent-everyone-voucher: '{prefix}<aqua>You have just given all players a <gold>{voucher} <aqua>voucher.'
+misc:
+  player-only: '{prefix}<red>Only players can use this command.'
+  config-reload: '{prefix}<gray>You have just reloaded the Config.yml'
+  help:
+    - '<dark_gray>- <gold>/crazyvouchers help <aqua>Lists all the commands for vouchers.'
+    - '<dark_gray>- <gold>/crazyvouchers list <aqua>Lists all available types of vouchers and codes.'
+    - '<dark_gray>- <gold>/crazyvouchers redeem <code> <aqua>Allows the player to redeem a voucher code.'
+    - '<dark_gray>- <gold>/crazyvouchers give <voucher> [amount] [player] [arguments] <aqua>Gives a player
+    a voucher.'
+    - '<dark_gray>- <gold>/crazyvouchers giveAll <voucher> [amount] [arguments] <aqua>Gives all players a voucher.'
+    - '<dark_gray>- <gold>/crazyvouchers open [page] <aqua>Opens a GUI so you can get vouchers easily.'
+    - '<dark_gray>- <gold>/crazyvouchers reload <aqua>Reloaded the configuration files.'

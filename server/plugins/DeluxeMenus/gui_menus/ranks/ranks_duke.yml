@@ -1,0 +1,82 @@
+menu_title: '&f七七七七七七七七⊩'
+open_command: dukerank
+size: 27
+update_interval: 1
+
+items:
+
+
+  'keys':
+    material: head-King_tebbeh
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lʀᴀɴᴋ ᴅᴜᴋᴇ'
+    lore:
+      - ''
+      - '&7The Duke rank will give you'
+      - '&7various usefull perks on the server.'
+      - '&7You can obtain Duke in the coinshop!'
+      - ''
+      - '&cRank Perks:'
+      - ' &8▪ &fPrefix: '
+      - ' &8▪ &fAccess to set Unlimited Homes'
+      - ' &8▪ &fKit Duke'
+      - ''
+      - '&cRank Commands:'
+      - ' &8▪ &f/Nick'
+      - ' &8▪ &f/Back'
+      - ' &8▪ &f/Recipe'
+      - ' &8▪ &f/Feed'
+      - ' &8▪ &f/Disposal'
+      - ' &8▪ &f/Near'
+      - ' &8▪ &f/Craft'
+      - ' &8▪ &f/Enderchest'
+      - ' &8▪ &f/Ptime'
+      - ' &8▪ &f/Heal'
+      - ' &8▪ &f/Fly'
+
+
+  'store':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+      - 14
+      - 15
+      - 16
+      - 17
+      - 23
+      - 24
+      - 25
+      - 26
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&#5B63AF&lsᴇʀᴠᴇʀ sᴛᴏʀᴇ'
+    lore:
+      - '&8Information'
+      - ''
+      - '&7The server store is where'
+      - '&7you can purchase premium'
+      - '&7perks such as coins!'
+      - ''
+      - '&7When you buy something from'
+      - '&7our store, it helps us'
+      - '&7improve the server!'
+      - ''
+      - '&e➥ Left-Click to open store'
+    left_click_commands:
+      - "[player] store"
+      - "[close]"
+
+
+
+
+

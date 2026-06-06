@@ -1,0 +1,103 @@
+menu_title: '&f七七七七七七七七♭'
+open_command: lotterybuy
+size: 27
+update_interval: 1
+
+items:
+
+
+  'buy_1':
+    material: PAPER
+    slot: 2
+    update: true
+    display_name: '&6&lᴘᴜʀᴄʜᴀsᴇ 1 ᴛɪᴄᴋᴇᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&6Price: &f$1,000'
+      - ''
+      - '&e➥ Left-Click to buy'
+    left_click_commands:
+      - "[player] lottery:lottery buy 1"
+
+  'buy_2':
+    material: PAPER
+    slot: 3
+    update: true
+    display_name: '&6&lᴘᴜʀᴄʜᴀsᴇ 2 ᴛɪᴄᴋᴇᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&6Price: &f$2,000'
+      - ''
+      - '&e➥ Left-Click to buy'
+    left_click_commands:
+      - "[player] lottery:lottery buy 2"
+
+  'buy_5':
+    material: PAPER
+    slot: 4
+    update: true
+    display_name: '&6&lᴘᴜʀᴄʜᴀsᴇ 5 ᴛɪᴄᴋᴇᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&6Price: &f$5,000'
+      - ''
+      - '&e➥ Left-Click to buy'
+    left_click_commands:
+      - "[player] lottery:lottery buy 5"
+
+  'buy_10':
+    material: PAPER
+    slot: 5
+    update: true
+    display_name: '&6&lᴘᴜʀᴄʜᴀsᴇ 10 ᴛɪᴄᴋᴇᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&6Price: &f$10,000'
+      - ''
+      - '&e➥ Left-Click to buy'
+    left_click_commands:
+      - "[player] lottery:lottery buy 10"
+
+  'buy_50':
+    material: PAPER
+    slot: 6
+    update: true
+    display_name: '&6&lᴘᴜʀᴄʜᴀsᴇ 50 ᴛɪᴄᴋᴇᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&6Price: &f$50,000'
+      - ''
+      - '&e➥ Left-Click to buy'
+    left_click_commands:
+      - "[player] lottery:lottery buy 50"
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 19
+      - 20
+      - 21
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] lottery_menu"

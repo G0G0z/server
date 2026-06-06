@@ -1,0 +1,1425 @@
+custom-elements:
+  categories: # apply to the categories menu (the main menu by default)
+    0:   # <--- start from slot 2
+      spacer: true # empty slot in GUI
+      repeat: 4 # repeats for 2 slots
+    9:
+      spacer: true
+    13:
+      spacer: true
+    22:
+      spacer: true
+    27:
+      spacer: true
+    31:
+      spacer: true
+    36:
+      spacer: true
+    40:
+      spacer: true
+    45:
+      spacer: true
+      repeat: 4
+
+    18:
+      display:
+        name: "&a&lInformation"
+        lore:
+          - ""
+          - "&7Choose a quest category in"
+          - "&7the quest category grid."
+        type: "PAPER"   
+        custommodeldata: 110007
+
+    5:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    6:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    7:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    8:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    14:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    15:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    16:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    17:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    23:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    24:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    25:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your progression"
+          - "&7with all the available quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+    26:
+      display:
+        name: "&#5A62AD&lPlayer Stats"
+        lore:
+          - ""
+          - "&7Here you can view your stats"
+          - "&7about quests such as progression"
+          - "&7and the amount of completed quests."
+          - ""
+          - "&#5A62ADStats:"
+          - "&8&l∙ &7You have &f%quests_started% &7started quests"       
+          - "&8&l∙ &7You have completed &f%quests_completed% &7quests"
+        type: "PAPER"   
+        custommodeldata: 110007
+
+
+
+
+
+    32:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    33:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    34:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    35:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    41:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    42:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    43:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    44:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    50:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    51:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    52:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+    53:
+      display:
+        name: "&a&lQuest Guide"
+        lore:
+          - ""
+          - "&7Quests are a simple way to earn money on"
+          - "&7the server by completing a specific task."
+          - "&7To start your first quest, enter one of"
+          - "&7the quest categories on the left side."
+          - ""
+          - "&aQuests:"
+          - "&8&l∙ &7Categories: &f%quests_categories%"       
+          - "&8&l∙ &7Total Quests: &f%quests_all%"
+        type: "PAPER"   
+        custommodeldata: 110007 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "c:mining": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    162:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    179:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    188:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    197:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    216:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    233:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    242:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    251:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+
+
+  "c:farming": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    162:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    179:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    188:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    197:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    216:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    233:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    242:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    251:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    270:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    287:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    296:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    305:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    324:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    341:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    350:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    359:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    378:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    395:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    404:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    413:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    432:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    449:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    458:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    467:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    486:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    503:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    512:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    521:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+    540:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    557:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    566:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    575:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+    594:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    611:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    620:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    629:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+    648:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    665:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    674:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    683:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+    702:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    719:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    728:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    737:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+    756:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    773:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    782:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    791:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+
+
+
+  "c:building": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    162:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    179:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    188:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    197:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "c:lumberjack": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+  "c:hunter": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    162:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    179:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    188:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    197:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    216:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    233:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    242:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    251:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    270:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    287:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    296:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    305:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+
+  "c:enchanting": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+  "c:brewing": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+  "c:crafting": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+  "c:digging": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+  "c:misc": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+  "c:fishing": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+  "c:blacksmith": # apply to the category "examples"
+    0:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    17:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    26:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    35:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    54:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    71:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    80:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    89:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+    108:
+      spacer: true # empty slot in GUI
+      repeat: 9 # repeats for 2 slots
+    125:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    134:
+      spacer: true # empty slot in GUI
+      repeat: 1 # repeats for 2 slots
+    143:
+      spacer: true # empty slot in GUI
+      repeat: 10 # repeats for 2 slots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# The items listed below are placeholder items for quests which the player cannot start.
+# You should change these for 1.8
+gui:
+  back-button:
+    name: "&c&lʙᴀᴄᴋ"
+    type: "PAPER"   
+    custommodeldata: 110007 
+  page-prev:
+    name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+    type: "PAPER"   
+    custommodeldata: 110007 
+  page-next:
+    name: "&f&lɴᴇxᴛ"
+    type: "PAPER"   
+    custommodeldata: 110007 
+  page-desc:
+    name: "&8"
+    type: "PAPER"   
+    custommodeldata: 110007  
+  quest-locked-display:
+    name: "&c&lQuest Locked"
+    lore:
+    - ""
+    - "&7You have not unlocked this quest."
+    - "&7Delete the previous quest first."
+    - ""
+    - "&cRequires: &f{requirements} &7to unlock."
+    type: "PAPER"   
+    custommodeldata: 5310 
+  quest-permission-display:
+    name: "&4&lNo Permission"
+    lore:
+    - "&7You do not have permission."
+    - "&r"
+    type: "PAPER"   
+    custommodeldata: 5310 
+  quest-cooldown-display:
+    name: "&e&lCooldown"
+    lore:
+    - "&7You have recently completed this quest"
+    - "&r"
+    - "&cYou must wait another &c&n{time}&c to unlock again."
+    type: "PAPER"   
+    custommodeldata: 5311
+  quest-completed-display:
+    name: "&a&lQuest Completed"
+    lore:
+    - "&7You have completed this quest."
+    - "&r"
+    - "&cIt cannot be repeated."
+    type: "PAPER"   
+    custommodeldata: 5312
+  no-started-quests:
+    name: "&c&lNo Started Quests"
+    lore:
+    - "&7Go start some!"
+    type: "FEATHER"    
+  quest-cancel-yes:
+    name: "&a&lᴄᴏɴғɪʀᴍ"
+    lore:
+    - "&7Confirm you wish to cancel this quest."
+    - "&r"
+    - "&cWarning: You will lose all progress."
+    type: "PAPER"   
+    custommodeldata: 110007 
+  quest-cancel-no:
+    name: "&c&lᴄᴀɴᴄᴇʟ"
+    lore:
+    - "&7Return to menu."
+    type: "PAPER"   
+    custommodeldata: 110007 
+  quest-cancel-background:
+    name: "&8"
+    type: "PAPER"   
+    custommodeldata: 110007 
+
+# Here you can add custom items to the quest menu
+# Categories & quests will fill empty slots
+#custom-elements:
+#  "menu": # apply to the categories menu (the main menu by default)
+#    0:   # <--- start from slot 2
+#      spacer: true # empty slot in GUI
+#      repeat: 1 # repeats for 2 slots
+#
+#
+#
+#
+#    1:
+#      display:
+#        name: "&cExample Custom Item (slots 2 - 5)"
+#        lore:
+#          - "&7This is a custom item which can be added"
+#          - "&7to your menus, but in slot 2 and repeated"
+#          - "&73 times."
+#          - "&7This is purely cosmetic."
+#        type: "NETHERRACK"
+#      repeat: 3 # repeats for 3 more slots
+
+options:
+  # If categories are disabled, quests will be put into one big gui.
+  categories-enabled: true
+  storage:
+    provider: "yaml"
+# Optional. Whether or not the quest should automatically be started. This is similar to enabling quest autostart for the entire plugin, 
+# but specific only to this quest, meaning it cannot be cancelled and counts towards the players quest started limit.    
+  autostart: false  
+  # If true, the gui size will automatically change based on the amount of quests inside it.
+  trim-gui-size: true
+  # Enable/disable titles
+  titles-enabled: true
+  # Allow players to have multiple active quests.
+  # You can set the default number of quests using the 'default' rank below.
+  # To grant different quest limits to different people, you can define a 'quest-rank'
+  # Create the 'quest-rank' below, and give the matching permission: quests.limit.<quest-rank>
+  bossbar:
+    progress: false
+    complete: false
+    # Time in seconds of bossbar showed
+    time: 5
+    # See https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+    color:
+      '0.0': BLUE # for 0.0 and higher progress values (progress is always between 0.0 and 1.0)
+    # See https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+    style:
+      '0.0': SOLID # for 0.0 and higher progress values (progress is always between 0.0 and 1.0)
+  # Enable/disable ActionBar
+  quest-limit:
+    default: 4
+    #vip: 5
+    #staff: 10
+  # Hide locked quests, quests on cooldown and completed (but not repeatable) quests
+  gui-hide-locked: false
+  # Allow players to cancel a quest
+  allow-quest-cancel: true
+  # Allow players to track a quest (you may want to remove the tracking instructions in the global item lore)
+  allow-quest-track: true  
+  # Titles for the GUIs
+  guinames:
+    quests-category: "&f七七七七七七七七⟰"
+    quests-menu: "&f七七七七七七七七⤋"
+    quests-started-menu: "&8Started Quests"    
+    daily-quests: "&8Daily Quests"
+    quest-cancel: "&f七七七七七七七七⭅"
+  # See https://github.com/LMBishop/Quests/wiki/Basic-Options#sounds - VERSION 3.2 UPDATE
+  sounds:
+    quest-start: "ENTITY_PLAYER_LEVELUP:2:3"
+    quest-cancel: "UI_TOAST_OUT:2:3"
+    quest-complete: "UI_TOAST_CHALLENGE_COMPLETE:1.25:3"
+    gui:
+      open: "ITEM_BOOK_PAGE_TURN:1:3"
+      interact: "ITEM_BOOK_PAGE_TURN1:3"
+  gui-actions:
+    start-quest: "LEFT"
+    track-quest: "SHIFT_LEFT"
+    cancel-quest: "RIGHT"
+  # Confirm quest cancellation with a separate menu
+  gui-confirm-cancel: true
+  # Truncate quest requirements when there are multiple requirements to prevent enormous display items
+  gui-truncate-requirements: true 
+  # Hide quests which a player cannot start due to permissions.
+  gui-hide-quests-nopermission: false
+  # Hide categories which a player cannot open due to permissions.
+  gui-hide-categories-nopermission: false
+  # Replace placeholders from PlaceholderAPI in Quests GUI items
+  gui-use-placeholderapi: true 
+  # Make it so players do not have to start quest themselves
+  quest-autostart: false
+  # How much quests should log, 0 = errors only, 1 = warnings, 2 = info, 3 = debug
+  verbose-logging-level: 2
+  performance-tweaking: # The following are measured in server ticks, multiply SECONDS by 20 to get the number of ticks.
+    quest-queue-executor-interval: 1      # how frequently Quests should execute the next check in the completion queue (def=1 - 0.05s) - increase this value if you are struggling with performance
+    quest-autosave-interval: 12000        # how frequently online players data will be autosaved (def=12000 - 10 minutes)
+    quests-autosave-async: false          # experimental - save asynchronously on autosave
+    quests-join-async: false              # experimental - load asynchronously on join
+    quests-leave-async: false             # experimental - save asynchronously on leave
+  tab-completion:
+    enabled: true
+  error-checking:
+    # Allow quests to be loaded if they contain errors
+    # This may lead to errors in the console!
+    override-errors: false
+  # How much time (in seconds) that plugin will cache placeholders
+  placeholder-cache-time: 10
+  # Whether or not the global task configuration will override per-task configuration settings
+  global-task-configuration-override: false
+  # Whether or not the global display configuration will override per-quest display settins
+  global-quest-display-configuration-override: false    
+
+# This switches up the entire quest system.
+# By enabling daily-quests, players will no longer be presented with the standard Quest GUI.
+# Instead, they will be presented with 5 random quests.
+# The 'requirements' section in each quest does not apply here.
+# The 'cooldown' section in each quest does not apply here - if it's done, it's done (and will be repeatable next time they get the quest).
+# The 'repeatable' section in each quest does not apply here. It will NOT be repeatable until the next day.
+# Enabling this MAY cause previous quest progress to be modified, wiped or changed irreversibly! If you're testing this on a live server, it is wise to backup
+# the Quests/playerdata/ folder! You've been warned!
+#
+# Quests BETA: this feature is a work in progress, it does not work yet!
+daily-quests:
+  enabled: false # <----- NOT YET IMPLEMENTED (THIS WILL NOT DO ANYTHING)
+
+# The global task configuration will apply to the config of each task of a specified type in each quest.
+# In the example below, every task with a type of "inventory" will have the config option "update-progress"
+# set to true. This is useful if you do not want to go through each quest if you want to update the configuration
+# for every task of a specific type.
+#
+# You must uncomment all below lines for the example to have any effect
+# vvvvvvvvvvvvvvvvvvvvvvvvv
+#global-task-configuration:
+#  types:
+#    inventory:
+#      update-progress: true
+
+global-quest-display:
+  lore:
+#    append-normal:
+#      - "..."
+    append-not-started:
+      - "&e➥ Left-Click to start"
+    append-started:
+      - "&e➥ Middle-Click to track this quest."
+      - "&e➦ Right-Click to cancel this quest."
+    append-tracked:
+      - "&e➥ Middle-Click to stop tracking this quest."
+      - "&e➦ Right-Click to cancel this quest."
+
+
+# Configure titles
+titles:
+  quest-start:
+    title: "&6&lQuest Started"
+    subtitle: "&7❖ &f{quest} &7❖"
+  quest-complete:
+    title: "&6&lQuest Completed"
+    subtitle: "&7❖ &f{quest} &7❖"
+
+# Configure messages
+messages:
+  time-format: "{hours}h {minutes}m"
+  quest-start: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &a({quest}) &7has been started."
+  quest-complete: "&8[&6&l!&8] &6&lQuests &8→ &7You have completed the quest: &a({quest})&7."
+  quest-cancel: "&8[&6&l!&8] &6&lQuests &8→ &7You have cancelled the quest: &c({quest})&7."
+  quest-track: "&8[&6&l!&8] &6&lQuests &8→ &7Tracking quest &a({quest})&7."
+  quest-track-stop: "&8[&6&l!&8] &6&lQuests &8→ &7No longer tracking quest &c({quest})&7."
+  quest-random-none: "&8[&6&l!&8] &6&lQuests &8→ &7You have no quests which you can start."  
+  quest-start-limit: "&8[&6&l!&8] &6&lQuests &8→ &7You are limited to &e({limit}) &7started quests at a time."
+  quest-start-disabled: "&8[&6&l!&8] &6&lQuests &8→ &7You cannot repeat this quest."
+  quest-start-locked: "&8[&6&l!&8] &6&lQuests &8→ &7You have not unlocked this quest yet."
+  quest-start-cooldown: "&8[&6&l!&8] &6&lQuests &8→ &7You have recently completed this quest. You have to wait &e({time}) &7until you are able to start it."
+  quest-start-started: "&8[&6&l!&8] &6&lQuests &8→ &7You have already started this quest."
+  quest-start-permission: "&8[&6&l!&8] &6&lQuests &8→ &7You do not have permission to start this quest."
+  quest-category-permission: "&8[&6&l!&8] &6&lQuests &8→ &7You do not have permission to view this category."
+  quest-category-quest-permission: "&8[&6&l!&8] &6&lQuests &8→ &7You do not have permission to start this quest since it is in a category you do not have permission to view."
+  quest-cancel-notstarted: "&8[&6&l!&8] &6&lQuests &8→ &7You have not started this quest."
+  quest-updater: "&8[&6&l!&8] &6&lQuests &8→ &7A new version &e({newver}) &7was found on Spigot. Update the plugin here: &e{link}"
+  command-sub-doesntexist: "&8[&6&l!&8] &6&lQuests &8→ &7The specified subcommand &c({sub}) &7does not exist."
+  command-quest-start-doesntexist: "&8[&6&l!&8] &6&lQuests &8→ &7The quest &c({quest})&7 does not exist."
+  command-category-open-disabled: "&8[&6&l!&8] &6&lQuests &8→ &7Categories are currently disabled."
+  command-category-open-doesntexist: "&8[&6&l!&8] &6&lQuests &8→ &7The specified category: &c({category})&7, does not exist."
+  command-quest-admin-playernotfound: "&8[&6&l!&8] &6&lQuests &8→ &7&c({player})&7 could not be found."
+  command-quest-openquests-admin-success: "&8[&6&l!&8] &6&lQuests &8→ &7The quest inventory has been opened for &e({player})&7."
+  command-quest-opencategory-admin-success: "&8[&6&l!&8] &6&lQuests &8→ &7The &a({category}) &7has been opened for &e({player})&7."
+  command-taskview-admin-fail: "&8[&6&l!&8] &6&lQuests &8→ &7The task type &c({task})&7 does not exist."
+  beta-reminder: "&8[&6&l!&8] &6&lQuests &8→ &7You are using a beta version of the quest plugin. Please report any bugs you find."
+  command-quest-admin-loaddata: "&8[&6&l!&8] &6&lQuests &8→ &7Quest data for &e({player})&7 is being loaded."
+  command-quest-admin-nodata: "&8[&6&l!&8] &6&lQuests &8→ &7No data could be found for &c({player})&7."
+  command-quest-admin-fullreset: "&8[&6&l!&8] &6&lQuests &8→ &7Data for &a({player})&7 has been reset."
+  command-quest-admin-start-faillocked: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. They have not yet unlocked it."
+  command-quest-admin-start-failcooldown: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. It is still on cooldown for them."
+  command-quest-admin-start-failcomplete: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. They have already completed it."
+  command-quest-admin-start-faillimit: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. They have reached their quest start limit."
+  command-quest-admin-start-failstarted: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. It is already started."
+  command-quest-admin-start-failpermission: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. They do not have permission."
+  command-quest-admin-start-failcategorypermission: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7. They do not have permission for the category which the quest is in."
+  command-quest-admin-start-failother: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &c({quest})&7 could not be started for &c({player})&7."
+  command-quest-admin-start-success: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &a({quest}) &7has been started for &a({player})&7."
+  command-quest-admin-category-permission: "&8[&6&l!&8] &6&lQuests &8→ &7Category &c({category}) &7could not be opened for &c({player})&7. They do not have permission to view it."
+  command-quest-admin-complete-success: "&8[&6&l!&8] &6&lQuests &8→ &7Quest &2({quest}) &fcompleted for &a({player})&7."
+  command-quest-admin-reset-success: "&8[&6&l!&8] &6&lQuests &8→ &7Successfully reset quest &a({quest})&7 for &a({player})&7."
+  command-quest-admin-random-none: "&aMisiones&8 ➡ &7Jugador &c{player}&7 no tiene misiones que puedan comenzar."
+  command-quest-admin-random-success: "&aMisiones&8 ➡ &7Misión aleatoria iniciada con éxito '&c{quest}&7' para el jugador &c{player}&7."
+  command-quest-admin-random-category-none: "&aMisiones&8 ➡ &7Jugador &c{player}&7 no tiene misiones en la categoría '&c{category}&7' que pueden empezar."
+  command-quest-admin-random-category-success: "&aMisiones&8 ➡ &7Misión aleatoria iniciada con éxito '&c{quest}&7' de la categoría '&c{category}&7' para el jugador &c{player}&7."
+  ui-placeholder-completed-true: "true"
+  ui-placeholder-completed-false: "false"
+  ui-placeholder-truncated: " +{amount} more"
+  placeholderapi-true: "true"
+  placeholderapi-false: "false"
+  placeholderapi-no-tracked-quest: "No tracked quest"
+  placeholderapi-data-not-loaded: "Data not loaded"
+

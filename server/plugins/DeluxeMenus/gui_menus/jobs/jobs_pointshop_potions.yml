@@ -1,0 +1,529 @@
+menu_title: '&f七七七七七七七七⇭'
+open_command: jobspointshoppotions
+size: 54
+update_interval: 1
+
+items:
+
+
+
+  'stats':
+    material: head-%player_name%
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&#5B63AF&l&lʏᴏᴜʀ ᴘᴏɪɴᴛs'
+    lore:
+      - ''
+      - '&7View the amount of points you have'
+      - '&7available to purchase on the pointshop!'
+      - ''
+      - '&6Points Balance: &f%jobsr_user_points_fixed%'
+
+
+
+
+  'pointshop_valuables':
+    material: EMERALD
+    slot: 2
+    update: true
+    display_name: '&6&lValuables'
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Pointshop Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_valuables"
+
+  'pointshop_weapons':
+    material: GOLDEN_SWORD
+    slot: 3
+    update: true
+    display_name: '&6&lWeapons'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Pointshop Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_weapons"
+
+  'pointshop_tools':
+    material: NETHERITE_AXE
+    slot: 4
+    update: true
+    display_name: '&6&lTools'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Pointshop Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_tools"
+
+  'pointshop_armor':
+    material: IRON_CHESTPLATE
+    slot: 5
+    update: true
+    display_name: '&6&lArmor'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Pointshop Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_armor"
+
+  'pointshop_potions':
+    material: POTION
+    slot: 6
+    update: true
+    display_name: '&6&lPotions'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Pointshop Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_pointshop_potions"
+
+
+
+
+
+
+
+  'buy_nightvision':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 148, 195, 78
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&6&l1x Potion Of Night Vision'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_NIGHT_VISION_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_invisibility':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 188, 188, 188
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&6&l1x Potion Of Invisibility'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_INVISIBILITY_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_fireresistance':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 195, 117, 0
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&6&l1x Potion Of Fire Resistance'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_FIRE_RESISTANCE_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_swiftness':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 39, 179, 195
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&6&l1x Potion Of Swiftness'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_SWIFTNESS_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_waterbreathing':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 116, 166, 147
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&6&l1x Potion Of Water Breathing'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_WATER_BREATHING_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_healing':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 189, 27, 27
+    amount: 1
+    slot: 24
+    update: true
+    display_name: '&6&l1x Potion Of Healing'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: II'
+      - '&#FFB5FADuration: Instant'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% HEALING_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_regeneration':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 156, 70, 131
+    amount: 1
+    slot: 25
+    update: true
+    display_name: '&6&l1x Potion Of Regeneration'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 1m 30s'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_REGENERATION_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_strenght':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 195, 152, 0
+    amount: 1
+    slot: 28
+    update: true
+    display_name: '&6&l1x Potion Of Strength'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 8m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_STRENGTH_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+  'buy_slowfalling':
+    material: POTION
+    potion_effects:
+    - SPEED;1;1
+    rgb: 185, 158, 141
+    amount: 1
+    slot: 29
+    update: true
+    display_name: '&6&l1x Potion Of Slow Falling'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    hide_effects: true
+    lore:
+      - ''
+      - '&7Purchase this item with your'
+      - '&7points earned from your jobs.'
+      - ''
+      - '&#FFB5FAPower: I'
+      - '&#FFB5FADuration: 4m'
+      - ''
+      - '&6Price: &f100 Points'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] give %player_name% LONG_SLOW_FALLING_POTION 1"
+      - "[console] jobs:jobs editpoints take %player_name% 100"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &7You have bought this item!"
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &f100 &7Points has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: '%jobsr_user_points_fixed% >= 100'
+          deny_commands:
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou don't have enough points to purchase this item!"
+            - "[message] &8[&6&l!&8] &6&lJobs &8→ &cYou need &f100 &cpoints, but you only have &f%jobsr_user_points_fixed%&c!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 46
+      - 47
+      - 48
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] jobs_menu"
+
+
+
+
+

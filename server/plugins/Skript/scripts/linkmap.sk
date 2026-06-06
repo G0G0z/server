@@ -1,0 +1,26 @@
+
+
+
+command /earthmap:
+ trigger:
+  message ""
+  message " &a&lMap &8&l▪ &fView the whole earth on a live map!"
+  message ""
+  message "<##8ABD65>View the whole earth map on a live browser map below."
+  message "<##8ABD65>You can see yourself on the map, and see other players."
+  message "<##8ABD65>Claims are also shown on the map!"
+  message ""
+  message "    &a<link:https://map.example.com>map.example.com &f"
+  message ""
+
+command /map:
+ trigger:
+  message ""
+  message " &a&lMap &8&l▪ &fView the whole earth on a live map!"
+  message ""
+  message "<##8ABD65>View the whole earth map on a live browser map below."
+  message "<##8ABD65>You can see yourself on the map, and see other players."
+  message "<##8ABD65>Claims are also shown on the map!"
+  message ""
+  message "    &a<link:https://map.example.com>map.example.com &f"
+  message ""

@@ -1,0 +1,235 @@
+menu_title: '&f七七七七七七七七🔮'
+open_command: settings
+size: 36
+update_interval: 1
+
+items:
+
+  'you_are_op_1':
+    material: BARRIER
+    slot: 1
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'off_scoreboard':
+    material: PAPER
+    model_data: 3186
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lsᴄᴏʀᴇʙᴏᴀʀᴅ'
+    lore:
+      - ''
+      - '&7Switch your scoreboard'
+      - '&7on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: settings.scoreboard.off
+    left_click_commands:
+      - "[takepermission] settings.scoreboard.off"
+      - "[console] tab scoreboard on %player_name%"
+      - "[refresh]"
+
+  'on_scoreboard':
+    material: PAPER
+    model_data: 3185
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lsᴄᴏʀᴇʙᴏᴀʀᴅ'
+    lore:
+      - ''
+      - '&7Switch your scoreboard'
+      - '&7on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    left_click_commands:
+      - "[givepermission] settings.scoreboard.off"
+      - "[console] tab scoreboard off %player_name%"
+      - "[refresh]"
+
+
+
+
+
+
+
+  'you_are_op_2':
+    material: BARRIER
+    slot: 10
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'off_jobsactionbar':
+    material: PAPER
+    model_data: 3186
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴊᴏʙs ᴀᴄᴛɪᴏɴʙᴀʀ'
+    lore:
+      - ''
+      - '&7Switch your jobs'
+      - '&7actionbar on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: settings.jobsactionbar.off
+    left_click_commands:
+      - "[takepermission] settings.jobsactionbar.off"
+      - "[player] jobs:jobs toggle actionbar"
+      - "[refresh]"
+
+  'on_jobsactionbar':
+    material: PAPER
+    model_data: 3185
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴊᴏʙs ᴀᴄᴛɪᴏɴʙᴀʀ'
+    lore:
+      - ''
+      - '&7Switch your jobs'
+      - '&7actionbar on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    left_click_commands:
+      - "[givepermission] settings.jobsactionbar.off"
+      - "[player] jobs:jobs toggle actionbar"
+      - "[refresh]"
+
+
+
+
+
+
+
+  'you_are_op_3':
+    material: BARRIER
+    slot: 19
+    display_name: '&c&lLocked'
+    lore:
+      - ''
+      - '&7You cant use the settings'
+      - '&7while being OP!'
+    priority: 1
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: admin.admin.admin
+
+  'off_jobsbossbar':
+    material: PAPER
+    model_data: 3186
+    slot: 19
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴊᴏʙs bossbar'
+    lore:
+      - ''
+      - '&7Switch your jobs'
+      - '&7bossbar on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 2
+    view_requirement:
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: settings.jobsbossbar.off
+    left_click_commands:
+      - "[takepermission] settings.jobsbossbar.off"
+      - "[player] jobs:jobs toggle bossbar"
+      - "[refresh]"
+
+  'on_jobsbossbar':
+    material: PAPER
+    model_data: 3185
+    slot: 19
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lᴊᴏʙs bossbar'
+    lore:
+      - ''
+      - '&7Switch your jobs'
+      - '&7bossbar on or off'
+      - ''
+      - '&e➥ Left-Click to switch'
+    priority: 3
+    left_click_commands:
+      - "[givepermission] settings.jobsbossbar.off"
+      - "[player] jobs:jobs toggle bossbar"
+      - "[refresh]"
+
+
+
+
+
+
+
+
+
+  'next':
+    material: PAPER
+    model_data: 110007
+    slot: 26
+    display_name: '&f&lsᴄʀᴏʟʟ ᴅᴏᴡɴ'
+    left_click_commands:
+      - "[openguimenu] settings_2"
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] serverguide_menu"
+
+

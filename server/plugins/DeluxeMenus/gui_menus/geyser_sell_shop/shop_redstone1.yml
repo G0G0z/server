@@ -1,0 +1,423 @@
+menu_title: '&f七七七七七七七七⥿'
+open_command: geysersellshopredstone1
+size: 54
+update_interval: 1
+
+items:
+
+
+  'redstone':
+    material: redstone
+    slot: 19
+    display_name: '&eRedstone'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'redstone_block':
+    material: redstone_block
+    slot: 20
+    display_name: '&eRedstone Block'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'repeater':
+    material: repeater
+    slot: 21
+    display_name: '&eRepeater'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'comparator':
+    material: comparator
+    slot: 22
+    display_name: '&eComparator'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'lever':
+    material: lever
+    slot: 23
+    display_name: '&eLever'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'redstone_torch':
+    material: redstone_torch
+    slot: 24
+    display_name: '&eRedstone Torch'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'dispenser':
+    material: dispenser
+    slot: 25
+    display_name: '&eDispenser'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'dropper':
+    material: dropper
+    slot: 28
+    display_name: '&eDropper'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'oak_pressure_plate':
+    material: oak_pressure_plate
+    slot: 29
+    display_name: '&eOak Pressure Plate'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'stone_pressure_plate':
+    material: stone_pressure_plate
+    slot: 30
+    display_name: '&eStone Pressure Plate'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'light_weighted_pressure_plate':
+    material: light_weighted_pressure_plate
+    slot: 31
+    display_name: '&eLight Weighted Pressure Plate'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'heavy_weighted_pressure_plate':
+    material: heavy_weighted_pressure_plate
+    slot: 32
+    display_name: '&eHeavy Weighted Pressure Plate'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'daylight_detector':
+    material: daylight_detector
+    slot: 33
+    display_name: '&eDaylight Detector'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'redstone_lamp':
+    material: redstone_lamp
+    slot: 34
+    display_name: '&eRedstone Lamp'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'piston':
+    material: piston
+    slot: 37
+    display_name: '&ePiston'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'sticky_piston':
+    material: sticky_piston
+    slot: 38
+    display_name: '&eSticky Piston'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'hopper':
+    material: hopper
+    slot: 39
+    display_name: '&eHopper'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'target':
+    material: target
+    slot: 40
+    display_name: '&eTarget'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'observer':
+    material: observer
+    slot: 41
+    display_name: '&eObserver'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'slime_block':
+    material: slime_block
+    slot: 42
+    display_name: '&eSlime Block'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'tnt':
+    material: tnt
+    slot: 43
+    display_name: '&eTNT'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_redstone2'
+
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_mobdrops1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_decorations1'
+
+
+
+
+
+
+
+  'shop_farming':
+    material: WHEAT
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_foods1'
+
+  'shop_mobdrops':
+    material: ROTTEN_FLESH
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMob Drops'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_mobdrops1'
+
+  'shop_redstone':
+    material: PISTON
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lRedstone'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_redstone1'
+
+  'shop_decorations':
+    material: FLOWER_POT
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lDecorations'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_decorations1'
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_misc1'
+
+  'shop_blocks':
+    material: BRICKS
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lBlocks'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_blocks1'
+
+
+
+

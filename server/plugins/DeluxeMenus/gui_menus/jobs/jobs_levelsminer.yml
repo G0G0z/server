@@ -1,0 +1,986 @@
+menu_title: '&f七七七七七七七七⬳'
+open_command: joblevelsminer
+size: 45
+update_interval: 1
+
+items:
+
+  'level_20_reward_not_in_job':
+    material: PAPER
+    model_data: 5715
+    slot: 21
+    update: true
+    display_name: '&c&lLevel 20 Reward &8&l▪ &7&lLocked!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 20'
+      - ''
+      - '&6Reward: &f$1,000'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "False"
+
+  'level_20_reward_ready':
+    material: PAPER
+    model_data: 5714
+    slot: 21
+    update: true
+    display_name: '&c&lLevel 20 Reward &8&l▪ &a&lClaim Now!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have achieved level 20, and'
+      - '&7can claim this reward now!'
+      - ''
+      - '&6Reward: &f$1,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 20'
+          output: "True"
+        permission:
+          type: has permission
+          permission: miner.reward.20
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aYou have claimed this reward!"
+      - "[console] eco give %player_name% 1000"
+      - "[console] lp user %player_name% permission unset miner.reward.20"
+      - "[takepermission] miner.reward.20"
+      - "[refresh]"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'level_20_reward_claimed':
+    material: PAPER
+    model_data: 5713
+    slot: 21
+    update: true
+    display_name: '&c&lLevel 20 Reward &8&l▪ &7&lClaimed'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have already claimed'
+      - '&7this level reward!'
+      - ''
+      - '&6Reward: &f$1,000'
+    priority: 3
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 20'
+          output: "True"
+
+  'level_20_reward_not_enough_level':
+    material: PAPER
+    model_data: 5712
+    slot: 21
+    update: true
+    display_name: '&c&lLevel 20 Reward'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 20'
+      - ''
+      - '&6Reward: &f$1,000'
+    priority: 4
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% < 20'
+          output: "True"
+
+
+
+
+
+
+
+
+  'level_40_reward_not_in_job':
+    material: PAPER
+    model_data: 5715
+    slot: 22
+    update: true
+    display_name: '&c&lLevel 40 Reward &8&l▪ &7&lLocked!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 40'
+      - ''
+      - '&6Reward: &f$5,000'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "False"
+
+  'level_40_reward_ready':
+    material: PAPER
+    model_data: 5714
+    slot: 22
+    update: true
+    display_name: '&c&lLevel 40 Reward &8&l▪ &a&lClaim Now!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have achieved level 40, and'
+      - '&7can claim this reward now!'
+      - ''
+      - '&6Reward: &f$5,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 40'
+          output: "True"
+        permission:
+          type: has permission
+          permission: miner.reward.40
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aYou have claimed this reward!"
+      - "[console] eco give %player_name% 5000"
+      - "[console] lp user %player_name% permission unset miner.reward.40"
+      - "[takepermission] miner.reward.40"
+      - "[refresh]"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'level_40_reward_claimed':
+    material: PAPER
+    model_data: 5713
+    slot: 22
+    update: true
+    display_name: '&c&lLevel 40 Reward &8&l▪ &7&lClaimed'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have already claimed'
+      - '&7this level reward!'
+      - ''
+      - '&6Reward: &f$5,000'
+    priority: 3
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 40'
+          output: "True"
+
+  'level_40_reward_not_enough_level':
+    material: PAPER
+    model_data: 5712
+    slot: 22
+    update: true
+    display_name: '&c&lLevel 40 Reward'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 40'
+      - ''
+      - '&6Reward: &f$5,000'
+    priority: 4
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% < 40'
+          output: "True"
+
+
+
+
+
+
+
+
+
+
+
+  'level_60_reward_not_in_job':
+    material: PAPER
+    model_data: 5715
+    slot: 23
+    update: true
+    display_name: '&c&lLevel 60 Reward &8&l▪ &7&lLocked!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 60'
+      - ''
+      - '&6Reward: &f$10,000'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "False"
+
+  'level_60_reward_ready':
+    material: PAPER
+    model_data: 5714
+    slot: 23
+    update: true
+    display_name: '&c&lLevel 60 Reward &8&l▪ &a&lClaim Now!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have achieved level 60, and'
+      - '&7can claim this reward now!'
+      - ''
+      - '&6Reward: &f$10,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 60'
+          output: "True"
+        permission:
+          type: has permission
+          permission: miner.reward.60
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aYou have claimed this reward!"
+      - "[console] eco give %player_name% 10000"
+      - "[console] lp user %player_name% permission unset miner.reward.60"
+      - "[takepermission] miner.reward.60"
+      - "[refresh]"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'level_60_reward_claimed':
+    material: PAPER
+    model_data: 5713
+    slot: 23
+    update: true
+    display_name: '&c&lLevel 60 Reward &8&l▪ &7&lClaimed'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have already claimed'
+      - '&7this level reward!'
+      - ''
+      - '&6Reward: &f$10,000'
+    priority: 3
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 60'
+          output: "True"
+
+  'level_60_reward_not_enough_level':
+    material: PAPER
+    model_data: 5712
+    slot: 23
+    update: true
+    display_name: '&c&lLevel 60 Reward'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 60'
+      - ''
+      - '&6Reward: &f$10,000'
+    priority: 4
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% < 60'
+          output: "True"
+
+
+
+
+
+
+
+
+
+
+
+
+  'level_80_reward_not_in_job':
+    material: PAPER
+    model_data: 5715
+    slot: 24
+    update: true
+    display_name: '&c&lLevel 80 Reward &8&l▪ &7&lLocked!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 80'
+      - ''
+      - '&6Reward: &f$25,000'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "False"
+
+  'level_80_reward_ready':
+    material: PAPER
+    model_data: 5714
+    slot: 24
+    update: true
+    display_name: '&c&lLevel 80 Reward &8&l▪ &a&lClaim Now!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have achieved level 80, and'
+      - '&7can claim this reward now!'
+      - ''
+      - '&6Reward: &f$25,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 80'
+          output: "True"
+        permission:
+          type: has permission
+          permission: miner.reward.80
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aYou have claimed this reward!"
+      - "[console] eco give %player_name% 25000"
+      - "[console] lp user %player_name% permission unset miner.reward.80"
+      - "[takepermission] miner.reward.80"
+      - "[refresh]"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'level_80_reward_claimed':
+    material: PAPER
+    model_data: 5713
+    slot: 24
+    update: true
+    display_name: '&c&lLevel 80 Reward &8&l▪ &7&lClaimed'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have already claimed'
+      - '&7this level reward!'
+      - ''
+      - '&6Reward: &f$25,000'
+    priority: 3
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 80'
+          output: "True"
+
+  'level_80_reward_not_enough_level':
+    material: PAPER
+    model_data: 5712
+    slot: 24
+    update: true
+    display_name: '&c&lLevel 80 Reward'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 80'
+      - ''
+      - '&6Reward: &f$25,000'
+    priority: 4
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% < 80'
+          output: "True"
+
+
+
+
+
+
+
+
+
+
+
+  'level_100_reward_not_in_job':
+    material: PAPER
+    model_data: 5715
+    slot: 25
+    update: true
+    display_name: '&c&lLevel 100 Reward &8&l▪ &7&lLocked!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 100'
+      - ''
+      - '&6Reward: &f$50,000'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "False"
+
+  'level_100_reward_ready':
+    material: PAPER
+    model_data: 5714
+    slot: 25
+    update: true
+    display_name: '&c&lLevel 100 Reward &8&l▪ &a&lClaim Now!'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have achieved level 100, and'
+      - '&7can claim this reward now!'
+      - ''
+      - '&6Reward: &f$50,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 100'
+          output: "True"
+        permission:
+          type: has permission
+          permission: miner.reward.100
+    click_commands:
+      - "[message] &8[&6&l!&8] &6&lJobs &8→ &aYou have claimed this reward!"
+      - "[console] eco give %player_name% 50000"
+      - "[console] lp user %player_name% permission unset miner.reward.100"
+      - "[takepermission] miner.reward.100"
+      - "[refresh]"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'level_100_reward_claimed':
+    material: PAPER
+    model_data: 5713
+    slot: 25
+    update: true
+    display_name: '&c&lLevel 100 Reward &8&l▪ &7&lClaimed'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7You have already claimed'
+      - '&7this level reward!'
+      - ''
+      - '&6Reward: &f$50,000'
+    priority: 3
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% >= 100'
+          output: "True"
+
+  'level_100_reward_not_enough_level':
+    material: PAPER
+    model_data: 5712
+    slot: 25
+    update: true
+    display_name: '&c&lLevel 100 Reward'
+    lore:
+      - '&8Miner Level Rewards'
+      - ''
+      - '&7Obtain this reward by reaching'
+      - '&7the required job level!'
+      - ''
+      - '&6Unlocks At: &fLevel 100'
+      - ''
+      - '&6Reward: &f$50,000'
+    priority: 4
+    view_requirement:
+      requirements:
+        level:
+          type: javascript
+          expression: '%jobsr_user_jlevel_miner% < 100'
+          output: "True"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'miner_level_joined':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 9
+      - 10
+      - 11
+      - 18
+      - 19
+      - 20
+      - 27
+      - 28
+      - 29
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lMiner Job &8&l▪ &a&lJoined!'
+    lore:
+      - '&8Level Information'
+      - ''
+      - '&7When receiving EXP from working'
+      - '&7your job, you can claim level rewards'
+      - '&7once you hit specific milestones!'
+      - ''
+      - '&6Your Miner Level: &f%jobsr_user_jlevel_miner%'
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "True"
+
+  'miner_level':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 9
+      - 10
+      - 11
+      - 18
+      - 19
+      - 20
+      - 27
+      - 28
+      - 29
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lMiner Job'
+    lore:
+      - '&8Level Information'
+      - ''
+      - '&7When receiving EXP from working'
+      - '&7your job, you can claim level rewards'
+      - '&7once you hit specific milestones!'
+      - ''
+      - '&c[!] You have not joined this job!'
+    priority: 2
+
+
+
+
+
+
+
+
+  'page_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsblacksmith"
+  'page_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] jobs_levelslumberjack"
+
+
+
+  'joined_page_brewer':
+    material: PAPER
+    model_data: 5711
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lBrewer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsbrewer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_brewer%"
+          output: "True"
+
+  'joined_page_explorer':
+    material: PAPER
+    model_data: 5711
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lExplorer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsexplorer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_explorer%"
+          output: "True"
+
+  'joined_page_blacksmith':
+    material: PAPER
+    model_data: 5711
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lBlacksmith Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsblacksmith"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_blacksmith%"
+          output: "True"
+
+  'joined_page_miner':
+    material: PAPER
+    model_data: 5711
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lMiner Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsminer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "True"
+
+  'joined_page_lumberjack':
+    material: PAPER
+    model_data: 5711
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLumberjack Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelslumberjack"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_lumberjack%"
+          output: "True"
+
+  'joined_page_digger':
+    material: PAPER
+    model_data: 5711
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDigger Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsdigger"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_digger%"
+          output: "True"
+
+  'joined_page_farmer':
+    material: PAPER
+    model_data: 5711
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lFarmer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&a&lJoined!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsfarmer"
+    priority: 1
+    view_requirement:
+      requirements:
+        in_job:
+          type: string contains
+          input: "%jobsr_user_isin_farmer%"
+          output: "True"
+
+
+
+
+  'page_brewer':
+    material: BREWING_STAND
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lBrewer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsbrewer"
+    priority: 2
+
+  'page_explorer':
+    material: SPYGLASS
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lExplorer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsexplorer"
+    priority: 2
+
+  'page_blacksmith':
+    material: ANVIL
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lBlacksmith Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsblacksmith"
+    priority: 2
+
+  'page_miner':
+    material: GOLDEN_PICKAXE
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lMiner Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsminer"
+    priority: 2
+
+  'page_lumberjack':
+    material: OAK_SAPLING
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLumberjack Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelslumberjack"
+    priority: 2
+
+  'page_digger':
+    material: IRON_SHOVEL
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDigger Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsdigger"
+    priority: 2
+
+  'page_farmer':
+    material: WHEAT
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lFarmer Job'
+    lore:
+      - '&7Level Page'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] jobs_levelsfarmer"
+    priority: 2
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] jobs_menu"
+
+
+
+

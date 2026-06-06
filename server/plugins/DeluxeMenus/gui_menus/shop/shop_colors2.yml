@@ -1,0 +1,1044 @@
+menu_title: '&f七七七七七七七七⤒'
+open_command: shopcolors2
+size: 54
+update_interval: 1
+
+items:
+
+
+  'red_terracotta':
+    material: red_terracotta
+    slot: 19
+    display_name: '&eRed Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% red_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% red_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'orange_terracotta':
+    material: orange_terracotta
+    slot: 20
+    display_name: '&eOrange Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% orange_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% orange_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'yellow_terracotta':
+    material: yellow_terracotta
+    slot: 21
+    display_name: '&eYellow Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% yellow_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% yellow_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'lime_terracotta':
+    material: lime_terracotta
+    slot: 22
+    display_name: '&eLime Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% lime_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% lime_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'green_terracotta':
+    material: green_terracotta
+    slot: 23
+    display_name: '&eGreen Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% green_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% green_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'cyan_terracotta':
+    material: cyan_terracotta
+    slot: 24
+    display_name: '&eCyan Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% cyan_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% cyan_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'light_blue_terracotta':
+    material: light_blue_terracotta
+    slot: 25
+    display_name: '&eLight Blue Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% light_blue_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% light_blue_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'blue_terracotta':
+    material: blue_terracotta
+    slot: 28
+    display_name: '&eBlue Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% blue_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% blue_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'purple_terracotta':
+    material: purple_terracotta
+    slot: 29
+    display_name: '&ePurple Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% purple_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% purple_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'magenta_terracotta':
+    material: magenta_terracotta
+    slot: 30
+    display_name: '&eMagenta Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% magenta_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% magenta_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'pink_terracotta':
+    material: pink_terracotta
+    slot: 31
+    display_name: '&ePink Terracotta'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% pink_terracotta 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% pink_terracotta 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'white_concrete_powder':
+    material: white_concrete_powder
+    slot: 32
+    display_name: '&eWhite Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% white_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% white_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'light_gray_concrete_powder':
+    material: light_gray_concrete_powder
+    slot: 33
+    display_name: '&eLight Gray Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% light_gray_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% light_gray_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'gray_concrete_powder':
+    material: gray_concrete_powder
+    slot: 34
+    display_name: '&eGray Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% gray_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% gray_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'black_concrete_powder':
+    material: black_concrete_powder
+    slot: 37
+    display_name: '&eBlack Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% black_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% black_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'brown_concrete_powder':
+    material: brown_concrete_powder
+    slot: 38
+    display_name: '&eBrown Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% brown_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% brown_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'red_concrete_powder':
+    material: red_concrete_powder
+    slot: 39
+    display_name: '&eRed Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% red_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% red_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'orange_concrete_powder':
+    material: orange_concrete_powder
+    slot: 40
+    display_name: '&eOrange Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% orange_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% orange_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'yellow_concrete_powder':
+    material: yellow_concrete_powder
+    slot: 41
+    display_name: '&eYellow Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% yellow_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% yellow_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'lime_concrete_powder':
+    material: lime_concrete_powder
+    slot: 42
+    display_name: '&eLime Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% lime_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% lime_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'green_concrete_powder':
+    material: green_concrete_powder
+    slot: 43
+    display_name: '&eGreen Concrete Powder'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$100/ea"
+      - ''
+      - '&e➦ &aRight-Click to buy 1x'
+      - '   &aShift-Right-Click to buy 16x'
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 100
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 1600
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    right_click_commands:
+      - '[console] eco take %player_name% 100'
+      - '[console] minecraft:give %player_name% green_concrete_powder 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_right_click_commands:
+      - '[console] eco take %player_name% 1600'
+      - '[console] minecraft:give %player_name% green_concrete_powder 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] shop_colors1'
+
+  'shoppage_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] shop_colors3'
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] shop_wood1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] shop_minerals1'
+
+
+
+
+
+
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_misc1'
+
+  'shop_blocks':
+    material: BRICKS
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lBlocks'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_blocks1'
+
+  'shop_wood':
+    material: OAK_LOG
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lWood'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_wood1'
+
+  'shop_colors':
+    material: CYAN_WOOL
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lColors'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_colors1'
+
+  'shop_minerals':
+    material: DIAMOND
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMinerals'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_minerals1'
+
+  'shop_farming':
+    material: WHEAT
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] shop_foods1'
+
+
+
+

@@ -1,0 +1,516 @@
+menu_title: '&f七七七七七七七七ざ'
+open_command: kitsranked
+size: 27
+update_interval: 1
+
+items:
+
+
+  'kit_knight_locked':
+    material: PAPER
+    model_data: 3655
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Knight &8&l▪ &c&lLocked'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the knight rank!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 7 days'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis dont have permission for this kit!"
+    right_click_commands:
+      - "[openguimenu] kits_previewknight"
+    view_requirement:
+      requirements:
+        started:
+          type: "!has permission"
+          permission: essentials.kits.knight
+    priority: 1
+
+  'kit_knight_claimed':
+    material: BARRIER
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Knight'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the knight rank!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 7 days'
+      - '&6Status: &fOn Cooldown (%essentials_kit_time_until_available_knight%)'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &8[&6&l!&8] &6&lKits &8→ &cThis kit is on cooldown!"
+    right_click_commands:
+      - "[openguimenu] kits_previewknight"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_knight%"
+          output: "no"
+    priority: 2
+
+  'kit_knight':
+    material: PAPER
+    model_data: 3655
+    slot: 2
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&6&lKit Knight &8&l▪ &a&lClaim!'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the knight rank!'
+      - ''
+      - '&6Cooldown: &7This kit can be claimed every 7 days'
+      - '&6Status: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[player] essentials:kit knight"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] kits_previewknight"
+    priority: 3
+
+
+
+
+
+
+
+  'kit_lord_locked':
+    material: PAPER
+    model_data: 3656
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lKit Lord &8&l▪ &c&lLocked'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the lord rank!'
+      - ''
+      - '&aCooldown: &7This kit can be claimed every 7 days'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &a&lKits &8→ &cThis dont have permission for this kit!"
+    right_click_commands:
+      - "[openguimenu] kits_previewlord"
+    view_requirement:
+      requirements:
+        started:
+          type: "!has permission"
+          permission: essentials.kits.lord
+    priority: 1
+
+  'kit_lord_claimed':
+    material: BARRIER
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lKit Lord'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the lord rank!'
+      - ''
+      - '&aCooldown: &7This kit can be claimed every 7 days'
+      - '&aStatus: &fOn Cooldown (%essentials_kit_time_until_available_lord%)'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &a&lKits &8→ &cThis kit is on cooldown!"
+    right_click_commands:
+      - "[openguimenu] kits_previewlord"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_lord%"
+          output: "no"
+    priority: 2
+
+  'kit_lord':
+    material: PAPER
+    model_data: 3656
+    slot: 3
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&a&lKit Lord &8&l▪ &a&lClaim!'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the lord rank!'
+      - ''
+      - '&aCooldown: &7This kit can be claimed every 7 days'
+      - '&aStatus: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[player] essentials:kit lord"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] kits_previewlord"
+    priority: 3
+
+
+
+
+
+
+
+  'kit_paladin_locked':
+    material: PAPER
+    model_data: 3657
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lKit Paladin &8&l▪ &c&lLocked'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the paladin rank!'
+      - ''
+      - '&bCooldown: &7This kit can be claimed every 7 days'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &b&lKits &8→ &cThis dont have permission for this kit!"
+    right_click_commands:
+      - "[openguimenu] kits_previewpaladin"
+    view_requirement:
+      requirements:
+        started:
+          type: "!has permission"
+          permission: essentials.kits.paladin
+    priority: 1
+
+  'kit_paladin_claimed':
+    material: BARRIER
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lKit Paladin'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the paladin rank!'
+      - ''
+      - '&bCooldown: &7This kit can be claimed every 7 days'
+      - '&bStatus: &fOn Cooldown (%essentials_kit_time_until_available_paladin%)'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &b&lKits &8→ &cThis kit is on cooldown!"
+    right_click_commands:
+      - "[openguimenu] kits_previewpaladin"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_paladin%"
+          output: "no"
+    priority: 2
+
+  'kit_paladin':
+    material: PAPER
+    model_data: 3657
+    slot: 4
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&b&lKit Paladin &8&l▪ &a&lClaim!'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the paladin rank!'
+      - ''
+      - '&bCooldown: &7This kit can be claimed every 7 days'
+      - '&bStatus: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[player] essentials:kit paladin"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] kits_previewpaladin"
+    priority: 3
+
+
+
+
+
+
+
+  'kit_duke_locked':
+    material: PAPER
+    model_data: 3658
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lKit Duke &8&l▪ &c&lLocked'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the duke rank!'
+      - ''
+      - '&cCooldown: &7This kit can be claimed every 7 days'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &c&lKits &8→ &cThis dont have permission for this kit!"
+    right_click_commands:
+      - "[openguimenu] kits_previewduke"
+    view_requirement:
+      requirements:
+        started:
+          type: "!has permission"
+          permission: essentials.kits.duke
+    priority: 1
+
+  'kit_duke_claimed':
+    material: BARRIER
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lKit Duke'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the duke rank!'
+      - ''
+      - '&cCooldown: &7This kit can be claimed every 7 days'
+      - '&cStatus: &fOn Cooldown (%essentials_kit_time_until_available_duke%)'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &c&lKits &8→ &cThis kit is on cooldown!"
+    right_click_commands:
+      - "[openguimenu] kits_previewduke"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_duke%"
+          output: "no"
+    priority: 2
+
+  'kit_duke':
+    material: PAPER
+    model_data: 3658
+    slot: 5
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&c&lKit Duke &8&l▪ &a&lClaim!'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the duke rank!'
+      - ''
+      - '&cCooldown: &7This kit can be claimed every 7 days'
+      - '&cStatus: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[player] essentials:kit duke"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] kits_previewduke"
+    priority: 3
+
+
+
+
+
+
+
+  'kit_king_locked':
+    material: PAPER
+    model_data: 3659
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lKit King &8&l▪ &c&lLocked'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the king rank!'
+      - ''
+      - '&eCooldown: &7This kit can be claimed every 7 days'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &e&lKits &8→ &cThis dont have permission for this kit!"
+    right_click_commands:
+      - "[openguimenu] kits_previewking"
+    view_requirement:
+      requirements:
+        started:
+          type: "!has permission"
+          permission: essentials.kits.king
+    priority: 1
+
+  'kit_king_claimed':
+    material: BARRIER
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lKit King'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the king rank!'
+      - ''
+      - '&eCooldown: &7This kit can be claimed every 7 days'
+      - '&eStatus: &fOn Cooldown (%essentials_kit_time_until_available_king%)'
+      - ''
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[message] &e&lKits &8→ &cThis kit is on cooldown!"
+    right_click_commands:
+      - "[openguimenu] kits_previewking"
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%essentials_kit_is_available_king%"
+          output: "no"
+    priority: 2
+
+  'kit_king':
+    material: PAPER
+    model_data: 3659
+    slot: 6
+    update: true
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&e&lKit King &8&l▪ &a&lClaim!'
+    lore:
+      - ''
+      - '&7This kit is available to'
+      - '&7players with the king rank!'
+      - ''
+      - '&eCooldown: &7This kit can be claimed every 7 days'
+      - '&eStatus: &fAvailable'
+      - ''
+      - '&e➥ Left-Click to claim kit'
+      - '&e➦ Right-Click to preview kit'
+    left_click_commands:
+      - "[player] essentials:kit king"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    right_click_commands:
+      - "[openguimenu] kits_previewking"
+    priority: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 19
+      - 20
+      - 21
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] kits"
+
+
+
+
+

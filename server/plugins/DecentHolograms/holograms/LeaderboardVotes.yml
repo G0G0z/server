@@ -1,0 +1,34 @@
+location: spawn:28.5:104.4:-112.500
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&b&lTop Votes'
+    height: 0.5
+  - content: '&b① &f%ajlb_lb_superbvote_votes_1_alltime_name% &8- &f%ajlb_lb_superbvote_votes_1_alltime_value%'
+    height: 0.3
+  - content: '&b②. &f%ajlb_lb_superbvote_votes_2_alltime_name% &8- &f%ajlb_lb_superbvote_votes_2_alltime_value%'
+    height: 0.3
+  - content: '&b③. &f%ajlb_lb_superbvote_votes_3_alltime_name% &8- &f%ajlb_lb_superbvote_votes_3_alltime_value%'
+    height: 0.3
+  - content: '&b④. &f%ajlb_lb_superbvote_votes_4_alltime_name% &8- &f%ajlb_lb_superbvote_votes_4_alltime_value%'
+    height: 0.3
+  - content: '&b⑤. &f%ajlb_lb_superbvote_votes_5_alltime_name% &8- &f%ajlb_lb_superbvote_votes_5_alltime_value%'
+    height: 0.3
+  - content: '&b⑥. &f%ajlb_lb_superbvote_votes_6_alltime_name% &8- &f%ajlb_lb_superbvote_votes_6_alltime_value%'
+    height: 0.3
+  - content: '&b⑦. &f%ajlb_lb_superbvote_votes_7_alltime_name% &8- &f%ajlb_lb_superbvote_votes_7_alltime_value%'
+    height: 0.3
+  - content: '&b⑧. &f%ajlb_lb_superbvote_votes_8_alltime_name% &8- &f%ajlb_lb_superbvote_votes_8_alltime_value%'
+    height: 0.3
+  - content: '&b⑨. &f%ajlb_lb_superbvote_votes_9_alltime_name% &8- &f%ajlb_lb_superbvote_votes_9_alltime_value%'
+    height: 0.3
+  - content: '&b⑩. &f%ajlb_lb_superbvote_votes_10_alltime_name% &8- &f%ajlb_lb_superbvote_votes_10_alltime_value%'
+    height: 0.5
+  - content: '&bYour Position: &f%ajlb_position_superbvote_votes_alltime%'
+    height: 0.5
+  actions: {}

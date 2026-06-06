@@ -1,0 +1,17 @@
+# Accepted storage types are SQLITE and MYSQL
+StorageType: SQLITE
+# This part is only relevant if you use MYSQL
+MYSQL:
+  Host: localhost
+  Port: 3306
+  Database: InteractiveChat
+  Username: mysql
+  Password: password
+
+
+# true
+# 222259
+# Chriz745
+# 27760
+# 111516
+# 1697560157

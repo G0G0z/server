@@ -1,0 +1,45 @@
+tasks:
+  kill:
+    type: "mobkillingcertain"
+    amount: 50
+    mob: SKELETON
+display:
+  name: "&cHunter Quest &8▪ &7Skeleton &fI"  
+  lore-normal:
+    - ""
+    - "&7Complete the objectives in this"
+    - "&7quest to obtain the reward!"
+    - ""
+    - "&cOptions:"
+    - "&8&l∙ &7Objective: &fKill 50 Skeletons."
+    - "&8&l∙ &7Progress: &f{kill:progress}/50 skeletons."
+    - ""
+    - "&cRewards: &a$500"
+    - ""
+  lore-started:
+    - "&#FFEC9BYou have started this quest."
+  type: "SKELETON_SPAWN_EGG"
+# Here you can list messages which will be sent to the player (if they are online) upon the quest starting.
+startstring:
+  - "&7Upon completion of this quest, you will be rewarded with"
+  - " &8&l∙ &a$500"
+rewards:
+  - "eco give {player} 500"
+# Here you can list messages which will be sent to the player (if they are online) upon completion.
+rewardstring:
+  - " &8&l∙ &a$500 &7was added to your in-game balance."
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+
+
+
+options:
+  category: "hunter"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 82600
+  sort-order: 7

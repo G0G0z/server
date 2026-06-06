@@ -1,0 +1,1017 @@
+quests:
+
+  1:
+    name: "&6&lBreak Stone"
+    menu_item: STONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 230 stones."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: STONE
+    required_amount: 230
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  2:
+    name: "&6&lBreak Acacia Log"
+    menu_item: ACACIA_LOG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 48 acacia logs."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: ACACIA_LOG
+    required_amount: 48
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  3:
+    name: "&6&lBreak Birch Log"
+    menu_item: BIRCH_LOG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 72 birch logs."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: BIRCH_LOG
+    required_amount: 72
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  4:
+    name: "&6&lBreak Andesite"
+    menu_item: ANDESITE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 128 andesite."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: ANDESITE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  5:
+    name: "&6&lBreak Sandstone"
+    menu_item: SANDSTONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 56 sandstone."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: SANDSTONE
+    required_amount: 56
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  6:
+    name: "&6&lBreak Prismarine"
+    menu_item: PRISMARINE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 26 prismarine."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: PRISMARINE
+    required_amount: 26
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  7:
+    name: "&6&lBreak End Stone"
+    menu_item: END_STONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 20 end stone."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: END_STONE
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  8:
+    name: "&6&lBreak Nether Bricks"
+    menu_item: NETHER_BRICKS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 38 nether bricks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: NETHER_BRICKS
+    required_amount: 38
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  9:
+    name: "&6&lBreak Blackstone"
+    menu_item: BLACKSTONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 15 blackstone."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: BLACKSTONE
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  10:
+    name: "&6&lBreak Obsidian"
+    menu_item: OBSIDIAN
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 12 obsidian."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: OBSIDIAN
+    required_amount: 12
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  11:
+    name: "&6&lBreak Crimson Stem"
+    menu_item: CRIMSON_STEM
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 40 crimson stem."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: CRIMSON_STEM
+    required_amount: 40
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  12:
+    name: "&6&lBreak Oak Log"
+    menu_item: OAK_LOG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 120 oak logs."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: OAK_LOG
+    required_amount: 120
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  13:
+    name: "&6&lBreak Glowstone"
+    menu_item: GLOWSTONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 35 glowstone."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: GLOWSTONE
+    required_amount: 35
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  14:
+    name: "&6&lBreak Clay"
+    menu_item: CLAY
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 75 clay."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: CLAY
+    required_amount: 75
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  15:
+    name: "&6&lBreak Soul Sand"
+    menu_item: SOUL_SAND
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 55 soul sand."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: SOUL_SAND
+    required_amount: 55
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  16:
+    name: "&6&lBreak Ice"
+    menu_item: ICE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Break 80 ice."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREAK
+    required_item: ICE
+    required_amount: 80
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+
+  17:
+    name: "&6&lPlace Bone Blocks"
+    menu_item: BONE_BLOCK
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 45 bone blocks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: BONE_BLOCK
+    required_amount: 45
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  18:
+    name: "&6&lPlace Cactus"
+    menu_item: CACTUS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 64 cactus."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: CACTUS
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  19:
+    name: "&6&lPlace Sugar Cane"
+    menu_item: SUGAR_CANE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 74 sugar cane."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: SUGAR_CANE
+    required_amount: 74
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  20:
+    name: "&6&lPlace Stone Bricks"
+    menu_item: STONE_BRICKS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 125 stone bricks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: STONE_BRICKS
+    required_amount: 125
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  21:
+    name: "&6&lPlace Sea Lantern"
+    menu_item: SEA_LANTERN
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 12 sea lantern."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: SEA_LANTERN
+    required_amount: 12
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  22:
+    name: "&6&lPlace Iron Blocks"
+    menu_item: IRON_BLOCK
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 14 iron blocks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: IRON_BLOCK
+    required_amount: 14
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  23:
+    name: "&6&lPlace Bricks"
+    menu_item: BRICKS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Place 80 bone bricks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: PLACE
+    required_item: BRICKS
+    required_amount: 80
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+
+  24:
+    name: "&6&lCraft TNT"
+    menu_item: TNT
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 15 TNT."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: TNT
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  25:
+    name: "&6&lCraft Iron Axe"
+    menu_item: IRON_AXE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 3 iron axes."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: IRON_AXE
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  26:
+    name: "&6&lCraft Golden Carrot"
+    menu_item: GOLDEN_CARROT
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 13 golden carrots."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: GOLDEN_CARROT
+    required_amount: 13
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  27:
+    name: "&6&lCraft Golden Apple"
+    menu_item: GOLDEN_APPLE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 2 golden apple."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: GOLDEN_APPLE
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  28:
+    name: "&6&lCraft Bread"
+    menu_item: BREAD
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 19 bread."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: BREAD
+    required_amount: 19
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  29:
+    name: "&6&lCraft Cake"
+    menu_item: CAKE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 2 cakes."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: CAKE
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  30:
+    name: "&6&lCraft Book"
+    menu_item: BOOK
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 60 book."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: BOOK
+    required_amount: 60
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  31:
+    name: "&6&lCraft Stone Bricks"
+    menu_item: STONE_BRICKS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 52 stone bricks."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: STONE_BRICKS
+    required_amount: 52
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  32:
+    name: "&6&lCraft Chest"
+    menu_item: CHEST
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 16 chests."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: CHEST
+    required_amount: 16
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  33:
+    name: "&6&lCraft Netherite Pickaxe"
+    menu_item: NETHERITE_PICKAXE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 1 netherite pickaxe."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: NETHERITE_PICKAXE
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  34:
+    name: "&6&lCraft Compass"
+    menu_item: COMPASS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 4 compass."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: COMPASS
+    required_amount: 4
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  35:
+    name: "&6&lCraft Clock"
+    menu_item: CLOCK
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 3 clock."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: CLOCK
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  36:
+    name: "&6&lCraft Spyglass"
+    menu_item: SPYGLASS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 6 spyglass."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: SPYGLASS
+    required_amount: 6
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  37:
+    name: "&6&lCraft Powered Rail"
+    menu_item: POWERED_RAIL
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 42 powered rail."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: POWERED_RAIL
+    required_amount: 42
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  38:
+    name: "&6&lCraft Sticky Piston"
+    menu_item: STICKY_PISTON
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 15 sticky piston."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: STICKY_PISTON
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  39:
+    name: "&6&lCraft Jukebox"
+    menu_item: JUKEBOX
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 3 jukebox."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: JUKEBOX
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  40:
+    name: "&6&lCraft Observer"
+    menu_item: OBSERVER
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Craft 6 observer."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: CRAFT
+    required_item: OBSERVER
+    required_amount: 6
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+
+  41:
+    name: "&6&lKill Zombie"
+    menu_item: ZOMBIE_HEAD
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Kill 32 zombies."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: KILL
+    required_entity: ZOMBIE
+    required_amount: 32
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  42:
+    name: "&6&lKill Skeleton"
+    menu_item: SKELETON_SKULL
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Kill 26 skeletons."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: KILL
+    required_entity: SKELETON
+    required_amount: 26
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  43:
+    name: "&6&lKill Creeper"
+    menu_item: CREEPER_HEAD
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Kill 15 creepers."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: KILL
+    required_entity: CREEPER
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  44:
+    name: "&6&lKill Wither Skeleton"
+    menu_item: WITHER_SKELETON_SKULL
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Kill 5 wither skeletons."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: KILL
+    required_entity: WITHER_SKELETON
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+
+
+
+  45:
+    name: "&6&lCatch Salmon"
+    menu_item: SALMON
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Fish 12 salmon."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: FISH
+    required_item: SALMON
+    required_amount: 12
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  46:
+    name: "&6&lCatch Pufferfish"
+    menu_item: PUFFERFISH
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Fish 5 pufferfish."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: FISH
+    required_item: PUFFERFISH
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  47:
+    name: "&6&lCatch Tropical Fish"
+    menu_item: TROPICAL_FISH
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Fish 3 tropical fish."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: FISH
+    required_item: TROPICAL_FISH
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+
+
+  48:
+    name: "&6&lBreed Cows"
+    menu_item: COW_SPAWN_EGG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Breed 11 cows."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREED
+    required_entity: COW
+    required_amount: 11
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  49:
+    name: "&6&lBreed Llamas"
+    menu_item: LLAMA_SPAWN_EGG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Breed 2 llamas."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREED
+    required_entity: LLAMA
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  50:
+    name: "&6&lBreed Parrots"
+    menu_item: PARROT_SPAWN_EGG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Breed 3 parrots."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREED
+    required_entity: PARROT
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  51:
+    name: "&6&lBreed Sheep"
+    menu_item: SHEEP_SPAWN_EGG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Breed 13 sheeps."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREED
+    required_entity: SHEEP
+    required_amount: 13
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  52:
+    name: "&6&lBreed Rabbits"
+    menu_item: RABBIT_SPAWN_EGG
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Breed 3 rabbits."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: BREED
+    required_entity: RABBIT
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+
+
+
+  53:
+    name: "&6&lTame Wolves"
+    menu_item: BONE
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Tame 2 wolves."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: TAME
+    required_entity: WOLF
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  54:
+    name: "&6&lShear Sheep"
+    menu_item: SHEARS
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Shear 17 sheep."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: SHEAR
+    required_entity: SHEEP
+    required_amount: 17
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"
+
+  55:
+    name: "&6&lMilk Cows"
+    menu_item: MILK_BUCKET
+    description:
+      - " "
+      - "&6Objectives:"
+      - " &8▪ &7Milk 13 cows."
+      - " "
+      - "&aReward: #B7FB765XP"
+    quest_type: MILKING
+    required_entity: COWS
+    required_amount: 13
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "levelxp give %player% 5"
+        - "codex unlock %player% objectives complete_daily_quests"

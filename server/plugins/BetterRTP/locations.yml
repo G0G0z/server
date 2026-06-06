@@ -1,0 +1,112 @@
+# Locations where rtp will center upon
+# Format:
+# - LOCATION_NAME:
+#     World: world
+#     CenterX: 100
+#     CenterY: 150
+#     MaxRadius: 100
+#     MinRadius: 5
+#     Shape: square
+#     MinY: 0
+#     MaxY: 320
+
+Enabled: true # enable the locations feature
+RequirePermission: false # Require players to have `betterrtp.location.<world_name>`
+UseLocationIfAvailable: false # Will choose a location upon `/rtp` if location(s) is available in the world
+UseLocationsInSameWorld: false # Will only choose locations in same world rtp'ing in
+
+Locations:
+- nether:
+    World: playworld_nether
+    CenterX: 0
+    CenterZ: 0
+    MaxRadius: 5000
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+    Price: 0
+- the_end:
+    World: playworld_the_end
+    CenterX: 0
+    CenterZ: 0
+    MaxRadius: 2500
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+    Price: 0
+- mining:
+    World: mining
+    CenterX: 0
+    CenterZ: 0
+    MaxRadius: 2500
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+    Price: 0
+
+- northamerica:
+    World: playworld
+    CenterX: -7120
+    CenterZ: -3600
+    MaxRadius: 1500
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+- southamerica:
+    World: playworld
+    CenterX: -4000
+    CenterZ: 1350
+    MaxRadius: 2000
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+- europe:
+    World: playworld
+    CenterX: 1000
+    CenterZ: -3500
+    MaxRadius: 1000
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+- africa:
+    World: playworld
+    CenterX: 1100
+    CenterZ: -200
+    MaxRadius: 2000
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+- asia:
+    World: playworld
+    CenterX: 7500
+    CenterZ: -2500
+    MaxRadius: 3000
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0
+- australia:
+    World: playworld
+    CenterX: 9000
+    CenterZ: 1700
+    MaxRadius: 1200
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 0

@@ -1,0 +1,1037 @@
+menu_title: '&f七七七七七七七七⤓'
+open_command: geyserbuyshopdecorations1
+size: 54
+update_interval: 1
+
+items:
+
+
+  'bookshelf':
+    material: bookshelf
+    slot: 19
+    display_name: '&eBookshelf'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$300/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 300
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4800
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 300'
+      - '[console] minecraft:give %player_name% bookshelf 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 4800'
+      - '[console] minecraft:give %player_name% bookshelf 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'cobweb':
+    material: cobweb
+    slot: 20
+    display_name: '&eCobweb'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$200/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 200
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 3200
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 200'
+      - '[console] minecraft:give %player_name% cobweb 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 3200'
+      - '[console] minecraft:give %player_name% cobweb 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'iron_bars':
+    material: iron_bars
+    slot: 21
+    display_name: '&eIron Bars'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$14/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 14
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 224
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 14'
+      - '[console] minecraft:give %player_name% iron_bars 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 224'
+      - '[console] minecraft:give %player_name% iron_bars 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'short_grass':
+    material: short_grass
+    slot: 22
+    display_name: '&eShort Grass'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$20/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 20
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 320
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 20'
+      - '[console] minecraft:give %player_name% short_grass 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 320'
+      - '[console] minecraft:give %player_name% short_grass 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'fern':
+    material: fern
+    slot: 23
+    display_name: '&eFern'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$20/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 20
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 320
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 20'
+      - '[console] minecraft:give %player_name% fern 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 320'
+      - '[console] minecraft:give %player_name% fern 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'dead_bush':
+    material: dead_bush
+    slot: 24
+    display_name: '&eDead Bush'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$20/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 20
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 320
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 20'
+      - '[console] minecraft:give %player_name% dead_bush 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 320'
+      - '[console] minecraft:give %player_name% dead_bush 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'dandelion':
+    material: dandelion
+    slot: 25
+    display_name: '&eDandelion'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% dandelion 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% dandelion 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'poppy':
+    material: poppy
+    slot: 28
+    display_name: '&ePoppy'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% poppy 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% poppy 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'blue_orchid':
+    material: blue_orchid
+    slot: 29
+    display_name: '&eBlue Orchid'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% blue_orchid 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% blue_orchid 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'allium':
+    material: allium
+    slot: 30
+    display_name: '&eAllium'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% allium 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% allium 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'azure_bluet':
+    material: azure_bluet
+    slot: 31
+    display_name: '&eAzure Bluet'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% azure_bluet 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% azure_bluet 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'red_tulip':
+    material: red_tulip
+    slot: 32
+    display_name: '&eRed Tulip'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% red_tulip 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% red_tulip 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'orange_tulip':
+    material: orange_tulip
+    slot: 33
+    display_name: '&eOrange Tulip'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% orange_tulip 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% orange_tulip 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'white_tulip':
+    material: white_tulip
+    slot: 34
+    display_name: '&eWhite Tulip'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% white_tulip 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% white_tulip 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'pink_tulip':
+    material: pink_tulip
+    slot: 37
+    display_name: '&ePink Tulip'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% pink_tulip 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% pink_tulip 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'oxeye_daisy':
+    material: oxeye_daisy
+    slot: 38
+    display_name: '&eOxeye Daisy'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% oxeye_daisy 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% oxeye_daisy 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'cornflower':
+    material: cornflower
+    slot: 39
+    display_name: '&eCornflower'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% cornflower 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% cornflower 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'lily_of_the_valley':
+    material: lily_of_the_valley
+    slot: 40
+    display_name: '&eLily Of The Valley'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% lily_of_the_valley 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% lily_of_the_valley 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'torchflower':
+    material: torchflower
+    slot: 41
+    display_name: '&eTorchflower'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$10/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 10
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 160
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 10'
+      - '[console] minecraft:give %player_name% torchflower 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 160'
+      - '[console] minecraft:give %player_name% torchflower 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'wither_rose':
+    material: wither_rose
+    slot: 42
+    display_name: '&eWither Rose'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$10/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 10
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 160
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 10'
+      - '[console] minecraft:give %player_name% wither_rose 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 160'
+      - '[console] minecraft:give %player_name% wither_rose 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+  'pink_petals':
+    material: pink_petals
+    slot: 43
+    display_name: '&ePink Petals'
+    lore:
+      - ''
+      - "&8• &fBuy for: &a$4/ea"
+      - ''
+      - '&e➦ &aLeft-Click to buy 1x'
+
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 4
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    shift_left_click_requirement:
+      requirements:
+        has_item:
+          type: has money
+          amount: 64
+          strict: true
+          deny_commands:
+          - '[message] &8[&b&l!&8] &b&lShop &8→ &cYou don''t have enough money to buy.'
+    left_click_commands:
+      - '[console] eco take %player_name% 4'
+      - '[console] minecraft:give %player_name% pink_petals 1'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[console] eco take %player_name% 64'
+      - '[console] minecraft:give %player_name% pink_petals 16'
+      - '[message] &8[&b&l!&8] &b&lShop &8→ &aYou have bought this item!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_decorations2'
+
+
+
+
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_redstone1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_misc1'
+
+
+
+
+
+
+
+  'shop_foods':
+    material: APPLE
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_foods1'
+
+  'shop_mobdrops':
+    material: ROTTEN_FLESH
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMob Drops'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_mobdrops1'
+
+  'shop_redstone':
+    material: PISTON
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lRedstone'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_redstone1'
+
+  'shop_decorations':
+    material: FLOWER_POT
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lDecorations'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_decorations1'
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_misc1'
+
+  'shop_blocks':
+    material: BRICKS
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lBlocks'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_blocks1'
+
+  'shop_wood':
+    material: OAK_LOG
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lWood'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_buy_shop_wood1'
+
+
+
+
+

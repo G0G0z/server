@@ -1,0 +1,435 @@
+menu_title: '&f七七七七七七七七⤒'
+open_command: geysersellshopcolors2
+size: 54
+update_interval: 1
+
+items:
+
+
+  'red_terracotta':
+    material: red_terracotta
+    slot: 19
+    display_name: '&eRed Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'orange_terracotta':
+    material: orange_terracotta
+    slot: 20
+    display_name: '&eOrange Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'yellow_terracotta':
+    material: yellow_terracotta
+    slot: 21
+    display_name: '&eYellow Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'lime_terracotta':
+    material: lime_terracotta
+    slot: 22
+    display_name: '&eLime Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'green_terracotta':
+    material: green_terracotta
+    slot: 23
+    display_name: '&eGreen Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'cyan_terracotta':
+    material: cyan_terracotta
+    slot: 24
+    display_name: '&eCyan Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'light_blue_terracotta':
+    material: light_blue_terracotta
+    slot: 25
+    display_name: '&eLight Blue Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'blue_terracotta':
+    material: blue_terracotta
+    slot: 28
+    display_name: '&eBlue Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'purple_terracotta':
+    material: purple_terracotta
+    slot: 29
+    display_name: '&ePurple Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'magenta_terracotta':
+    material: magenta_terracotta
+    slot: 30
+    display_name: '&eMagenta Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'pink_terracotta':
+    material: pink_terracotta
+    slot: 31
+    display_name: '&ePink Terracotta'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'white_concrete_powder':
+    material: white_concrete_powder
+    slot: 32
+    display_name: '&eWhite Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'light_gray_concrete_powder':
+    material: light_gray_concrete_powder
+    slot: 33
+    display_name: '&eLight Gray Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'gray_concrete_powder':
+    material: gray_concrete_powder
+    slot: 34
+    display_name: '&eGray Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'black_concrete_powder':
+    material: black_concrete_powder
+    slot: 37
+    display_name: '&eBlack Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'brown_concrete_powder':
+    material: brown_concrete_powder
+    slot: 38
+    display_name: '&eBrown Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'red_concrete_powder':
+    material: red_concrete_powder
+    slot: 39
+    display_name: '&eRed Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'orange_concrete_powder':
+    material: orange_concrete_powder
+    slot: 40
+    display_name: '&eOrange Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'yellow_concrete_powder':
+    material: yellow_concrete_powder
+    slot: 41
+    display_name: '&eYellow Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'lime_concrete_powder':
+    material: lime_concrete_powder
+    slot: 42
+    display_name: '&eLime Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+  'green_concrete_powder':
+    material: green_concrete_powder
+    slot: 43
+    display_name: '&eGreen Concrete Powder'
+    lore:
+      - ''
+      - "&cThis item can only be bought!"
+      - '&cOpen the buy shop to buy!'
+      - ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'shoppage_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_colors1'
+
+  'shoppage_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_colors3'
+
+
+
+
+
+
+  'shop_previous':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_wood1'
+  'shop_next':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_minerals1'
+
+
+
+
+
+
+
+  'shop_misc':
+    material: TOTEM_OF_UNDYING
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMisc'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_misc1'
+
+  'shop_blocks':
+    material: BRICKS
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lBlocks'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_blocks1'
+
+  'shop_wood':
+    material: OAK_LOG
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lWood'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_wood1'
+
+  'shop_colors':
+    material: CYAN_WOOL
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lColors'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_colors1'
+
+  'shop_minerals':
+    material: DIAMOND
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lMinerals'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_minerals1'
+
+  'shop_farming':
+    material: WHEAT
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFarming'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_farming1'
+
+  'shop_foods':
+    material: APPLE
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lFoods'
+    lore:
+      - '&7Shop Categories'
+    click_commands:
+      - '[openguimenu] geyser_sell_shop_foods1'
+
+
+
+

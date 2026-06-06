@@ -1,0 +1,22 @@
+location: spawn:0.5:102:-114.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&3&lAFK Pond'
+    height: 0.5
+  - content: '&fJump in to receive rewards'
+    height: 0.3
+  - content: '&fwhile being &cAFK &fon the server!'
+    height: 0.5
+  - content: '&6Rewards:'
+    height: 0.3
+  - content: '&f15 Min → &e2 Coins'
+    height: 0.3
+  - content: '&f1 Hour → &aCommon Key'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,174 @@
+# German Translation for CombatLogX
+# Made by wegGehamstert#7554 for v10.4.2.4
+# Updated to v11.0.0.0 by SirBlobman
+
+language-name: de_de
+decimal-format: '0.00'
+
+prefix: <bold><white>[</white></bold><gold>CombatLogX</gold><bold><white>]
+
+broadcast:
+  on-load: <bold><green>CombatLogX wurde erfolgreich geladen.
+  on-enable: <bold><green>CombatLogX wurde aktiviert.
+  on-disable: <bold><red>CombatLogX ist nun deaktiviert
+
+placeholder:
+  time-left-zero: '0'
+  unknown-enemy: Unbekannt
+  status:
+    fighting: <red>Im Kampf
+    idling: <green>Untätig
+    in-combat: <green>Ja
+    not-in-combat: <red>Nein
+  toggle:
+    enabled: <green>An
+    disabled: <red>Aus
+
+combat-timer:
+  expire: <green>Du bist nicht mehr im Kampf.
+  enemy-death: <green>Dein Feind ist tot.
+
+error:
+  no-permission: <italic><red>Du hast nicht die Berechtigungen </red></italic><green>{permission}</green><italic><red>
+    dafür.
+  player-only: <italic><red>Du bist kein Spieler
+  invalid-target: <italic><red>Konnte den Spieler </red></italic><green>{target}</green><italic><red>
+    nicht finden.
+  target-not-in-combat: <green>{target}</green><italic><red> ist nicht im Kampf.
+  self-not-in-combat: <italic><red>Du bist nicht im Kampf.
+
+commands:
+  combatlogx:
+    help-message-list:
+    - <white>
+    - '<bold><gold>CombatLogX Command Help:'
+    - '  <bold><white>/combatlogx help</white></bold><gray>: Zeige dir diese Seite
+      an.'
+    - '  <bold><white>/combatlogx reload</white></bold><gray>: Laden Sie die config.yml,
+      language.yml und alle Erweiterungskonfigurationsdateien neu.'
+    - '  <bold><white>/combatlogx version</white></bold><gray>: Überprüfen Sie Ihre
+      Version von CombatLogX.'
+    - '  <bold><white>/combatlogx tag \<player></white></bold><gray>: Zwinge einen
+      Spieler in den Kampf.'
+    - '  <bold><white>/combatlogx untag \<player></white></bold><gray>: Zwinge einen
+      Spieler aus dem Kampf.'
+    - <white>
+    
+    reloaded-success: <green>Alle Konfigurationsdateien von CombatLogX und Erweiterungen
+      erfolgreich neu geladen.
+    
+    tag-player: <green>Du hast </green><white>{target}</white><green> in den Kampf
+      gezwungen. Dabei können Fehler auftreten.
+    tag-failure: <italic><red>Konnte den Spieler </red></italic><green>{target}</green><italic><red>
+      nicht in den Kampf schicken.
+    untag-player: <green>Du hast gerade </green><white>{target}</white><green> aus
+      dem Kampf gezogen. Dabei könnte Fehler auftreten
+  
+  combat-timer:
+    time-left-self: <green>Du hast </green><red>{time} Sekunden</red><green> verbleibend
+    time-left-other: <white>{target} </white><green>hat </green><red>{time} Sekunden</red><green>
+      verbleibend
+
+
+tagged:
+  unknown:
+    unknown: <red>Du befindest dich jetzt im Kampf. Melde dich sich nicht ab!
+  attacked:
+    player: <red>Du wirst angegriffen von </red><white>{name}</white><red>. Melde
+      dich nicht ab!
+    mob: <red>Du wirst angegriffen von a(n) </red><white>{mob_type}</white><red>.
+      Melde dich nicht ab!
+  attacker:
+    player: <red>Du wirst angegriffen von </red><white>{name}</white><red>. Melde
+      dich nicht ab!
+    mob: <red>Wir wirst attakiert von </red><white>{mob_type}</white><red>. Melde
+      dich nicht ab!
+
+expansion:
+  cheat-prevention:
+    command-blocked: <red>Du kannst diesen Command </red><green>{command}</green><red>
+      jetzt nicht benutzen.
+    no-riptide: <red>Riptide ist deaktiviert während dem Kampf.
+    no-totem: <red>Du darfst kein Totem-Of-Undying im Kampf benutzen.
+    no-entity-interaction: <red>Du darfst das Mob nicht benutzen.
+    no-chat: <red>Du darfst keine Nachrichten schicken..
+    
+    game-mode:
+      force-switch: <red>Dein Game-Mode wurde zu </red><white>{game_mode}</white><red>
+        gewechselt.
+      no-switch: <red>Du darfst den Game-Mode nicht wechseln während dem Kampf.
+    
+    flight:
+      force-disabled: <red>Deine Fähigkeit zu fliegen wurde deaktiviert.
+      no-flying: <red>Du darfst nicht fliegen während des Kampfes.
+    
+    elytra:
+      force-disabled: <red>Deine Elytra wurde deaktiviert.
+      no-gliding: <red>Du darfst keine Elytra benutzen während des Kampes.
+    
+    teleportation:
+      block-pearl: <red>Du darfst keine Enderperle während des Kampfes benutzen.
+      block-other: <red>Du darfst dich nicht teleportieren während des Kampfes.
+    
+    inventory:
+      force-closed: <red>Dein Inventar wurde geschlossen.
+      no-opening: <red>Du darfst das Inventar nicht während des Kampfes öffnen.
+    
+    blocks:
+      prevent-breaking: <red>Du darfst keine Blöcke abbauen während des Kampfes.
+      prevent-placing: <red>Du darfst keine Blöcke platzieren während des Kampfes.
+      prevent-interaction: <red>Du darfst keine Blöcke benutzen während des Kampfes.
+    
+    items:
+      no-pickup: <red>Du darfst keine Items aufnehmen während des Kampfes.
+      no-dropping: <red>Du darfst keine Items droppen während des Kampfes.
+  
+  damage-tagger:
+    unknown-damage: <red>Du hast Schaden genommen.!
+    damage-type:
+      contact: <red>Du wurdest von einem Kaktus gestochen. Melden Sie sich nicht ab!
+      suffocation: <red>Du erstickst in einer Wand. Melden Sie sich nicht ab!
+      fall: <red>Du hast Sturzschaden erlitten. Melden Sie sich nicht ab!
+      fire: <red>Du bist ins Feuer gegangen. Nicht abmelden!
+      fire-tick: Du bist ins Feuer gegangen. Nicht abmelden!
+      lava: <red>Du kochst in Lava. Nicht abmelden!
+      drowning: <red>Du ertrinkst. Nicht abmelden!
+      block-explosion: <red>Sie wurden durch eine Explosion beschädigt. Nicht abmelden!
+      lightning: <red>Du wurdest vom Blitz getroffen! Nicht abmelden!
+      starvation: <red>Du bist zu hungrig. Nicht abmelden!
+      poison: <red>Du hast Giftschaden erlitten. Nicht abmelden!
+      magic: <red>Jemand hat einen Trank nach dir geworfen. Nicht abmelden!
+      wither: <red>Du hast Wither. Nicht abmelden!
+      falling-block: <red>Ein Block ist auf dich gefallen. Nicht abmelden!
+      custom: <red>Du hast benutzerdefinierten Schaden erlitten. Nicht abmelden!
+      fly-into-wall: <red>Du hast kinetische Energie erfahren. Nicht abmelden!
+      hot-floor: <red>Der Boden ist Lava! Nicht abmelden!
+      cramming: <red>Du wirst gequetscht. Nicht abmelden!
+  
+  newbie-helper:
+    status:
+      protected: <green>Geschützt
+      not-protected: <red>Nicht Geschützt
+    togglepvp:
+      self: '<bold><gray>PvP: {status}'
+      admin: <gray>Du hast PVP bei </gray><yellow>{target}</yellow><gray> {status}</gray><gray>.
+    no-pvp:
+      self: <red>Du darfst diesen Spieler nicht treffen, während dein PvP deaktiviert
+        ist.
+      other: <red>Dieser Spieler hat PvP deaktiviert.
+      protected: <red>Dieser Spieler ist geschützt, du darfst ihn noch nicht angreifen!
+    protection-disabled:
+      attacker: <red>Sie haben jemanden angegriffen, Ihr Anfängerschutz ist jetzt
+        deaktiviert.
+      expired: <red>Ihr Anfängerschutz ist abgelaufen.
+  
+  citizens-compatibility:
+    prevent-join: <red>Als Strafe für das Abmelden während des Kampfes dürfen Sie
+      nicht beitreten, bis Ihr Klon getötet oder entfernt wurde.
+  
+  region-protection:
+    worldguard:
+      no-entry-player-combat: <red>Es ist dir nicht gestattet, während des Kampfes
+        ein Nicht-Spieler-Kampfgebiet zu betreten.
+      no-entry-mob-combat: <red>Es ist dir nicht gestattet, während des Kampfes ein
+        Nicht-Mob-Kampfgebiet zu betreten.

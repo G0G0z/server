@@ -1,0 +1,47 @@
+tasks:
+  dig:
+    type: "blockbreakcertain"
+    amount: 200
+    block: RED_SAND
+    reverse-if-placed: true
+display:
+  name: "&eDigging Quest &8▪ &7Red Sand &fIII" 
+  lore-normal:
+    - ""
+    - "&7Complete the objectives in this"
+    - "&7quest to obtain the reward!"
+    - ""
+    - "&eOptions:"
+    - "&8&l∙ &7Objective: &fDig 200 Red Sand."
+    - "&8&l∙ &7Progress: &f{dig:progress}/200 red sand."
+    - ""
+    - "&eRewards: &a$1000"
+    - ""
+  lore-started:
+    - "&#FFEC9BYou have started this quest."
+  type: "RED_SAND"
+# Here you can list messages which will be sent to the player (if they are online) upon the quest starting.
+startstring:
+  - "&7Upon completion of this quest, you will be rewarded with"
+  - " &8&l∙ &a$1000"
+rewards:
+  - "eco give {player} 1000"
+# Here you can list messages which will be sent to the player (if they are online) upon completion.
+rewardstring:
+  - " &8&l∙ &a$1000 &7was added to your in-game balance."
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+
+
+
+options:
+  category: "digging"
+  requires:
+    - "digging17redsand"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 82600
+  sort-order: 18

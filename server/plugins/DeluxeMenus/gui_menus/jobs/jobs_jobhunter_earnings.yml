@@ -1,0 +1,111 @@
+menu_title: '&f七七七七七七七七⇮'
+open_command: jobsjobhunterearnings
+size: 54
+update_interval: 1
+
+items:
+
+
+  'killing_mobs_1':
+    material: IRON_SWORD
+    slot: 10
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lKilling Mobs'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fChicken &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fCow &8&l▪ &a$%math_6+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fPig &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fSheep &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fWolf &8&l▪ &a$%math_10+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_10*0.04% pts &65exp'
+      - '&fCreeper &8&l▪ &a$%math_15+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_15*0.04% pts &615exp'
+      - '&fSkeleton &8&l▪ &a$%math_10+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_10*0.04% pts &615exp'
+      - '&fSpider &8&l▪ &a$%math_10+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_10*0.04% pts &615exp'
+      - '&fZombie &8&l▪ &a$%math_10+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_10*0.04% pts &615exp'
+      - '&fBlaze &8&l▪ &a$%math_20+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_20*0.04% pts &615exp'
+
+
+  'killing_mobs_2':
+    material: IRON_SWORD
+    slot: 11
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lKilling Mobs'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fCave Spider &8&l▪ &a$%math_20+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_20*0.04% pts &615exp'
+      - '&fEnderman &8&l▪ &a$%math_2+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2*0.04% pts &62exp'
+      - '&fGhast &8&l▪ &a$%math_30+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_30*0.04% pts &630exp'
+      - '&fGiant &8&l▪ &a$%math_250+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_250*0.04% pts &6100exp'
+      - '&fIron Golem &8&l▪ &a$%math_30+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_30*0.04% pts &630exp'
+      - '&fMushroom Cow &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fSilverfish &8&l▪ &a$%math_3+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_3*0.04% pts &65exp'
+      - '&fSnowman &8&l▪ &a$%math_2+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2*0.04% pts &64exp'
+      - '&fSquid &8&l▪ &a$%math_2+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2*0.04% pts &62exp'
+      - '&fRabbit &8&l▪ &a$%math_2+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2*0.04% pts &62exp'
+
+
+  'killing_mobs_3':
+    material: IRON_SWORD
+    slot: 12
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lKilling Mobs'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fGuardian &8&l▪ &a$%math_2+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2*0.04% pts &62exp'
+      - '&fShulker &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fPhantom &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fDrowned &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fHusk &8&l▪ &a$%math_5+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_5*0.04% pts &65exp'
+      - '&fWither &8&l▪ &a$%math_50+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_50*0.04% pts &6120exp'
+      - '&fEnder Dragon &8&l▪ &a$%math_2000+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_2000*0.04% pts &62000exp'
+      - '&fPlayer &8&l▪ &a$%math_9+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_9*0.04% pts &67.5exp'
+
+
+
+
+  'taming_mobs_1':
+    material: BONE
+    slot: 13
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&6&lTaming Mobs'
+    lore:
+      - ''
+      - '&7View the payment you receive'
+      - '&7for each job action.'
+      - ''
+      - '&fWolf &8&l▪ &a$%math_20+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_20*0.04% pts &615exp'
+      - '&fOcelot &8&l▪ &a$%math_20+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_20*0.04% pts &615exp'
+      - '&fHorse &8&l▪ &a$%math_20+({jobsr_user_jlevel_hunter}*0.03)% &b%math_2_20*0.04% pts &615exp'
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 46
+      - 47
+      - 48
+    update: true
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] jobs_jobhunter"
+
+
+

@@ -1,0 +1,227 @@
+menu_title: '&f七七七七七七七七♑'
+open_command: kitspreviewduke
+size: 45
+update_interval: 1
+
+items:
+
+
+  '1':
+    material: NETHERITE_SWORD
+    slot: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Sword'
+    lore:
+      - ''
+      - '&#CCE9FFSharpness IV'
+      - '&#CCE9FFUnbreaking II'
+      - ''
+      - '&7Rarity: '
+  '2':
+    material: NETHERITE_PICKAXE
+    slot: 2
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Pickaxe'
+    lore:
+      - ''
+      - '&#CCE9FFEfficiency IV'
+      - '&#CCE9FFUnbreaking II'
+      - ''
+      - '&7Rarity: '
+  '3':
+    material: NETHERITE_AXE
+    slot: 3
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Axe'
+    lore:
+      - ''
+      - '&#CCE9FFEfficiency IV'
+      - '&#CCE9FFUnbreaking II'
+      - ''
+      - '&7Rarity: '
+  '4':
+    material: NETHERITE_SHOVEL
+    slot: 4
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Shovel'
+    lore:
+      - ''
+      - '&#CCE9FFEfficiency IV'
+      - '&#CCE9FFUnbreaking II'
+      - ''
+      - '&7Rarity: '
+  '5':
+    material: NETHERITE_HELMET
+    slot: 5
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Helmet'
+    lore:
+      - ''
+      - '&#CCE9FFProtection IV'
+      - '&#CCE9FFUnbreaking III'
+      - ''
+      - '&7Rarity: '
+  '6':
+    material: NETHERITE_CHESTPLATE
+    slot: 6
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Chestplate'
+    lore:
+      - ''
+      - '&#CCE9FFProtection IV'
+      - '&#CCE9FFUnbreaking III'
+      - ''
+      - '&7Rarity: '
+  '7':
+    material: NETHERITE_LEGGINGS
+    slot: 7
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Leggings'
+    lore:
+      - ''
+      - '&#CCE9FFProtection IV'
+      - '&#CCE9FFUnbreaking III'
+      - ''
+      - '&7Rarity: '
+  '8':
+    material: NETHERITE_BOOTS
+    slot: 10
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lDuke Boots'
+    lore:
+      - ''
+      - '&#CCE9FFProtection IV'
+      - '&#CCE9FFUnbreaking III'
+      - ''
+      - '&7Rarity: '
+  '9':
+    material: COOKED_BEEF
+    amount: 64
+    slot: 11
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l64x &e&lSteak'
+  '10':
+    material: ENCHANTED_GOLDEN_APPLE
+    amount: 1
+    slot: 12
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l1x &e&lNotch Apple'
+  '11':
+    material: OAK_LOG
+    amount: 64
+    slot: 13
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l64x &e&lOak Log'
+  '12':
+    material: OAK_LOG
+    amount: 64
+    slot: 14
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l64x &e&lOak Log'
+  '13':
+    material: IRON_BLOCK
+    amount: 8
+    slot: 15
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l8x &e&lIron Block'
+  '14':
+    material: GOLD_BLOCK
+    amount: 4
+    slot: 16
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l4x &e&lGold Block'
+  '15':
+    material: DIAMOND
+    amount: 8
+    slot: 19
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l8x &e&lDiamond'
+  '16':
+    material: EMERALD
+    amount: 4
+    slot: 20
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l4x &e&lEmerald'
+  '17':
+    material: NETHERITE_INGOT
+    amount: 2
+    slot: 21
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&f&l2x &e&lNetherite Ingot'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] kits_ranked"
+
+
+
+
+

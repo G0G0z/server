@@ -1,0 +1,708 @@
+menu_title: '&f七七七七七七七七㊜'
+open_command: factorieswood
+size: 45
+update_interval: 1
+
+items:
+
+
+  'factories_1_ongoing':
+    material: OAK_LOG
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f100x Oak Log'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieswood%'
+    priority: 1
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.1
+        started:
+          type: "has permission"
+          permission: factory.wood.ongoing.1
+
+  'factories_1_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.1
+        started:
+          type: "!has permission"
+          permission: factory.wood.ongoing.1
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.wood.started.1"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% OAK_LOG 100"
+      - "[console] codex unlock %player_name% objectives produce_100_logs"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_1_alreadyproducing':
+    material: BARRIER
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.2
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.wood.started.3
+          optional: true
+
+  'factories_1_productionlimit':
+    material: BARRIER
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_1_start':
+    material: OAK_LOG
+    slot: 21
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴡᴏᴏᴅ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f100x Oak Log'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f20x Oak Saplings'
+      - ' &8&l∙ &f10x Bone Meal'
+      - ' &8&l∙ &f15x Coal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&6Production Time: &710m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.wood.ongoing.1
+        started:
+          type: "!has permission"
+          permission: factory.wood.started.1
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factorieswood 600s"
+      - "[console] lp user %player_name% permission settemp factory.wood.ongoing.1 true 600s"
+      - "[console] lp user %player_name% permission set factory.wood.started.1"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_sapling 20"
+      - "[console] minecraft:clear %player_name% bone_meal 10"
+      - "[console] minecraft:clear %player_name% coal 15"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_SAPLING"
+          amount: 20
+        item2:
+          type: has item
+          material: "BONE_MEAL"
+          amount: 10
+        item3:
+          type: has item
+          material: "COAL"
+          amount: 15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'factories_2_purchase':
+    material: PAPER
+    model_data: 11065
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴡᴏᴏᴅ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f250x Oak Log'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f30x Oak Saplings'
+      - ' &8&l∙ &f15x Bone Meal'
+      - ' &8&l∙ &f20x Coal'
+      - ''
+      - '&6Production Time: &715m'
+      - ''
+      - '&#D85300Purchase Price: &f$50,000'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 1
+    view_requirement:
+      requirements:
+        permission1:
+          type: "!has permission"
+          permission: factory.purchased.wood.2
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.purchased.wood.2"
+      - "[console] eco take %player_name% 50000"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingI
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        permission2:
+          type: "!has permission"
+          permission: factory.research.ongoing.AccountingI
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        money:
+          type: has money
+          amount: 50000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+
+  'factories_2_ongoing':
+    material: OAK_LOG
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f250x Oak Log'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieswood%'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.2
+        started:
+          type: "has permission"
+          permission: factory.wood.ongoing.2
+
+  'factories_2_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.2
+        started:
+          type: "!has permission"
+          permission: factory.wood.ongoing.2
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.wood.started.2"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% OAK_LOG 250"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_2_alreadyproducing':
+    material: BARRIER
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.1
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.wood.started.3
+          optional: true
+
+  'factories_2_productionlimit':
+    material: BARRIER
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_2_start':
+    material: OAK_LOG
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴡᴏᴏᴅ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f250x Oak Log'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f30x Oak Saplings'
+      - ' &8&l∙ &f15x Bone Meal'
+      - ' &8&l∙ &f20x Coal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&6Production Time: &715m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 6
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.wood.ongoing.2
+        started:
+          type: "!has permission"
+          permission: factory.wood.started.2
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factorieswood 900s"
+      - "[console] lp user %player_name% permission settemp factory.wood.ongoing.2 true 900s"
+      - "[console] lp user %player_name% permission set factory.wood.started.2"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_sapling 30"
+      - "[console] minecraft:clear %player_name% bone_meal 15"
+      - "[console] minecraft:clear %player_name% coal 20"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_SAPLING"
+          amount: 30
+        item2:
+          type: has item
+          material: "BONE_MEAL"
+          amount: 15
+        item3:
+          type: has item
+          material: "COAL"
+          amount: 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'factories_3_purchase':
+    material: PAPER
+    model_data: 11065
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴡᴏᴏᴅ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f500x Oak Log'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f50x Oak Saplings'
+      - ' &8&l∙ &f25x Bone Meal'
+      - ' &8&l∙ &f30x Coal'
+      - ''
+      - '&6Production Time: &720m'
+      - ''
+      - '&#D85300Purchase Price: &f$200,000'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 1
+    view_requirement:
+      requirements:
+        permission1:
+          type: "!has permission"
+          permission: factory.purchased.wood.3
+    click_commands:
+      - "[console] lp user %player_name% permission set factory.purchased.wood.3"
+      - "[console] eco take %player_name% 200000"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        permission1:
+          type: "has permission"
+          permission: factory.research.completed.AccountingII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        permission2:
+          type: "!has permission"
+          permission: factory.research.ongoing.AccountingII
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+        money:
+          type: has money
+          amount: 200000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+
+  'factories_3_ongoing':
+    material: OAK_LOG
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    lore:
+      - ''
+      - '&7Your products are currently'
+      - '&7being produces. Return when'
+      - '&7the production is completed.'
+      - ''
+      - '&6Production: &f500x Oak Log'
+      - ''
+      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieswood%'
+    priority: 2
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.3
+        started:
+          type: "has permission"
+          permission: factory.wood.ongoing.3
+
+  'factories_3_completed':
+    material: PAPER
+    model_data: 11064
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    lore:
+      - ''
+      - '&7The production is completed,'
+      - '&7please claim your product.'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 3
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.3
+        started:
+          type: "!has permission"
+          permission: factory.wood.ongoing.3
+    click_commands:
+      - "[console] lp user %player_name% permission unset factory.wood.started.3"
+      - "[console] factoriespongoing take %player_name% 1"
+      - "[console] factoriespcompleted give %player_name% 1"
+      - "[console] give %player_name% OAK_LOG 500"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+
+  'factories_3_alreadyproducing':
+    material: BARRIER
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You already have a production'
+      - '&7ongoing in this factory.'
+    priority: 4
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        ongoing:
+          type: "has permission"
+          permission: factory.wood.started.1
+          optional: true
+        started:
+          type: "has permission"
+          permission: factory.wood.started.2
+          optional: true
+
+  'factories_3_productionlimit':
+    material: BARRIER
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    lore:
+      - ''
+      - '&7You have reached your limit for'
+      - '&7ongoing productions. Wait till one'
+      - '&7of your productions is completed.'
+      - ''
+      - '&cYour Limit: &f%coinsengine_balance_raw_factoriespongoing%/%coinsengine_balance_raw_factoriesplimit%'
+    priority: 5
+    view_requirement:
+      minimum_requirements: 1
+      requirements:
+        one:
+          type: javascript
+          expression: '%math_{coinsengine_balance_raw_factoriesplimit}-{coinsengine_balance_raw_factoriespongoing}% < 1'
+
+  'factories_3_start':
+    material: OAK_LOG
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴡᴏᴏᴅ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    lore:
+      - ''
+      - '&7Start the production by delivering'
+      - '&7the required resources and fuel.'
+      - ''
+      - '&6Production: &f500x Oak Log'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &f50x Oak Saplings'
+      - ' &8&l∙ &f25x Bone Meal'
+      - ' &8&l∙ &f30x Coal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&6Production Time: &720m'
+      - ''
+      - '&e➥ Left-Click to start'
+    priority: 6
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        ongoing:
+          type: "!has permission"
+          permission: factory.wood.ongoing.3
+        started:
+          type: "!has permission"
+          permission: factory.wood.started.3
+    click_commands:
+      - "[console] lp user %player_name% parent addtemp factorieswood 1200s"
+      - "[console] lp user %player_name% permission settemp factory.wood.ongoing.3 true 1200s"
+      - "[console] lp user %player_name% permission set factory.wood.started.3"
+      - "[console] factoriespongoing give %player_name% 1"
+      - "[console] minecraft:clear %player_name% oak_sapling 50"
+      - "[console] minecraft:clear %player_name% bone_meal 25"
+      - "[console] minecraft:clear %player_name% coal 30"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    click_requirement:
+      requirements:
+        item1:
+          type: has item
+          material: "OAK_SAPLING"
+          amount: 50
+        item2:
+          type: has item
+          material: "BONE_MEAL"
+          amount: 25
+        item3:
+          type: has item
+          material: "COAL"
+          amount: 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] factories_menu_wood"

@@ -1,0 +1,85 @@
+config:
+  inventory_items:
+    category:
+      id: PAPER
+      custom_model_data: 110007
+      name: "&a&lᴅɪsᴄᴏᴠᴇʀ ʀᴇɢɪᴏɴs"
+      lore:
+        - ""
+        - "&7Discover all the important areas"
+        - "&7on the server to explore the server."
+        - "&7Receive rewards at the same time!"
+        - ""
+        - "&aUnlocked: %unlocked% &8(&7%percentage%&8)"
+        - ""
+        - "&e➥ Left-Click to browse"
+    discovery_unlocked:
+      id: PAPER
+      custom_model_data: 3167
+      name: "&a&lᴅɪsᴄᴏᴠᴇʀ ʀᴇɢɪᴏɴ"
+      lore:
+        - ""
+        - "&7Find and enter this region"
+        - "&7to unlock this discovery!"
+        - ""
+        - "&6Region: &f%description%"
+        - ""
+        - "&aReward: #B7FB762XP"
+        - ""
+        - "&e➼ Discovered on %date%"
+    discovery_blocked:
+      id: PAPER
+      custom_model_data: 3168
+      name: "&a&lᴅɪsᴄᴏᴠᴇʀ ʀᴇɢɪᴏɴ"
+      lore:
+        - ""
+        - "&7Find and enter this region"
+        - "&7to unlock this discovery!"
+        - ""
+        - "%description%"
+        - ""
+        - "&aReward: #B7FB762XP"
+        - ""
+        - "&e➼ Enter region to discover"
+  rewards:
+    per_discovery:
+      - "message: &f"
+      - "message: &8[&6&l!&8] &6&lDiscovery Made &8→ &f%name%"
+      - "message: &f"
+    all_discoveries: []
+
+
+
+discoveries:
+  crates:
+    name: "&a&lCrates"
+    description:
+      - "&6Region: &fCrates"
+    discovered_on:
+      type: WORLDGUARD_REGION
+      value:
+        region_name: cratesdiscovery
+  arena:
+    name: "&a&lArena"
+    description:
+      - "&6Region: &fArena"
+    discovered_on:
+      type: WORLDGUARD_REGION
+      value:
+        region_name: arenadiscovery
+  koth:
+    name: "&a&lKOTH"
+    description:
+      - "&6Region: &fKOTH"
+    discovered_on:
+      type: WORLDGUARD_REGION
+      value:
+        region_name: kothdiscovery
+  afk:
+    name: "&a&lAFK"
+    description:
+      - "&6Region: &fAFK"
+    discovered_on:
+      type: WORLDGUARD_REGION
+      value:
+        region_name: afk

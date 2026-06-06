@@ -1,0 +1,1335 @@
+menu_title: '&f七七七七七七七七≭'
+open_command: levels2
+size: 36
+update_interval: 1
+
+items:
+
+
+### [ LEVEL 13 ] ###
+
+  'level_13_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 13'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f1,010XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Craft'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &b&l+2 &fRare Keys'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '13'
+
+
+  'level_13':
+    material: PAPER
+    model_data: 5302
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 13'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,010XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1010*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Craft'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &b&l+2 &fRare Keys'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '1010'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 13"
+      - "[console] excellentcrates:crate key give %player_name% rare 2"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 13!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '12'
+
+
+  'level_13_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 13'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,010XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1010*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Craft'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &b&l+2 &fRare Keys'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+### [ LEVEL 14 ] ###
+
+  'level_14_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 14'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f1,220XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &fFormatted Signs'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &2&l+$&f32,000'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '14'
+
+
+  'level_14':
+    material: PAPER
+    model_data: 5302
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 14'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,220XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1220*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &fFormatted Signs'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &2&l+$&f32,000'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '1220'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 14"
+      - "[console] eco give %player_name% 32000"
+      - "[console] crazyvouchers:voucher give Random_Toolskin 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% common 3"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 14!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '13'
+
+
+  'level_14_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 14'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,220XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1220*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &fFormatted Signs'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &2&l+$&f32,000'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+### [ LEVEL 15 ] ###
+
+  'level_15_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 15'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f1,460XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &e&l+75 &fCoins'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '15'
+
+
+  'level_15':
+    material: PAPER
+    model_data: 5302
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 14'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,460XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1460*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &e&l+75 &fCoins'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '1460'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 15"
+      - "[console] coins give %player_name% 75"
+      - "[message] &8[&e&l!&8] &e&lCoins &8→ &aYou have received &f75 &acoins!"
+      - "[console] excellentcrates:crate key give %player_name% superior 1"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 15!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '14'
+
+
+  'level_15_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 15'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,460XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1460*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &6&l+1 &fHome'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &e&l+75 &fCoins'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+### [ LEVEL 16 ] ###
+
+  'level_16_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 16'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f1,730XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Enderchest'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &b&l+2 &fRare Keys'
+      - ' &8▪ &2&l+$&f40,000'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '16'
+
+
+  'level_16':
+    material: PAPER
+    model_data: 5302
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 16'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,730XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1730*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Enderchest'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &b&l+2 &fRare Keys'
+      - ' &8▪ &2&l+$&f40,000'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '1730'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 16"
+      - "[console] eco give %player_name% 40000"
+      - "[console] crazyvouchers:voucher give Random_Toolskin 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% rare 2"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 16!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '15'
+
+
+  'level_16_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 16'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/1,730XP &a(%math_0_{coinsengine_balance_raw_levelxp}/1730*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Enderchest'
+      - ' &8▪ &b&l+1 &fRandom Toolskins'
+      - ' &8▪ &b&l+2 &fRare Keys'
+      - ' &8▪ &2&l+$&f40,000'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+
+### [ LEVEL 17 ] ###
+
+  'level_17_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 13
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 17'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f2,060XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Ptime'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+1 &fEpic Keys'
+      - ' &8▪ &6&l+10 &fResearch Points'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '17'
+
+
+  'level_17':
+    material: PAPER
+    model_data: 5302
+    slot: 13
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 17'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/2,060XP &a(%math_0_{coinsengine_balance_raw_levelxp}/2060*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Ptime'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+1 &fEpic Keys'
+      - ' &8▪ &6&l+10 &fResearch Points'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '2060'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 17"
+      - "[console] factoriesresearch give %player_name% 10"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have received &f10 &aresearch points!"
+      - "[console] excellentcrates:crate key give %player_name% epic 1"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 17!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '16'
+
+
+  'level_17_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 13
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 17'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/2,060XP &a(%math_0_{coinsengine_balance_raw_levelxp}/2060*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Ptime'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+1 &fEpic Keys'
+      - ' &8▪ &6&l+10 &fResearch Points'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+### [ LEVEL 18 ] ###
+
+  'level_18_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 14
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 18'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f2,450XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Heal'
+      - ' &8▪ &6&l+1 &fRandom Toolskins'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &e&l+100 &fCoins'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '18'
+
+
+  'level_18':
+    material: PAPER
+    model_data: 5302
+    slot: 14
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 18'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/2,450XP &a(%math_0_{coinsengine_balance_raw_levelxp}/2450*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Heal'
+      - ' &8▪ &6&l+1 &fRandom Toolskins'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &e&l+100 &fCoins'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '2450'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 18"
+      - "[console] coins give %player_name% 100"
+      - "[message] &8[&e&l!&8] &e&lCoins &8→ &aYou have received &f100 &acoins!"
+      - "[console] crazyvouchers:voucher give Random_Toolskin 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% common 3"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 18!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '17'
+
+
+  'level_18_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 14
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 18'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/2,450XP &a(%math_0_{coinsengine_balance_raw_levelxp}/2450*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Heal'
+      - ' &8▪ &6&l+1 &fRandom Toolskin'
+      - ' &8▪ &a&l+3 &fCommon Keys'
+      - ' &8▪ &e&l+100 &fCoins'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+### [ LEVEL 19 ] ###
+
+  'level_19_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 15
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 19'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f3,000XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &2&l+$&f50,000'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '19'
+
+
+  'level_19':
+    material: PAPER
+    model_data: 5302
+    slot: 15
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 19'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/3,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/3000*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &2&l+$&f50,000'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '3000'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 19"
+      - "[console] eco give %player_name% 50000"
+      - "[console] excellentcrates:crate key give %player_name% superior 1"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 19!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '18'
+
+
+  'level_19_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 15
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 19'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/3,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/3000*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &e&l+1 &fSuperior Key'
+      - ' &8▪ &2&l+$&f50,000'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+### [ LEVEL 20 ] ###
+
+  'level_20_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 20'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f3,800XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+12 &fResearch Points'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '20'
+
+
+  'level_20':
+    material: PAPER
+    model_data: 5302
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 20'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/3,800XP &a(%math_0_{coinsengine_balance_raw_levelxp}/3800*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+12 &fResearch Points'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '3800'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 20"
+      - "[console] factoriesresearch give %player_name% 12"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have received &f12 &aresearch points!"
+      - "[console] crazyvouchers:voucher give Random_Toolskin 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% rare 3"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 20!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '19'
+
+
+  'level_20_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 20'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/3,800XP &a(%math_0_{coinsengine_balance_raw_levelxp}/3800*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+12 &fResearch Points'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+### [ LEVEL 21 ] ###
+
+  'level_21_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 21'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f5,000XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Invsee'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+120 &fCoins'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '21'
+
+
+  'level_21':
+    material: PAPER
+    model_data: 5302
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 21'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/5,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/5000*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Invsee'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+120 &fCoins'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '5000'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 21"
+      - "[console] coins give %player_name% 120"
+      - "[message] &8[&e&l!&8] &e&lCoins &8→ &aYou have received &f120 &acoins!"
+      - "[console] excellentcrates:crate key give %player_name% epic 2"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 21!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '20'
+
+
+  'level_21_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 22
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 21'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/5,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/5000*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Invsee'
+      - ' &8▪ &6&l+2 &fHomes'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+120 &fCoins'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+
+### [ LEVEL 22 ] ###
+
+  'level_22_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 22'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f6,500XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &f/Fly'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+15 &fResearch Points'
+      - ' &8▪ &2&l+$&f75,000'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '22'
+
+
+  'level_22':
+    material: PAPER
+    model_data: 5302
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 22'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/6,500XP &a(%math_0_{coinsengine_balance_raw_levelxp}/6500*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &f/Fly'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+15 &fResearch Points'
+      - ' &8▪ &2&l+$&f75,000'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '6500'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 22"
+      - "[console] eco give %player_name% 75000"
+      - "[console] factoriesresearch give %player_name% 15"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have received &f15 &aresearch points!"
+      - "[console] excellentcrates:crate key give %player_name% rare 3"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 22!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '21'
+
+
+  'level_22_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 22'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/6,500XP &a(%math_0_{coinsengine_balance_raw_levelxp}/6500*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &f/Fly'
+      - ' &8▪ &b&l+3 &fRare Keys'
+      - ' &8▪ &6&l+15 &fResearch Points'
+      - ' &8▪ &2&l+$&f75,000'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+### [ LEVEL 23 ] ###
+
+  'level_23_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 24
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 23'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f8,200XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &3&l+🔓 &fUnlimited Homes'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+150 &fCoins'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '23'
+
+
+  'level_23':
+    material: PAPER
+    model_data: 5302
+    slot: 24
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 23'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/8,200XP &a(%math_0_{coinsengine_balance_raw_levelxp}/8200*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &3&l+🔓 &fUnlimited Homes'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+150 &fCoins'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '8200'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 23"
+      - "[console] coins give %player_name% 150"
+      - "[message] &8[&e&l!&8] &e&lCoins &8→ &aYou have received &f150 &acoins!"
+      - "[console] crazyvouchers:voucher give Random_Toolskin 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% epic 2"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 23!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '22'
+
+
+  'level_23_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 24
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 23'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/8,200XP &a(%math_0_{coinsengine_balance_raw_levelxp}/8200*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &3&l+🔓 &fUnlimited Homes'
+      - ' &8▪ &b&l+1 &fRandom Toolskin'
+      - ' &8▪ &d&l+2 &fEpic Keys'
+      - ' &8▪ &e&l+150 &fCoins'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+
+### [ LEVEL 24 ] ###
+
+  'level_24_unlocked':
+    material: PAPER
+    model_data: 5301
+    slot: 25
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&a&lLevel 24'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f10,000XP &a(100%)'
+      - ''
+      - '&aRewards:'
+      - ' &8▪ &6&l[&e&l+&6&l] &fRank King'
+      - ' &8▪ &e&l+2 &fSuperior Keys'
+      - ' &8▪ &e&l+250 &fCoins'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '24'
+
+
+  'level_24':
+    material: PAPER
+    model_data: 5302
+    slot: 25
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lLevel 24'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/10,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/10000*100%%)'
+      - ''
+      - '&eRewards:'
+      - ' &8▪ &6&l[&e&l+&6&l] &fRank King'
+      - ' &8▪ &e&l+2 &fSuperior Keys'
+      - ' &8▪ &e&l+250 &fCoins'
+      - ''
+      - '&eLeft-Click to redeem'
+    priority: 2
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%coinsengine_balance_raw_levelxp%'
+          output: '10000'
+          deny_commands:
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+            - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+    click_commands:
+      - "[console] lp user %player_name% parent settrack level 24"
+      - "[console] coins give %player_name% 250"
+      - "[message] &8[&e&l!&8] &e&lCoins &8→ &aYou have received &f250 &acoins!"
+      - "[console] crazyvouchers:voucher give King_Rank 1 %player_name%"
+      - "[console] excellentcrates:crate key give %player_name% superior 2"
+      - "[broadcast] &f"
+      - "[broadcast] &8[&a&l!&8] &#BAFF77%player_name% is now Level 24!"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%luckperms_current_group_on_track_level%'
+          output: '23'
+
+
+  'level_24_locked':
+    material: PAPER
+    model_data: 5303
+    slot: 25
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lLevel 24'
+    lore:
+      - ''
+      - '&#B7FB76XP Required: &f%coinsengine_balance_clean_levelxp%/10,000XP &a(%math_0_{coinsengine_balance_raw_levelxp}/10000*100%%)'
+      - ''
+      - '&cRewards:'
+      - ' &8▪ &6&l[&e&l+&6&l] &fRank King'
+      - ' &8▪ &e&l+2 &fSuperior Keys'
+      - ' &8▪ &e&l+250 &fCoins'
+    priority: 3
+    click_commands:
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You do not have enough Level XP!"
+      - "[message] &8[&c&l!&8] &c&lLevels &8→ &7You only have &f%coinsengine_balance_clean_levelxp%XP&7."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'previous_page':
+    material: PAPER
+    model_data: 110007
+    slot: 12
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] levels_1"
+
+
+  'playerstats':
+    material: head-%player_name%
+    model_data: 1
+    slot: 10
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&c&lLevels'
+    lore:
+      - ''
+      - '&7Levels is a way for you to obtain'
+      - '&7special perks and rewards just by'
+      - '&7playing on the server! Gather XP'
+      - '&7the increase your level.'
+      - ''
+      - '&cYour Stats:'
+      - ' &8▪ &fLevel: &a%luckperms_current_group_on_track_level%'
+      - ' &8▪ &fXP: &#B7FB76%coinsengine_balance_clean_levelxp%XP'
+      - ''
+      - '&cXP Sources:'
+      - ' &8▪ &7Playtime: &f5 Minutes &8→ &f1XP'
+      - ' &8▪ &7Voting: &f1 Vote &8→ &f10XP'
+      - ' &8▪ &7DailyQuests: &f1 Vote &8→ &f5XP'
+

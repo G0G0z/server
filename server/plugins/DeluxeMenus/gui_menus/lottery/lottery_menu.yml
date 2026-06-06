@@ -1,0 +1,88 @@
+menu_title: '&f七七七七七七七七♮'
+open_command: lottery
+size: 36
+update_interval: 1
+
+items:
+
+
+  'lottery_info':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 1
+      - 2
+      - 3
+      - 10
+      - 11
+      - 12
+      - 19
+      - 20
+      - 21
+      - 28
+      - 29
+      - 30
+    update: true
+    display_name: '&b&lʟᴏᴛᴛᴇʀʏ ɪɴғᴏ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7View all the stats about the'
+      - '&7currently ongoing lottery.'
+      - ''
+      - '&bStats:'
+      - ' &8&l∙ &7Your Tickets: &f%lottery_ptickets%'
+      - ' &8&l∙ &7Total Tickets: &f%lottery_gtickets%'
+      - ' &8&l∙ &7Money in Pot: &f$%lottery_pot%'
+      - ' &8&l∙ &7Last Winner: &f%lottery_winner%'
+
+
+  'draw_time':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+      - 14
+      - 15
+      - 16
+      - 17
+    update: true
+    display_name: '&#5E65B5&lᴅʀᴀᴡ ᴛɪᴍᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7The lottery winners will be found'
+      - '&7once the draw time is reached.'
+      - ''
+      - '&#5E65B5Drawing in: &f%lottery_drawtime%'
+
+
+  'buy_tickets':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 23
+      - 24
+      - 25
+      - 26
+      - 32
+      - 33
+      - 34
+      - 35
+    update: true
+    display_name: '&6&lʙᴜʏ ᴛɪᴄᴋᴇᴛs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Participate in the lottery'
+      - '&7by purchasing tickets!'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] lottery_buy"

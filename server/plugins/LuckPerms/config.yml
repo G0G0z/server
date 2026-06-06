@@ -1,0 +1,102 @@
+# 
+# +----------------------------------------------------------------------------------------------+ #
+# |                                   __         __   ___  __         __                         | #
+# |                        |    |  | /  ` |__/  |__) |__  |__)  |\/| /__`                        | #
+# |                        |___ \__/ \__, |  \  |    |___ |  \  |  | .__/                        | #
+# |                                                                                              | #
+# |                                     https://luckperms.net                                    | #
+# |                                                                                              | #
+# |  SOURCE CODE: https://github.com/lucko/LuckPerms                                             | #
+# |  WIKI:        https://github.com/lucko/LuckPerms/wiki                                        | #
+# |  BUG REPORTS: https://github.com/lucko/LuckPerms/issues                                      | #
+# |                                                                                              | #
+# |  Each option in this file is documented and explained here:                                  | #
+# |   ==>  https://github.com/lucko/LuckPerms/wiki/Configuration                                 | #
+# |                                                                                              | #
+# |  New options are not added to this file automatically. Default values are used if an         | #
+# |  option cannot be found. The latest config versions can be obtained at the link above.       | #
+# +----------------------------------------------------------------------------------------------+ #
+server: global
+use-server-uuid-cache: false
+storage-method: h2
+data:
+  address: localhost
+  database: minecraft
+  username: root
+  password: ''
+  pool-settings:
+    maximum-pool-size: 10
+    minimum-idle: 10
+    maximum-lifetime: 1800000
+    connection-timeout: 5000
+    properties:
+      useUnicode: true
+      characterEncoding: utf8
+  table_prefix: luckperms_
+  mongodb_collection_prefix: ''
+  mongodb_connection_URI: ''
+split-storage:
+  enabled: false
+  methods:
+    user: h2
+    group: h2
+    track: h2
+    uuid: h2
+    log: h2
+sync-minutes: -1
+watch-files: true
+messaging-service: auto
+auto-push-updates: true
+push-log-entries: false
+broadcast-received-log-entries: false
+redis:
+  enabled: false
+  address: localhost
+  password: ''
+temporary-add-behaviour: deny
+primary-group-calculation: parents-by-weight
+argument-based-command-permissions: false
+require-sender-group-membership-to-modify: false
+log-notify: false
+meta-formatting:
+  prefix:
+    format:
+    - highest_on_track_level
+    - highest_on_track_rank
+    duplicates: first-only
+    start-spacer: ''
+    middle-spacer: ''
+    end-spacer: ''
+  suffix:
+    format:
+    - highest
+    duplicates: first-only
+    start-spacer: ''
+    middle-spacer: ' '
+    end-spacer: ''
+inheritance-traversal-algorithm: depth-first-pre-order
+post-traversal-inheritance-sort: false
+include-global: true
+include-global-world: true
+apply-global-groups: true
+apply-global-world-groups: true
+apply-wildcards: true
+apply-regex: true
+apply-shorthand: true
+apply-bukkit-child-permissions: true
+apply-bukkit-default-permissions: true
+apply-bukkit-attachment-permissions: true
+enable-ops: true
+auto-op: false
+commands-allow-op: true
+vault-unsafe-lookups: true
+vault-npc-group: default
+vault-npc-op-status: false
+use-vault-server: false
+vault-server: global
+vault-include-global: true
+vault-ignore-world: false
+debug-logins: false
+allow-invalid-usernames: true
+prevent-primary-group-removal: false
+resolve-command-selectors: false

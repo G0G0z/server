@@ -1,0 +1,8 @@
+Name: <bold><gold>Vote Key
+Virtual: false
+ItemData:
+  Provider: vanilla
+  Data:
+    Value: '{components:{"minecraft:custom_model_data":{floats:[3001.0f]},"minecraft:custom_name":{extra:[{bold:1b,color:"gold",italic:0b,text:"Vote Key"}],text:""},"minecraft:damage":0,"minecraft:lore":["",{extra:[{color:"gray",italic:0b,text:"Purchase more crate keys"}],text:""},{extra:[{color:"gray",italic:0b,text:"with "},{color:"gold",italic:0b,text:"/coinshop"}],text:""},"",{extra:[{color:"yellow",italic:0b,text:"➥ Use at Warp Crates!"}],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:enchantments"]}},count:1,id:"minecraft:paper"}'
+    DataVersion: 4671
+ItemStackable: true

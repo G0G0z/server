@@ -1,0 +1,183 @@
+# French Language Translation for CombatLogX
+# Created by Kyufrr on GitHub for v10.4.2.4
+# Updated to v11.0.0.0 by SirBlobman
+language-name: fr_fr
+decimal-format: '0.00'
+
+prefix: <bold><white>[</white></bold><gold>CombatLogX</gold><bold><white>]
+
+broadcast:
+  on-load: <bold><green>CombatLogX chargé avec succès.
+  on-enable: <bold><green>CombatLogX est maintenant activé.
+  on-disable: <bold><white>CombatLogX est maintenant désactivé.
+
+placeholder:
+  time-left-zero: '0'
+  unknown-enemy: Inconnu
+  status:
+    fighting: <white>Combattre
+    idle: <green>Idle
+    in-combat: <green>Oui
+    not-in-combat: <white>Non
+  toggle:
+    enabled: <green>ON
+    disabled: <white>OFF
+  pvp-status:
+    enabled: <green>ON
+    disabled: <white>OFF
+
+combat-timer:
+  expire: <green>Vous n'êtes plus en combat.
+  enemy-death: <green>Votre ennemi est mort.
+
+error:
+  player-only: <italic><white>Vous n'êtes pas un joueur.
+  invalid-target: <italic><white>Impossible de trouver la cible </white></italic><green>{target}</green><italic><white>.
+  no-permission: '<italic><white>Vous n''avez pas la permission : </white></italic><green>{permission}</green><white>.'
+  target-not-in-combat: <green>{target}</green><italic><white> n'est pas en combat.
+  self-not-in-combat: <italic><white>Vous n'êtes pas en combat.
+
+command:
+  combatlogx:
+    help-message-list:
+    - <white>
+    - '<bold><gold>CombatLogX Commandes Help:'
+    - '  <bold><white>/combatlogx help</white></bold><gray>: Voir cette page d''aide.'
+    - '  <bold><white>/combatlogx reload</white></bold><gray>: Rechargez le fichier
+      config.yml, language.yml et tous les fichiers de configuration de l''expansion.'
+    - '  <bold><white>/combatlogx version</white></bold><gray>: Vérifiez votre version
+      de Combatlogx.'
+    - '  <bold><white>/combatlogx tag \<player></white></bold><gray>: Forcer un joueur
+      a être en combat.'
+    - '  <bold><white>/combatlogx untag \<player></white></bold><gray>: Forcer un
+      joueur à être hors du combat.'
+    - <white>
+    
+    reload-success:
+    - <green>Rechargé avec succès tous les fichiers de configuration de Combatlogx
+      et des expansions.
+    
+    tag-player: <green>Vous venez de forcer </green><white>{target}</white><green>
+      d'être en combat. Cela peut causer des problèmes.
+    tag-failure: <italic><white>Impossible de taguer le joueur </white></italic><green>{target}</green><italic><white>.
+    untag-player: <green>Vous venez de forcer </green><white>{target}</white><green>
+      d'être hors de combat. Cela peut causer des problèmes.
+  
+  combat-timer:
+    time-left-self: <green>Vous avez </green><white>{time} secondes</white><green>
+      restant.
+    time-left-other: <white>{target} </white><green>a </green><white>{time} seconds</white><green>
+      restant.
+
+tagged:
+  unknown:
+    unknown: <white>Vous êtes maintenant au combat. Ne vous déconnectez pas!
+  attacked:
+    player: <white>Vous êtes attaqué par </white><white>{name}</white><white>. Ne
+      vous déconnectez pas!
+    mob: <white>Vous êtes attaqué par un(e) </white><white>{mob_type}</white><white>.
+      Ne vous déconnectez pas!
+  attacker:
+    player: <white>Vous attaquez </white><white>{name}</white><white>. Ne vous déconnectez
+      pas!
+    mob: <white>Vous attaquez un(e) </white><white>{mob_type}</white><white>. Ne vous
+      déconnectez pas!
+
+# Messages after this point are only for Expansions
+
+expansion:
+  cheat-prevention:
+    command-blocked: '<white>Vous n''avez pas accès à la commande : </white><green>{command}</green><white>
+      pendant le combat.'
+    no-riptide: <white>L'enchantement de la riptide est désactivé pendant le combat.
+    no-totem: <white>Vous n'êtes pas autorisé à utiliser des totems d'immortalité
+      pendant le combat.
+    no-entity-interaction: <white>Vous n'êtes pas autorisé à utiliser ce mob pendant
+      le combat.
+    no-chat: <white>Vous n'êtes pas autorisé à envoyer des messages de discussion
+      Pendent Le Combat.
+    
+    game-mode:
+      force-switch: <white>Votre mode de jeu a été changé en </white><white>{game_mode}</white><white>.
+      no-switch: <white>Vous n'êtes pas autorisé à changer de jeu de jeux pendant
+        le combat.
+    
+    flight:
+      force-disabled: <white>Votre capacité à voler a été supprimée.
+      no-flying: <white>Vous n'êtes pas autorisé à voler pendant le combat.
+    
+    elytra:
+      force-disabled: <white>Vos Elytra a été désactivée.
+      no-gliding: <white>Vous n'êtes pas autorisé à utiliser vos Elytra pendant le
+        combat.
+    
+    teleportation:
+      block-pearl: <white>Vous n'êtes pas autorisé à utiliser vos enders pearls pendant
+        le combat.
+      block-other: <white>Vous n'êtes pas autorisé à vous téléporter pendant le combat.
+    
+    inventory:
+      force-closed: <white>Votre inventaire a été fermé.
+      no-opening: <white>Vous n'êtes pas autorisé à ouvrir votre inventaire pendant
+        le combat.
+    
+    blocks:
+      prevent-breaking: <white>Vous n'êtes pas autorisé à casser des blocs pendant
+        le combat.
+      prevent-placing: <white>Vous n'êtes pas autorisé à placer des blocs pendant
+        le combat.
+      prevent-interaction: <white>Vous n'êtes pas autorisé à utiliser des blocs pendant
+        le combat.
+    
+    items:
+      no-pickup: <white>Vous n'êtes pas autorisé à récupérer des objets pendant le
+        combat.
+      no-dropping: <white>Vous n'êtes pas autorisé à laisser tomber des objets pendant
+        le combat.
+  
+  damage-tagger:
+    unknown-damage: <white>Vous avez pris des dégâts !Ne vous déconnectez pas !
+    damage-type:
+      contact: <white>Vous avez été piqué par un cactus. Ne vous déconnectez pas!
+      suffocation: <white>Vous avez suffoqué dans un mur. Ne vous déconnectez pas!
+      fall: <white>Vous avez pris des dégâts de chute. Ne vous déconnectez pas!
+      fire: <white>Vous êtes entré dans le feu. Ne vous déconnectez pas!
+      fire-tick: <white>Vous brûlez. Ne vous déconnectez pas!
+      lava: <white>Vous faites bouillir en lave. Ne vous déconnectez pas!
+      drowning: <white>Vous vous noyez. Ne vous déconnectez pas!
+      block-explosion: <white>Vous avez reçu des dégats par une explosion. Ne vous
+        déconnectez pas!
+      lightning: <white>Tu as été frappé! Ne vous déconnectez pas!
+      starvation: <white>Tu as trop faim. Ne vous déconnectez pas!
+      poison: <white>Vous avez pris des dégâts de poisons. Ne vous déconnectez pas!
+      magic: <white>Quelqu'un a jeté une potion sur vous. Ne vous déconnectez pas!
+      wither: <white>Vous avez reçu des dégats de withers. Ne vous déconnectez pas!
+      falling-block: <white>Un bloc est tombé sur vous. Ne vous déconnectez pas!
+      custom: <white>Vous avez pris des dommages personnalisés. Ne vous déconnectez
+        pas!
+      fly-into-wall: <white>Vous avez eu une énergie cinétique. Ne vous déconnectez
+        pas!
+      hot-floor: <white>Le sol est la lave ! Ne vous déconnectez pas!
+      cramming: <white>Vous êtes schémé. Ne vous déconnectez pas!
+  
+  newbie-helper:
+    togglepvp:
+      self: '<bold><gray>PvP: </gray></bold><green>{status}'
+      admin: <gray>Vous définissez le PVP de </gray><yellow>{target}</yellow><gray>
+        en </gray><green>{status}
+    no-pvp:
+      self: <white>Vous n'êtes pas autorisé à frapper ce joueur pendant que votre
+        PvP est désactivé.
+      other: <white>Ce joueur a le PVP désactivé.
+      protected: <white>Ce joueur est protégé, vous n'êtes pas autorisé à l'attaquer!
+    protection-disabled:
+      attacker: <white>Vous avez attaqué quelqu'un, votre protection Newbie est maintenant
+        désactivée.
+      expired: <white>Votre protection Newbie a expiré.
+  
+  region-protection:
+    worldguard:
+      no-entry-player-combat: <white>Vous n'êtes pas autorisé à entrer dans une zone
+        de combat sans joueur pendant le combat.
+      no-entry-mob-combat: <white>Vous n'êtes pas autorisé à entrer dans une zone
+        de combat sans mob pendant le combat.

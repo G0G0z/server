@@ -1,0 +1,732 @@
+menu_title: '&f七七七七七七七七ま'
+open_command: factoriesall1
+size: 45
+update_interval: 1
+
+items:
+
+
+  'factory_wood':
+    material: OAK_LOG
+    slot: 11
+    update: true
+    display_name: '&6&lᴡᴏᴏᴅ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7The oak log factory is unlocked'
+      - '&7by default. Use the factory'
+      - '&7to produce oak logs easily.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fSaplings'
+      - ' &8&l∙ &fBone Meal'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_wood"
+
+
+
+
+
+  'factory_charcoal_unlocked':
+    material: CHARCOAL
+    slot: 12
+    update: true
+    display_name: '&6&lᴄʜᴀʀᴄᴏᴀʟ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the charcoal'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fLogs'
+      - ' &8&l∙ &fLeaves'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_charcoal"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.charcoal.1
+    priority: 1
+
+  'factory_charcoal_locked':
+    material: PAPER
+    model_data: 8004
+    slot: 12
+    update: true
+    display_name: '&6&lᴄʜᴀʀᴄᴏᴀʟ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the charcoal factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fLogs'
+      - ' &8&l∙ &fLeaves'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Purchase Factory: &f$&720.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 20000"
+      - "[console] lp user %player_name% permission set factory.purchased.charcoal.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 20000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_wheat_unlocked':
+    material: WHEAT
+    slot: 13
+    update: true
+    display_name: '&6&lᴡʜᴇᴀᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the wheat'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fWheat Seeds'
+      - ' &8&l∙ &fWater Buckets'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_wheat"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.wheat.1
+    priority: 1
+
+  'factory_wheat_locked':
+    material: PAPER
+    model_data: 8001
+    slot: 13
+    update: true
+    display_name: '&6&lᴡʜᴇᴀᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the wheat factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fWheat Seeds'
+      - ' &8&l∙ &fWater Buckets'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Purchase Factory: &f$&750.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 50000"
+      - "[console] lp user %player_name% permission set factory.purchased.wheat.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 50000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_book_unlocked':
+    material: BOOK
+    slot: 14
+    update: true
+    display_name: '&6&lʙᴏᴏᴋ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the book'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fPaper'
+      - ' &8&l∙ &fLogs'
+      - ' &8&l∙ &fLeather'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_book"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.book.1
+    priority: 1
+
+  'factory_book_locked':
+    material: PAPER
+    model_data: 8002
+    slot: 14
+    update: true
+    display_name: '&6&lʙᴏᴏᴋ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the book factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fPaper'
+      - ' &8&l∙ &fLogs'
+      - ' &8&l∙ &fLeather'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Purchase Factory: &f$&775.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 75000"
+      - "[console] lp user %player_name% permission set factory.purchased.book.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 75000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_oil_unlocked':
+    material: PAPER
+    model_data: 11067
+    slot: 15
+    update: true
+    display_name: '&6&lᴏɪʟ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the oil'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fDried Kelp'
+      - ' &8&l∙ &fBuckets'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Fuel Level: &8Coal &7(1)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_oil"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.oil.1
+    priority: 1
+
+  'factory_oil_locked':
+    material: PAPER
+    model_data: 8015
+    slot: 15
+    update: true
+    display_name: '&6&lᴏɪʟ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the oil factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fDried Kelp'
+      - ' &8&l∙ &fBuckets'
+      - ' &8&l∙ &fCoal'
+      - ''
+      - '&6Required Research: &fOil'
+      - ''
+      - '&6Purchase Factory: &f$&7100.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 100000"
+      - "[console] lp user %player_name% permission set factory.purchased.oil.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      minimum_requirements: 3
+      requirements:
+        permission:
+          type: has money
+          amount: 100000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+        researchunlocked1:
+          type: "has permission"
+          permission: factory.research.completed.oil
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+        researchunlocked2:
+          type: "!has permission"
+          permission: factory.research.ongoing.oil
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+    priority: 2
+
+
+
+
+
+  'factory_ironingot_unlocked':
+    material: IRON_INGOT
+    slot: 20
+    update: true
+    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the iron ingot'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fRaw Iron'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_ironingot"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.ironingot.1
+    priority: 1
+
+  'factory_ironingot_locked':
+    material: PAPER
+    model_data: 8011
+    slot: 20
+    update: true
+    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the iron ingot factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fRaw Iron'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Required Research: &fIron Ingot'
+      - ''
+      - '&6Purchase Factory: &f$&7150.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 150000"
+      - "[console] lp user %player_name% permission set factory.purchased.ironingot.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      minimum_requirements: 3
+      requirements:
+        permission:
+          type: has money
+          amount: 150000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+        researchunlocked1:
+          type: "has permission"
+          permission: factory.research.completed.ironingot
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+        researchunlocked2:
+          type: "!has permission"
+          permission: factory.research.ongoing.ironingot
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+    priority: 2
+
+
+
+
+
+
+  'factory_arrow_unlocked':
+    material: ARROW
+    slot: 21
+    update: true
+    display_name: '&6&lᴀʀʀᴏᴡ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the arrow'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fFlint'
+      - ' &8&l∙ &fOak Log'
+      - ' &8&l∙ &fFeather'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_arrow"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.arrow.1
+    priority: 1
+
+  'factory_arrow_locked':
+    material: PAPER
+    model_data: 8019
+    slot: 21
+    update: true
+    display_name: '&6&lᴀʀʀᴏᴡ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the arrow factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fFlint'
+      - ' &8&l∙ &fOak Log'
+      - ' &8&l∙ &fFeather'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Purchase Factory: &f$&7250.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 250000"
+      - "[console] lp user %player_name% permission set factory.purchased.arrow.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 250000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_copperingot_unlocked':
+    material: COPPER_INGOT
+    slot: 22
+    update: true
+    display_name: '&6&lᴄᴏᴘᴘᴇʀ ɪɴɢᴏᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the copper ingot'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fRaw Copper'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_copperingot"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.copperingot.1
+    priority: 1
+
+  'factory_copperingot_locked':
+    material: PAPER
+    model_data: 8005
+    slot: 22
+    update: true
+    display_name: '&6&lᴄᴏᴘᴘᴇʀ ɪɴɢᴏᴛ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the copper ingot factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fRaw Copper'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Purchase Factory: &f$&7350.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 350000"
+      - "[console] lp user %player_name% permission set factory.purchased.copperingot.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 350000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_itemframe_unlocked':
+    material: ITEM_FRAME
+    slot: 23
+    update: true
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the item frame'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fOak Log'
+      - ' &8&l∙ &fLeather'
+      - ' &8&l∙ &fSlime'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_itemframe"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.itemframe.1
+    priority: 1
+
+  'factory_itemframe_locked':
+    material: PAPER
+    model_data: 8012
+    slot: 23
+    update: true
+    display_name: '&6&lɪᴛᴇᴍ ғʀᴀᴍᴇ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the item frame factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fOak Log'
+      - ' &8&l∙ &fLeather'
+      - ' &8&l∙ &fSlime'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Purchase Factory: &f$&7500.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 500000"
+      - "[console] lp user %player_name% permission set factory.purchased.itemframe.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      requirements:
+        permission:
+          type: has money
+          amount: 500000
+      deny_commands:
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+    priority: 2
+
+
+
+
+
+  'factory_gasoline_unlocked':
+    material: PAPER
+    model_data: 11068
+    slot: 24
+    update: true
+    display_name: '&6&lɢᴀsᴏʟɪɴᴇ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7You have purchased the gasoline'
+      - '&7factory, and can start producing.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fBlaze Powder'
+      - ' &8&l∙ &fRed Dye'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Fuel Level: &eOil &7(2)'
+      - ''
+      - '&e➥ Left-Click to open'
+    click_commands:
+      - "[openguimenu] factories_gasoline"
+    view_requirement:
+      requirements:
+        permission:
+          type: "has permission"
+          permission: factory.purchased.gasoline.1
+    priority: 1
+
+  'factory_gasoline_locked':
+    material: PAPER
+    model_data: 8008
+    slot: 24
+    update: true
+    display_name: '&6&lɢᴀsᴏʟɪɴᴇ ғᴀᴄᴛᴏʀʏ'
+    lore:
+      - ''
+      - '&7Purchase the gasoline factory to'
+      - '&7produce it in your factory.'
+      - ''
+      - '&6Required Resources:'
+      - ' &8&l∙ &fBlaze Powder'
+      - ' &8&l∙ &fRed Dye'
+      - ' &8&l∙ &fOil'
+      - ''
+      - '&6Required Research: &fGasoline'
+      - ''
+      - '&6Purchase Factory: &f$&7650.000'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] eco take %player_name% 650000"
+      - "[console] lp user %player_name% permission set factory.purchased.gasoline.1"
+      - "[console] factoriesowned give %player_name% 1"
+      - "[refresh]"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory!"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+    click_requirement:
+      minimum_requirements: 3
+      requirements:
+        permission:
+          type: has money
+          amount: 650000
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+        researchunlocked1:
+          type: "has permission"
+          permission: factory.research.completed.gasoline
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+        researchunlocked2:
+          type: "!has permission"
+          permission: factory.research.ongoing.gasoline
+          deny_commands:
+          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou have not unlocked this through research!"
+    priority: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'next_page':
+    material: PAPER
+    model_data: 110007
+    slot: 43
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - "[openguimenu] factories_all2"
+
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lʙᴀᴄᴋ'
+    click_commands:
+      - "[openguimenu] factories_menu_wood"

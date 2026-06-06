@@ -1,0 +1,1136 @@
+menu_title: '&f七七七七七七七七🌚'
+open_command: toolskinsbow
+size: 54
+update_interval: 1
+
+items:
+
+
+  'category_hoe_skins':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+    display_name: '&f&lʜᴏᴇ sᴋɪɴs'
+    left_click_commands:
+      - "[openguimenu] toolskins_hoe"
+
+  'category_bow_skins':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 19
+      - 20
+      - 21
+      - 22
+    display_name: '&f&lʙᴏᴡ sᴋɪɴs'
+    left_click_commands:
+      - "[openguimenu] toolskins_bow"
+
+  'category_crossbow_skins':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+      - 31
+    display_name: '&f&lᴄʀᴏssʙᴏᴡ sᴋɪɴs'
+    left_click_commands:
+      - "[openguimenu] toolskins_crossbow"
+
+  'category_fishingrod_skins':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 37
+      - 38
+      - 39
+      - 40
+    display_name: '&f&lғɪsʜɪɴɢ ʀᴏᴅ sᴋɪɴs'
+    left_click_commands:
+      - "[openguimenu] toolskins_fishingrod"
+
+  'previous_page':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 0
+      - 9
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] toolskins_sword"
+
+  'store':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 46
+      - 47
+      - 48
+    update: true
+    display_name: '&6&lsᴛᴏʀᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    left_click_commands:
+      - "[player] store"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'atlantis_skin_unlocked':
+    material: BOW
+    model_data: 50001
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Atlantis Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50001"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.Atlantis.bow
+    priority: 1
+
+  'atlantis_skin_locked':
+    material: BOW
+    model_data: 50001
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Atlantis Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'celestial_skin_unlocked':
+    material: BOW
+    model_data: 50002
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Celestial Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50002"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.celestial.bow
+    priority: 1
+
+  'celestial_skin_locked':
+    material: BOW
+    model_data: 50002
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Celestial Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'crimson_skin_unlocked':
+    material: BOW
+    model_data: 50003
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Crimson Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50003"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.crimson.bow
+    priority: 1
+
+  'crimson_skin_locked':
+    material: BOW
+    model_data: 50003
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Crimson Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'devil_skin_unlocked':
+    material: BOW
+    model_data: 50004
+    slot: 8
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Devil Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50004"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.devil.bow
+    priority: 1
+
+  'devil_skin_locked':
+    material: BOW
+    model_data: 50004
+    slot: 8
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Devil Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'emerald_skin_unlocked':
+    material: BOW
+    model_data: 50005
+    slot: 14
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Emerald Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50005"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.emerald.bow
+    priority: 1
+
+  'emerald_skin_locked':
+    material: BOW
+    model_data: 50005
+    slot: 14
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Emerald Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'halloween_skin_unlocked':
+    material: BOW
+    model_data: 50006
+    slot: 15
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Halloween Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50006"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.halloween.bow
+    priority: 1
+
+  'halloween_skin_locked':
+    material: BOW
+    model_data: 50006
+    slot: 15
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Halloween Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'heaven_skin_unlocked':
+    material: BOW
+    model_data: 50007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Heaven Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50007"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.heaven.bow
+    priority: 1
+
+  'heaven_skin_locked':
+    material: BOW
+    model_data: 50007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Heaven Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'monster_skin_unlocked':
+    material: BOW
+    model_data: 50008
+    slot: 17
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Monster Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50008"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.monster.bow
+    priority: 1
+
+  'monster_skin_locked':
+    material: BOW
+    model_data: 50008
+    slot: 17
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Monster Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'moon_skin_unlocked':
+    material: BOW
+    model_data: 50009
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Moon Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50009"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.moon.bow
+    priority: 1
+
+  'moon_skin_locked':
+    material: BOW
+    model_data: 50009
+    slot: 23
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Moon Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'mud_skin_unlocked':
+    material: BOW
+    model_data: 50010
+    slot: 24
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Mud Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50010"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.mud.bow
+    priority: 1
+
+  'mud_skin_locked':
+    material: BOW
+    model_data: 50010
+    slot: 24
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Mud Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'nether_skin_unlocked':
+    material: BOW
+    model_data: 50011
+    slot: 25
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Nether Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50011"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.nether.bow
+    priority: 1
+
+  'nether_skin_locked':
+    material: BOW
+    model_data: 50011
+    slot: 25
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Nether Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'panther_skin_unlocked':
+    material: BOW
+    model_data: 50012
+    slot: 26
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Panther Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50012"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.panther.bow
+    priority: 1
+
+  'panther_skin_locked':
+    material: BOW
+    model_data: 50012
+    slot: 26
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Panther Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'pegasus_skin_unlocked':
+    material: BOW
+    model_data: 50013
+    slot: 32
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Pegasus Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50013"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.pegasus.bow
+    priority: 1
+
+  'pegasus_skin_locked':
+    material: BOW
+    model_data: 50013
+    slot: 32
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Pegasus Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'radiant_skin_unlocked':
+    material: BOW
+    model_data: 50014
+    slot: 33
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Radiant Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50014"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.radiant.bow
+    priority: 1
+
+  'radiant_skin_locked':
+    material: BOW
+    model_data: 50014
+    slot: 33
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Radiant Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'thunder_skin_unlocked':
+    material: BOW
+    model_data: 50015
+    slot: 34
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Thunder Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50015"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.thunder.bow
+    priority: 1
+
+  'thunder_skin_locked':
+    material: BOW
+    model_data: 50015
+    slot: 34
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Thunder Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'twilight_skin_unlocked':
+    material: BOW
+    model_data: 50016
+    slot: 35
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Twilight Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50016"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.twilight.bow
+    priority: 1
+
+  'twilight_skin_locked':
+    material: BOW
+    model_data: 50016
+    slot: 35
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Twilight Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+  'warrior_skin_unlocked':
+    material: BOW
+    model_data: 50017
+    slot: 41
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchantments:
+      - mending;1
+    display_name: '&6Warrior Bow'
+    lore:
+      - '&8Toolskin Unlocked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[givepermission] toolskins.admin"
+      - "[player] toolskinbow 50017"
+      - "[takepermission] toolskins.admin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: toolskins.warrior.bow
+    priority: 1
+
+  'warrior_skin_locked':
+    material: BOW
+    model_data: 50017
+    slot: 41
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6Warrior Bow'
+    lore:
+      - '&8Toolskin Locked'
+      - ''
+      - '&7Equip this skin to your tool by'
+      - '&7holding the tool in your hand.'
+      - ''
+      - '&fApplicable Tools:'
+      - ' &8▪ &7Netherite'
+      - ' &8▪ &7Diamond'
+      - ''
+      - '&e➥ Left-Click to equip'
+    click_commands:
+      - "[message] &8[&b&l!&8] &b&lToolSkins &8→ &cYou do not own this skin!"
+    priority: 2
+
+
+
+
+
+
+
+

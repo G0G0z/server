@@ -1,0 +1,45 @@
+tasks:
+  crafting:
+    type: "crafting"
+    item: LADDER
+    amount: 25
+display:
+  name: "&fCrafting Quest &8▪ &7Ladder" 
+  lore-normal:
+    - ""
+    - "&7Complete the objectives in this"
+    - "&7quest to obtain the reward!"
+    - ""
+    - "&fOptions:"
+    - "&8&l∙ &7Objective: &fCraft 25 ladder."
+    - "&8&l∙ &7Progress: &f{crafting:progress}/25 ladder"
+    - ""
+    - "&fRewards: &a$250"
+    - ""
+  lore-started:
+    - "&#FFEC9BYou have started this quest."
+  type: "LADDER"
+# Here you can list messages which will be sent to the player (if they are online) upon the quest starting.
+startstring:
+  - "&7Upon completion of this quest, you will be rewarded with"
+  - " &8&l∙ &a$250"
+rewards:
+  - "eco give {player} 250"
+# Here you can list messages which will be sent to the player (if they are online) upon completion.
+rewardstring:
+  - " &8&l∙ &a$250 &7was added to your in-game balance."
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+
+
+
+options:
+  category: "crafting"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 82600
+  sort-order: 33

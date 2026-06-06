@@ -1,0 +1,18 @@
+location: spawn:22.500:103.6:-35.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&lCommon Crate'
+    height: 0.3
+  - content: '&fRarity: '
+    height: 0.5
+  - content: '&fLeft-Click to Preview'
+    height: 0.3
+  - content: '&a&nGet Keys From: /coinshop'
+    height: 0.3
+  actions: {}

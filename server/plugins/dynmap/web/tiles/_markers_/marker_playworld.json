@@ -1,0 +1,13 @@
+{"sets": {"worldborder.markerset": {"hide": false,"circles": {}
+,"areas": {}
+,"label": "WorldBorder","markers": {}
+,"lines": {}
+,"layerprio": 0}
+,"markers": {"hide": false,"circles": {}
+,"areas": {}
+,"label": "Markers","markers": {"_spawn_playworld": {"markup": false,"x": 128.00,"icon": "world","y": 64.00,"dim": "16x16","z": -94.00,"label": "Spawn"}
+}
+,"lines": {}
+,"layerprio": 0}
+}
+,"timestamp": 1705954970314}

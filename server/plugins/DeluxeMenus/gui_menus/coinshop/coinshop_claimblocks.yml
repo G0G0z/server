@@ -1,0 +1,150 @@
+menu_title: '&f七七七七七七七七ლ'
+open_command: coinshopclaimblocks
+size: 36
+update_interval: 1
+
+items:
+
+
+  'buy_claimblocks100':
+    material: GOLDEN_SHOVEL
+    amount: 1
+    slot: 0
+    update: true
+    display_name: '&f&l100x &a&lClaimblocks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f2 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] adjustbonusclaimblocks %player_name% 100"
+      - "[console] coins take %player_name% 2"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f2 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 2'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f2 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_claimblocks1000':
+    material: GOLDEN_SHOVEL
+    amount: 1
+    slot: 1
+    update: true
+    display_name: '&f&l1000x &a&lClaimblocks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f20 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] adjustbonusclaimblocks %player_name% 1000"
+      - "[console] coins take %player_name% 20"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f20 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 20'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f20 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_claimblocks10000':
+    material: GOLDEN_SHOVEL
+    amount: 1
+    slot: 2
+    update: true
+    display_name: '&f&l10000x &a&lClaimblocks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f200 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] adjustbonusclaimblocks %player_name% 10000"
+      - "[console] coins take %player_name% 200"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f200 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 200'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f200 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'coins':
+    material: PAPER
+    model_data: 110007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴄᴏɪɴs'
+    lore:
+      - '&8Information'
+      - ''
+      - '&7Coins is a premium currency'
+      - '&7on our server which can be'
+      - '&7bought in the server store!'
+      - ''
+      - '&6Your Coins: &f%coinsengine_balance_coins%'
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] coinshop_menu"
+

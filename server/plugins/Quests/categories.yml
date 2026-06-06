@@ -1,0 +1,281 @@
+# Categories are a way of grouping up quests.
+# When a player uses /quests, a menu of categories will be presented to them.
+# When a player clicks ona category, a list of quests under that category will show.
+# If categories are disabled, all quests will be shown under one big GUI.
+# Players can access specific categories by command using /quests c [category].
+# If a quest does not have a category, it will not be shown.
+categories:
+  mining:
+    display:
+      name: '&b&lMining Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to mining in which you"
+        - "&7have to break certain blocks."
+        - "&r"
+        - "&bOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:mining_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:mining_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:mining_started%"     
+        - ""
+        - "&bRewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"     
+      type: "GOLDEN_PICKAXE"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  farming:
+    display:
+      name: '&a&lFarming Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to farming in which you"
+        - "&7have to harvest certain items/blocks."
+        - ""
+        - "&aOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:farming_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:farming_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:farming_started%"  
+        - ""
+        - "&aRewards:"
+        - "&8&l∙ &7Reward type: &aMoney" 
+        - ""
+        - "&e➥ Left-Click to browse"  
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+  
+      type: "WHEAT"
+  building:
+    display:
+      name: '&2&lBuilding Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to building in which you"
+        - "&7have to place certain blocks."
+        - ""
+        - "&2Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:building_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:building_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:building_started%"       
+        - ""
+        - "&2Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"             
+      type: "BRICKS"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  lumberjack:
+    display:
+      name: '&6&lLumberjack Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to woodcutting in which you"
+        - "&7have to break wood blocks."
+        - ""
+        - "&6Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:lumberjack_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:lumberjack_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:lumberjack_started%"     
+        - ""
+        - "&6Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"         
+      type: "GOLDEN_AXE"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  hunter:
+    display:
+      name: '&c&lHunter Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to hunting in which you"
+        - "&7have to kill certain mobs."
+        - ""
+        - "&cOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:hunter_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:hunter_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:hunter_started%"       
+        - ""
+        - "&cRewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"         
+      type: "GOLDEN_SWORD"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  enchanting:
+    display:
+      name: '&5&lEnchanting Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to enchanting in which you"
+        - "&7have to enchant certain items."
+        - ""
+        - "&5Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:enchanting_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:enchanting_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:enchanting_started%"       
+        - ""
+        - "&5Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"    
+      type: "ENCHANTING_TABLE"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  brewing:
+    display:
+      name: '&e&lBrewing Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to brewing in which you"
+        - "&7have to brew certain potions."
+        - ""
+        - "&eOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:brewing_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:brewing_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:brewing_started%"       
+        - ""
+        - "&eRewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"        
+      type: "BREWING_STAND"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  crafting:
+    display:
+      name: '&f&lCrafting Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to crafting in which you"
+        - "&7have to craft certain items."
+        - ""
+        - "&fOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:crafting_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:crafting_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:crafting_started%"      
+        - ""
+        - "&fRewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"        
+      type: "CRAFTING_TABLE"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  digging:
+    display:
+      name: '&e&lDigging Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to digging in which you"
+        - "&7have to dig blocks."
+        - ""
+        - "&eOptions:"
+        - "&8&l∙ &7Quests available: &f%quests_category:digging_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:digging_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:digging_started%"       
+        - ""
+        - "&eRewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"        
+      type: "GOLDEN_SHOVEL"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  misc:
+    display:
+      name: '&6&lMisc Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7miscellaneous quests in which you"
+        - "&7have to do things related to misc."
+        - ""
+        - "&6Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:misc_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:misc_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:misc_started%"     
+        - ""
+        - "&6Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"        
+      type: "SADDLE"
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+
+  fishing:
+    display:
+      name: '&3&lFishing Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to fishing in which you"
+        - "&7have to catch certain items."
+        - ""
+        - "&3Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:fishing_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:fishing_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:fishing_started%"     
+        - ""
+        - "&3Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"    
+      type: "FISHING_ROD"  
+      itemflags:
+        - "HIDE_ATTRIBUTES"
+
+  
+  blacksmith:
+    display:
+      name: '&8&lBlacksmith Quests'
+      lore:
+        - ""
+        - "&7This category includes quests"
+        - "&7related to weaponsmithing in which you"
+        - "&7have to craft tools and armor."
+        - ""
+        - "&8Options:"
+        - "&8&l∙ &7Quests available: &f%quests_category:blacksmith_all%"
+        - "&8&l∙ &7Completed quests: &f%quests_category:blacksmith_completed%"
+        - "&8&l∙ &7Quests started: &f%quests_category:blacksmith_started%"     
+        - ""
+        - "&8Rewards:"
+        - "&8&l∙ &7Reward type: &aMoney"
+        - ""
+        - "&e➥ Left-Click to browse"        
+      type: "ANVIL"
+      itemflags:
+        - "HIDE_ATTRIBUTES"

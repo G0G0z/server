@@ -1,0 +1,208 @@
+menu_title: '&f七七七七七七七七ꉕ'
+open_command: coinshopranks
+size: 36
+update_interval: 1
+
+items:
+
+
+  'buy_knightrank':
+    material: BOOK
+    amount: 1
+    slot: 0
+    update: true
+    display_name: '&6&lKnight Rank &f&lVoucher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f2000 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crazyvouchers:voucher give Knight_Rank 1 %player_name%"
+      - "[console] coins take %player_name% 2000"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f2000 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 2000'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f2000 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_lordrank':
+    material: BOOK
+    amount: 1
+    slot: 1
+    update: true
+    display_name: '&a&lLord Rank &f&lVoucher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f4000 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crazyvouchers:voucher give Lord_Rank 1 %player_name%"
+      - "[console] coins take %player_name% 4000"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f4000 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 4000'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f4000 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_paladinrank':
+    material: BOOK
+    amount: 1
+    slot: 2
+    update: true
+    display_name: '&b&lPaladin Rank &f&lVoucher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f6000 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crazyvouchers:voucher give Paladin_Rank 1 %player_name%"
+      - "[console] coins take %player_name% 6000"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f6000 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 6000'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f6000 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_dukerank':
+    material: BOOK
+    amount: 1
+    slot: 3
+    update: true
+    display_name: '&c&lDuke Rank &f&lVoucher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f8000 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crazyvouchers:voucher give Duke_Rank 1 %player_name%"
+      - "[console] coins take %player_name% 8000"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f8000 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 8000'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f8000 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_kingrank':
+    material: BOOK
+    amount: 1
+    slot: 4
+    update: true
+    display_name: '&e&lKing Rank &f&lVoucher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f10,000 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crazyvouchers:voucher give King_Rank 1 %player_name%"
+      - "[console] coins take %player_name% 10000"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f10000 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 10000'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f10000 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'coins':
+    material: PAPER
+    model_data: 110007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴄᴏɪɴs'
+    lore:
+      - '&8Information'
+      - ''
+      - '&7Coins is a premium currency'
+      - '&7on our server which can be'
+      - '&7bought in the server store!'
+      - ''
+      - '&6Your Coins: &f%coinsengine_balance_coins%'
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] coinshop_menu"
+

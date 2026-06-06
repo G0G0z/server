@@ -1,0 +1,48 @@
+tasks:
+  misc:
+    type: "position"
+    x: 1500
+    y: 70
+    z: 1500
+    world: world
+    distance-padding: 10
+display:
+  name: "&6Misc Quest &8▪ &7Travel" 
+  lore-normal:
+    - ""
+    - "&7Complete the objectives in this"
+    - "&7quest to obtain the reward!"
+    - ""
+    - "&6Options:"
+    - "&8&l∙ &7Objective: &fTravel to x1500 y70 z1500."
+    - "&8&l∙ &7Progress: &fN/A"
+    - ""
+    - "&6Rewards: &a$1000"
+    - ""
+  lore-started:
+    - "&#FFEC9BYou have started this quest."
+  type: "COMPASS"
+# Here you can list messages which will be sent to the player (if they are online) upon the quest starting.
+startstring:
+  - "&7Upon completion of this quest, you will be rewarded with"
+  - " &8&l∙ &a$1000"
+rewards:
+  - "eco give {player} 1000"
+# Here you can list messages which will be sent to the player (if they are online) upon completion.
+rewardstring:
+  - " &8&l∙ &a$1000 &7was added to your in-game balance."
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+
+
+
+options:
+  category: "misc"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 82600
+  sort-order: 7

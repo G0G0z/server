@@ -1,0 +1,237 @@
+language-name: pl_pl
+decimal-format: '0.00'
+prefix: <bold><white>[</white></bold><gold>CombatLogX</gold><bold><white>]
+broadcast:
+  on-load: <bold><green>CombatLogX został pomyślnie załadowany.
+  on-enable: <bold><green>CombatLogX został pomyślnie włączony.
+  on-disable: <bold><red>CombatLogX został pomyślnie wyłączony.
+placeholder:
+  time-left-zero: '0'
+  unknown-enemy: Nieznany
+  status:
+    fighting: <red>Walka
+    idle: <green>Bezczynny
+    in-combat: <green>Tak
+    not-in-combat: <red>Nie
+  toggle:
+    enabled: <green>Włączony
+    disabled: <red>Wyłączony
+  pvp-status:
+    enabled: <green>Włączony
+    disabled: <red>Wyłączony
+combat-timer:
+  expire: <green>Nie jesteś już w walce.
+  enemy-death: <green>Nie jesteś już w walce, ponieważ twój przeciwnik nie żyje.
+error:
+  player-only: <red>Tylko gracze mogą wykonać to polecenie.
+  invalid-target: <gray>{target}</gray><red> nie jest online lub nie istnieje.
+  disabled-world: <red>Ta komenda nie jest dostępna w tym świecie.
+  no-permission: '<red>Brak uprawnień: </red><gray>{permission}'
+  target-not-in-combat: <gray>{target}</gray><red> nie jest w walce.
+  self-not-in-combat: <red>Nie jesteś w walce.
+  unknown-expansion: <gray>{target}</gray><red> nie jest rozszerzeniem lub nie jest
+    zainstalowane.
+command:
+  combatlogx:
+    help-message-list:
+    - <white>
+    - '<bold><gold>Menu pomocy CombatLogX:'
+    - '  <bold><white>/combatlogx help</white></bold><gray>: Wyświetl stronę pomocy.'
+    - '  <bold><white>/combatlogx reload</white></bold><gray>: Przeładuj plik config.yml,
+      language.yml i wszystkie pliki konfiguracyjne rozszerzeń.'
+    - '  <bold><white>/combatlogx o \<expansion></white></bold><gray>: Sprawdź informacje
+      o rozszerzeniu.'
+    - '  <bold><white>/combatlogx tag \<player> [seconds]</white></bold><gray>: Zmuś
+      gracza do walki.'
+    - '  <bold><white>/combatlogx toggle bossbar/actionbar/scoreboard</white></bold><gray>:
+      Włącz lub wyłącz wybrany typ powiadomień.'
+    - '  <bold><white>/combatlogx untag \<player></white></bold><gray>: Zmuś gracza
+      do opuszczenia walki.'
+    - '  <bold><white>/combatlogx version</white></bold><gray>: Sprawdź wersję CombatLogX.'
+    - <white>
+    reload-success:
+    - <green>Pomyślnie przeładowano wszystkie pliki konfiguracyjne z CombatLogX.
+    - <green>Pomyślnie przeładowano wszystkie pliki językowe z CombatLogX.
+    - <green>Pomyślnie przeładowano wszystkie pliki konfiguracyjne z rozszerzeń CombatLogX.
+    tag-player: <green>Pomyślnie zmuszono gracza </green><gray>{target}</gray><green>
+      do bycia w walce.
+    tag-failure: <gray>{target}</gray><red> nie może zostać zmuszony do bycia w walce.
+      (Może ma uprawnienie .bypass)
+    untag-player: <green>Pomyślnie zmuszono gracza </green><gray>{target}</gray><green>
+      do bycia poza walką.
+    toggle-bossbar: '<bold><gray>Boss Bar: {status}'
+    toggle-actionbar: '<bold><gray>Action Bar: {status}'
+    toggle-scoreboard: '<gray>Scoreboard: {status}'
+  combat-timer:
+    time-left-self: <green>Pozostało Ci </green><gray>{time_left} sekund.
+    time-left-other: <gray>Graczowi {target}</gray><green> pozostało </green><gray>{time_left}</gray><green>.
+tagged:
+  unknown:
+    player: <red>Jesteś teraz w walce z </red><white>{enemy}</white><red> z nieznanego
+      powodu. Nie wylogowuj się!
+    mob: <red>Jesteś teraz w walce z </red><white>{enemy}</white><red> z nieznanego
+      powodu. Nie wylogowuj się!
+    mythic_mob: <red>Jesteś teraz w walce z </red><white>{mob_type}</white><red> z
+      nieznanego powodu. Nie wylogowuj się!
+    unknown: <red>Zostałeś postawiony do walki bez powodu. Nie wylogowuj się.
+  attacked:
+    player: <red>Zostałeś zaatakowany przez </red><white>{enemy}</white><red>. Nie
+      wylogowuj się!
+    mob: <red>Zostałeś zaatakowany przez </red><white>{mob_type}</white><red>. Nie
+      wylogowuj się!
+    mythic_mob: <red>Zostałeś zaatakowany przez </red><white>{enemy}</white><red>.
+      Nie wylogowuj się!
+    unknown: <red>Jesteś atakowany przez nieznaną siłę. Nie wylogowuj się!
+  attacker:
+    player: <red>Zaatakowałeś </red><white>{enemy}</white><red>. Nie wylogowuj się!
+    mob: <red>Zaatakowałeś </red><white>{mob_type}</white><red>. Nie wylogowuj się!
+    mythic_mob: <red>Zaatakowałeś </red><white>{enemy}</white><red>. Nie wylogowuj
+      się!
+    unknown: <red>Atakujesz nieznaną siłę. Nie wylogowuj się!
+expansion:
+  action-bar:
+    # Valid 'timer' placeholders: {time_left}, {time_left_decimal}, {bars}
+    timer: <bold><gold>Walka </gold></bold><gray>» </gray><white>{bars} </white><white>{time_left_decimal}
+      sekund.
+    ended: <bold><gold>Walka </gold></bold><gray>» </gray><white>Nie jesteś już w
+      walce.
+  boss-bar:
+    # Valid 'timer' placeholders: {time_left}, {time_left_decimal}
+    timer: <bold><gold>Walka </gold></bold><gray>» </gray><red>{time_left_decimal}
+      sekund.
+    ended: <bold><gold>Walka </gold></bold><gray>» </gray><green>Nie jesteś już w
+      walce.
+  scoreboard:
+    # Make sure to follow your Spigot version's scoreboard character limit
+    title: <bold><gold>CombatLogX
+    # Make sure to follow your Spigot version's scoreboard line/character limit
+    lines:
+    - <white>
+    - '<bold><white>Statystyki Walki:'
+    - '<dark_gray>» </dark_gray><bold><white>Pozostały Czas: </white></bold><gray>{time_left}'
+    - '<dark_gray>» </dark_gray><bold><white>W Walce: </white></bold><gray>{in_combat}'
+    - '<dark_gray>» </dark_gray><bold><white>Status: </white></bold><gray>{status}'
+    - <white>
+    - <bold><white>Statystyki Wroga
+    - '<dark_gray>» </dark_gray><bold><white>Nazwa: </white></bold><gray>{enemy_name}'
+    - '<dark_gray>» </dark_gray><bold><white>Życie: </white></bold><gray>{enemy_health}'
+    - '<dark_gray>» </dark_gray><bold><white>Zdrowie: </white></bold><gray>{enemy_health_rounded}'
+    - '<dark_gray>» </dark_gray><bold><white>Serca: </white></bold><gray>{enemy_hearts}'
+    - <white>
+  cheat-prevention:
+    command-blocked: <red>Nie masz dostępu do </red><green>{command}</green><red>
+      podczas walki.
+    no-riptide: <red>Zaklęcie "Torpeda" jest wyłączone podczas walki.
+    no-totem: <red>Nie możesz używać totemów nieśmiertelności podczas walki.
+    no-entity-interaction: <red>Nie możesz używać tego stworzenia podczas walki.
+    no-chat: <red>Nie możesz wysyłać wiadomości na czacie podczas walki.
+    game-mode:
+      force-switch: <red>Twój tryb gry został zmieniony na </red><white>{game_mode}</white><red>.
+      no-switch: <red>Nie możesz przełączać trybów gry podczas walki.
+    flight:
+      force-disabled: <red>Twoja zdolność latania została usunięta.
+      no-flying: <red>Nie możesz latać podczas walki.
+    elytra:
+      force-disabled: <red>Twoja elytra została wyłączona.
+      no-gliding: <red>Nie możesz używać elytry podczas walki.
+    teleportation:
+      block-portal: <red>Nie możesz używać portalu podczas walki.
+      block-pearl: <red>Nie możesz używać enderpereł podczas walki.
+      block-other: <red>Nie możesz się teleportować podczas walki.
+    inventory:
+      force-closed: <red>Twój ekwipunek został zamknięty.
+      no-opening: <red>Nie możesz otwierać ekwipunku podczas walki.
+    blocks:
+      prevent-breaking: <red>Nie możesz niszczyć bloków podczas walki.
+      prevent-placing: <red>Nie możesz stawiać bloków podczas walki.
+      prevent-interaction: <red>Nie możesz używać bloków podczas walki.
+      prevent-portal-creation: <red>Nie możesz tworzyć portali podczas walki.
+    items:
+      no-pickup: <red>Nie możesz podnosić przedmiotów podczas walki.
+      no-dropping: <red>Nie możesz wyrzucać przedmiotów podczas walki.
+    buckets:
+      no-empty: <red>Nie możesz opróżniać wiader podczas walki.
+      no-fill: <red>Nie możesz napełniać wiader podczas walki.
+  damage-tagger:
+    unknown-damage: <red>Otrzymałeś obrażenia! Nie wylogowuj się!
+    damage-type:
+      contact: <red>Zostałeś ukłuty przez kaktusa. Nie wylogowuj się!
+      suffocation: <red>Uderzasz się w ścianie. Nie wylogowuj się!
+      fall: <red>Otrzymałeś obrażenia od upadku. Nie wylogowuj się!
+      fire: <red>Wskoczyłeś w ogień. Nie wylogowuj się!
+      fire-tick: <red>Palisz się. Nie wylogowuj się!
+      lava: <red>Gotujesz się w lawie. Nie wylogowuj się!
+      drowning: <red>Toniesz. Nie wylogowuj się!
+      block-explosion: <red>Otrzymałeś obrażenia od wybuchu. Nie wylogowuj się!
+      lightning: <red>Uderzył Cię piorun! Nie wylogowuj się!
+      starvation: <red>Głodujesz. Nie wylogowuj się!
+      poison: <red>Otrzymałeś obrażenia od trucizny. Nie wylogowuj się!
+      magic: <red>Ktoś rzucił w ciebie miksturę. Nie wylogowuj się!
+      wither: <red>Usychasz. Nie wylogowuj się!
+      falling-block: <red>Spadł na ciebie blok. Nie wylogowuj się!
+      custom: <red>Otrzymałeś niestandardowe obrażenia. Nie wylogowuj się!
+      fly-into-wall: <red>Doświadczyłeś energii kinetycznej. Nie wylogowuj się!
+      hot-floor: <red>Podłoga to lawa! Nie wyloguj się!
+      cramming: <red>Zostałeś zgnieciony. Nie wylogowuj się!
+  newbie-helper:
+    togglepvp:
+      self: '<gray>PVP: {status}'
+      admin: <gray>Ustawiłeś status pvp gracza </gray><yellow>{target}</yellow><gray>
+        na {status}</gray><gray>.
+      cooldown: <red>Musisz poczekać </red><gray>{time_left} sekund</gray><red> aby
+        użyć tej komendy ponownie.
+    no-pvp:
+      self: <red>Nie możesz bić innych graczy, kiedy Twoje PvP jest wyłączone.
+      other: <red>Ten gracz ma wyłączone PvP.
+      protected: <red>Ten gracz jest chroniony, nie możesz go jeszcze zaatakować!
+    protection-disabled:
+      attacker: <red>Zaatakowałeś kogoś, twoja ochrona dla nowych została wyłączona.
+      expired: <red>Twoja ochrona dla nowych graczy wygasła.
+    check-format:
+    - '<bold><white>Informacje dla </white></bold><gray>{target}</gray><bold><white>:'
+    - '<bold><white>Ochrona: </white></bold><gray>{protected}'
+    - '<bold><white>PvP: </white></bold><gray>{pvp}'
+  loot-protection:
+    enemy-died: <white>{enemy} </white><green>umarł. Łup będzie chroniony przez </green><white>{time}
+      sekund</white><green>.
+    protected: <red>Ten przedmiot jest obecnie chroniony, poczekaj </red><white>{time}
+      sekund </white><red>aby móc go podnieść.
+  citizens-compatibility:
+    prevent-join: <red>Nie możesz dołączyć do serwera dopóki Twój NPC nie zostanie
+      zabity lub nie zniknie.
+  disguise-compatibility:
+    remove-disguise: <red>Twoje przebranie zostało usunięte.
+  essentials-compatibility:
+    prevent-teleport-request-self: <red>Nie możesz tworzyć żądań teleportacji podczas
+      walki.
+    prevent-teleport-request-other: <red>Nie możesz wysłać prośby o teleportację do
+      gracza, który jest w walce.
+  marriagemaster-compatiblity:
+    prevent-teleport: <red>Nie możesz teleportować się do swojego partnera podczas
+      walki.
+  region-protection:
+    factions-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    griefdefender-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    griefprevention-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    kingdomsx-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    konquest-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    redprotect-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    residence-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    towny-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    ultimateclaims-no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    protectionstones:
+      prevent-area-creation: <red>Nie możesz tworzyć obszaru chronionego podczas walki.
+      no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    preciousstones:
+      prevent-field-creation: <red>Nie możesz tworzyć pola ochrony podczas walki.
+      no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+    worldguard:
+      no-entry-mob-combat: <red>Nie możesz wejść do strefy, gdzie zostało wyłączone
+        PvP mobów podczas walki.
+      no-entry-player-combat: <red>Nie możesz wejść do strefy, gdzie zostało wyłączone
+        PvP podczas walki.
+      no-entry-unknown-combat: <red>Nie możesz wejść do tego obszaru podczas walki.
+    lands:
+      no-entry: <red>Nie możesz wejść do tego obszaru podczas walki.
+      war-disable-newbie-protection: <yellow>PvP jest teraz włączone z powodu deklaracji
+        wojennej.

@@ -1,0 +1,7 @@
+locations:
+  SpawnPoint:
+    world: spawn
+    x: 0
+    y: 99
+    z: 0
+    particle: Witch

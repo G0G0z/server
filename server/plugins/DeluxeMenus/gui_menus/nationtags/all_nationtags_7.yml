@@ -1,0 +1,662 @@
+menu_title: '&f七七七七七七七七⊺'
+open_command: nationtagsall7
+size: 54
+update_interval: 1
+
+items:
+
+
+  'Spain_tag':
+    material: NAME_TAG
+    slot: 19
+    update: true
+    display_name: '&e&lSpain Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Spain"
+
+
+  'Sudan_tag':
+    material: NAME_TAG
+    slot: 20
+    update: true
+    display_name: '&e&lSudan Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Sudan"
+
+
+  'Suriname_tag':
+    material: NAME_TAG
+    slot: 21
+    update: true
+    display_name: '&e&lSuriname Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Suriname"
+
+
+  'Sweden_tag':
+    material: NAME_TAG
+    slot: 22
+    update: true
+    display_name: '&e&lSweden Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Sweden"
+
+
+  'Switzerland_tag':
+    material: NAME_TAG
+    slot: 23
+    update: true
+    display_name: '&e&lSwitzerland Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Switzerland"
+
+
+  'Syria_tag':
+    material: NAME_TAG
+    slot: 24
+    update: true
+    display_name: '&e&lSyria Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Syria"
+
+
+  'Taiwan_tag':
+    material: NAME_TAG
+    slot: 25
+    update: true
+    display_name: '&e&lTaiwan Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Taiwan"
+
+
+  'Tajikistan_tag':
+    material: NAME_TAG
+    slot: 28
+    update: true
+    display_name: '&e&lTajikistan Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Tajikistan"
+
+
+  'Tanzania_tag':
+    material: NAME_TAG
+    slot: 29
+    update: true
+    display_name: '&e&lTanzania Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Tanzania"
+
+
+  'Thailand_tag':
+    material: NAME_TAG
+    slot: 30
+    update: true
+    display_name: '&e&lThailand Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Thailand"
+
+
+  'Togo_tag':
+    material: NAME_TAG
+    slot: 31
+    update: true
+    display_name: '&e&lTogo Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Togo"
+
+
+  'Tunesia_tag':
+    material: NAME_TAG
+    slot: 32
+    update: true
+    display_name: '&e&lTunesia Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Tunesia"
+
+
+  'Turkey_tag':
+    material: NAME_TAG
+    slot: 33
+    update: true
+    display_name: '&e&lTurkey Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Turkey"
+
+
+  'Turkmenistan_tag':
+    material: NAME_TAG
+    slot: 34
+    update: true
+    display_name: '&e&lTurkmenistan Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Turkmenistan"
+
+
+  'Uganda_tag':
+    material: NAME_TAG
+    slot: 37
+    update: true
+    display_name: '&e&lUganda Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Uganda"
+
+
+  'Ukraine_tag':
+    material: NAME_TAG
+    slot: 38
+    update: true
+    display_name: '&e&lUkraine Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Ukraine"
+
+
+  'UnitedArabEmirates_tag':
+    material: NAME_TAG
+    slot: 39
+    update: true
+    display_name: '&e&lUnitedArabEmirates Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% UnitedArabEmirates"
+
+
+  'Uruguay_tag':
+    material: NAME_TAG
+    slot: 40
+    update: true
+    display_name: '&e&lUruguay Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Uruguay"
+
+
+  'Usa_tag':
+    material: NAME_TAG
+    slot: 41
+    update: true
+    display_name: '&e&lUsa Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Usa"
+
+
+  'Uzbekistan_tag':
+    material: NAME_TAG
+    slot: 42
+    update: true
+    display_name: '&e&lUzbekistan Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Uzbekistan"
+
+
+  'Venezuela_tag':
+    material: NAME_TAG
+    slot: 43
+    update: true
+    display_name: '&e&lVenezuela Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: '
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Venezuela"
+
+
+
+
+
+
+
+
+
+
+
+  'page_previous':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 18
+      - 27
+      - 36
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_6"
+
+  'page_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_8"
+
+
+
+
+  'page_previous_category':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] australia_nationtags_1"
+  'page_next_category':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] northamerica_nationtags_1"
+
+
+
+
+
+
+
+  'page_africa':
+    material: PAPER
+    model_data: 4111
+    slot: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lAfrica'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] africa_nationtags_1"
+
+  'page_asia':
+    material: PAPER
+    model_data: 4112
+    slot: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&5&lAsia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] asia_nationtags_1"
+
+  'page_australia':
+    material: PAPER
+    model_data: 4113
+    slot: 3
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lAustralia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] australia_nationtags_1"
+
+  'page_all':
+    material: PAPER
+    model_data: 4114
+    slot: 4
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&d&lAll'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_1"
+
+  'page_northamerica':
+    material: PAPER
+    model_data: 4108
+    slot: 5
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&c&lNorth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] northamerica_nationtags_1"
+
+  'page_southamerica':
+    material: PAPER
+    model_data: 4109
+    slot: 6
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&2&lSouth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] southamerica_nationtags_1"
+
+  'page_europe':
+    material: PAPER
+    model_data: 4110
+    slot: 7
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&b&lEurope'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] europe_nationtags_1"
+
+
+
+
+  'clear_tag':
+    material: PAPER
+    model_data: 110007
+    slot: 49
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&e&lᴄʟᴇᴀʀ ᴛᴀɢ'
+    lore:
+      - ''
+      - '&8&l∙ &fCurrent: &7%deluxetags_identifier%'
+      - '&8&l∙ &fDisplay: &7%deluxetags_tag%'
+      - ''
+      - '&e➥ Left-Click to clear tag'
+    left_click_commands:
+      - "[console] deluxetags:tags clear %player_name%"
+
+
+
+
+

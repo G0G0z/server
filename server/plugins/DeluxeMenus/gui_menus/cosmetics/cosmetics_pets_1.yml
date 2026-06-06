@@ -1,0 +1,752 @@
+menu_title: '&f七七七七七七七七ㅧ'
+open_command: cosmetics
+size: 54
+update_interval: 1
+
+items:
+
+
+
+  'clear_all_cosmetics':
+    material: REDSTONE
+    slot: 0
+    update: true
+    display_name: '&6&lᴄʟᴇᴀʀ ᴀʟʟ ᴄᴏsᴍᴇᴛɪᴄs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&7Clear all your cosmetics'
+      - ''
+      - '&e➥ Left-Click to clear'
+    left_click_commands:
+      - "[console] eglow:eglow set %player_name% none"
+      - "[console] ultracosmetics clear %player_name%"
+      - "[message] &8[&6&l!&8] &6&lCosmetics &8→ &7You have cleared all your cosmetics!"
+
+
+
+
+
+
+
+
+
+
+  'cosmetics_pets':
+    material: WOLF_SPAWN_EGG
+    slot: 2
+    update: true
+    display_name: '&a&lPets'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_pets_1"
+
+  'cosmetics_hats':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgyNTYzODQwMDIxNGRmYzljMWY3NjU5MTBlYmMwZTIyN2YyY2JkOTg0MzYzZGFhMzkyMDQwYmNlYjdkZWRjMiJ9fX0=
+    slot: 3
+    update: true
+    display_name: '&e&lHats'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_hats_1"
+
+  'cosmetics_particles':
+    material: BLAZE_POWDER
+    slot: 4
+    update: true
+    display_name: '&b&lParticles'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_particles_1"
+
+  'cosmetics_projectileeffects':
+    material: ARROW
+    slot: 5
+    update: true
+    display_name: '&6&lProjectile Effects'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_projectileeffects_1"
+
+  'cosmetics_deatheffects':
+    material: IRON_SWORD
+    slot: 6
+    update: true
+    display_name: '&c&lDeath Effects'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_deatheffects_1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'locked_piggypet':
+    material: BARRIER
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&a&lPiggy Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.piggy
+    priority: 1
+
+  'toggle_piggypet':
+    material: PIG_SPAWN_EGG
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&a&lPiggy Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets piggy"
+    priority: 2
+
+
+
+
+  'locked_easterbunnypet':
+    material: BARRIER
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&a&lEaster Bunny Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.easterbunny
+    priority: 1
+
+  'toggle_easterbunnypet':
+    material: RABBIT_SPAWN_EGG
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&a&lEaster Bunny Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets easterbunny"
+    priority: 2
+
+
+
+
+  'locked_cowpet':
+    material: BARRIER
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&a&lCow Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.cow
+    priority: 1
+
+  'toggle_cowpet':
+    material: COW_SPAWN_EGG
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&a&lCow Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets cow"
+    priority: 2
+
+
+
+
+  'locked_mooshroompet':
+    material: BARRIER
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&a&lMooshroom Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.mooshroom
+    priority: 1
+
+  'toggle_mooshroompet':
+    material: MOOSHROOM_SPAWN_EGG
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&a&lMooshroom Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets mooshroom"
+    priority: 2
+
+
+
+
+  'locked_dogpet':
+    material: BARRIER
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&a&lDog Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.dog
+    priority: 1
+
+  'toggle_dogpet':
+    material: WOLF_SPAWN_EGG
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&a&lDog Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets dog"
+    priority: 2
+
+
+
+
+  'locked_chickpet':
+    material: BARRIER
+    amount: 1
+    slot: 24
+    update: true
+    display_name: '&a&lChick Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.chick
+    priority: 1
+
+  'toggle_chickpet':
+    material: CHICKEN_SPAWN_EGG
+    amount: 1
+    slot: 24
+    update: true
+    display_name: '&a&lChick Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets chick"
+    priority: 2
+
+
+
+
+  'locked_sheeppet':
+    material: BARRIER
+    amount: 1
+    slot: 25
+    update: true
+    display_name: '&a&lSheep Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.sheep
+    priority: 1
+
+  'toggle_sheeppet':
+    material: SHEEP_SPAWN_EGG
+    amount: 1
+    slot: 25
+    update: true
+    display_name: '&a&lSheep Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets sheep"
+    priority: 2
+
+
+
+
+  'locked_frogpet':
+    material: BARRIER
+    amount: 1
+    slot: 28
+    update: true
+    display_name: '&a&lFrog Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.frog
+    priority: 1
+
+  'toggle_frogpet':
+    material: FROG_SPAWN_EGG
+    amount: 1
+    slot: 28
+    update: true
+    display_name: '&a&lFrog Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets frog"
+    priority: 2
+
+
+
+
+  'locked_allaypet':
+    material: BARRIER
+    amount: 1
+    slot: 29
+    update: true
+    display_name: '&a&lAllay Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.allay
+    priority: 1
+
+  'toggle_allaypet':
+    material: ALLAY_SPAWN_EGG
+    amount: 1
+    slot: 29
+    update: true
+    display_name: '&a&lAllay Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets allay"
+    priority: 2
+
+
+
+
+  'locked_axolotlpet':
+    material: BARRIER
+    amount: 1
+    slot: 30
+    update: true
+    display_name: '&a&lAxolotl Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.axolotl
+    priority: 1
+
+  'toggle_axolotlpet':
+    material: AXOLOTL_SPAWN_EGG
+    amount: 1
+    slot: 30
+    update: true
+    display_name: '&a&lAxolotl Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets axolotl"
+    priority: 2
+
+
+
+
+  'locked_beepet':
+    material: BARRIER
+    amount: 1
+    slot: 31
+    update: true
+    display_name: '&a&lBee Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.bee
+    priority: 1
+
+  'toggle_beepet':
+    material: BEE_SPAWN_EGG
+    amount: 1
+    slot: 31
+    update: true
+    display_name: '&a&lBee Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets bee"
+    priority: 2
+
+
+
+
+  'locked_pandapet':
+    material: BARRIER
+    amount: 1
+    slot: 32
+    update: true
+    display_name: '&a&lPanda Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.panda
+    priority: 1
+
+  'toggle_pandapet':
+    material: PANDA_SPAWN_EGG
+    amount: 1
+    slot: 32
+    update: true
+    display_name: '&a&lPanda Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets panda"
+    priority: 2
+
+
+
+
+  'locked_foxpet':
+    material: BARRIER
+    amount: 1
+    slot: 33
+    update: true
+    display_name: '&a&lFox Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.fox
+    priority: 1
+
+  'toggle_foxpet':
+    material: FOX_SPAWN_EGG
+    amount: 1
+    slot: 33
+    update: true
+    display_name: '&a&lFox Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets fox"
+    priority: 2
+
+
+
+
+  'locked_kittypet':
+    material: BARRIER
+    amount: 1
+    slot: 34
+    update: true
+    display_name: '&a&lKitty Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.pets.kitty
+    priority: 1
+
+  'toggle_kittypet':
+    material: OCELOT_SPAWN_EGG
+    amount: 1
+    slot: 34
+    update: true
+    display_name: '&a&lKitty Pet'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle pets kitty"
+    priority: 2
+
+

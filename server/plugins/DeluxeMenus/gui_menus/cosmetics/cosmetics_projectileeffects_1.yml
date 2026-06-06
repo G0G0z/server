@@ -1,0 +1,935 @@
+menu_title: '&f七七七七七七七七ㅢ'
+open_command: cosmeticsprojectileeffects1
+size: 54
+update_interval: 1
+
+items:
+
+
+
+  'clear_all_cosmetics':
+    material: REDSTONE
+    slot: 0
+    update: true
+    display_name: '&6&lᴄʟᴇᴀʀ ᴀʟʟ ᴄᴏsᴍᴇᴛɪᴄs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - ''
+      - '&7Clear all your cosmetics'
+      - ''
+      - '&e➥ Left-Click to clear'
+    left_click_commands:
+      - "[console] eglow:eglow set %player_name% none"
+      - "[console] ultracosmetics clear %player_name%"
+      - "[message] &8[&6&l!&8] &6&lCosmetics &8→ &7You have cleared all your cosmetics!"
+
+
+
+
+
+
+
+
+  'cosmetics_pets':
+    material: WOLF_SPAWN_EGG
+    slot: 2
+    update: true
+    display_name: '&a&lPets'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_pets_1"
+
+  'cosmetics_hats':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgyNTYzODQwMDIxNGRmYzljMWY3NjU5MTBlYmMwZTIyN2YyY2JkOTg0MzYzZGFhMzkyMDQwYmNlYjdkZWRjMiJ9fX0=
+    slot: 3
+    update: true
+    display_name: '&e&lHats'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_hats_1"
+
+  'cosmetics_particles':
+    material: BLAZE_POWDER
+    slot: 4
+    update: true
+    display_name: '&b&lParticles'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_particles_1"
+
+  'cosmetics_projectileeffects':
+    material: ARROW
+    slot: 5
+    update: true
+    display_name: '&6&lProjectile Effects'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_projectileeffects_1"
+
+  'cosmetics_deatheffects':
+    material: IRON_SWORD
+    slot: 6
+    update: true
+    display_name: '&c&lDeath Effects'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&7Cosmetics Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] cosmetics_deatheffects_1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'locked_Rainbow':
+    material: BARRIER
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&6&lRainbow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Rainbow
+    priority: 1
+
+  'toggle_Rainbow':
+    material: LIME_WOOL
+    amount: 1
+    slot: 19
+    update: true
+    display_name: '&6&lRainbow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Rainbow"
+    priority: 2
+
+
+
+
+  'locked_Christmas':
+    material: BARRIER
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&6&lChristmas'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Christmas
+    priority: 1
+
+  'toggle_Christmas':
+    material: SNOW_BLOCK
+    amount: 1
+    slot: 20
+    update: true
+    display_name: '&6&lChristmas'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Christmas"
+    priority: 2
+
+
+
+
+  'locked_Spark':
+    material: BARRIER
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&6&lSpark'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Spark
+    priority: 1
+
+  'toggle_Spark':
+    material: FIREWORK_ROCKET
+    amount: 1
+    slot: 21
+    update: true
+    display_name: '&6&lSpark'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Spark"
+    priority: 2
+
+
+
+
+  'locked_Redstone':
+    material: BARRIER
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&6&lRedstone'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Redstone
+    priority: 1
+
+  'toggle_Redstone':
+    material: REDSTONE
+    amount: 1
+    slot: 22
+    update: true
+    display_name: '&6&lRedstone'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Redstone"
+    priority: 2
+
+
+
+
+  'locked_Flame':
+    material: BARRIER
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&6&lFlame'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Flame
+    priority: 1
+
+  'toggle_Flame':
+    material: TORCH
+    amount: 1
+    slot: 23
+    update: true
+    display_name: '&6&lFlame'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Flame"
+    priority: 2
+
+
+
+
+  'locked_Water':
+    material: BARRIER
+    amount: 1
+    slot: 24
+    update: true
+    display_name: '&6&lWater'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Water
+    priority: 1
+
+  'toggle_Water':
+    material: WATER_BUCKET
+    amount: 1
+    slot: 24
+    update: true
+    display_name: '&6&lWater'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Water"
+    priority: 2
+
+
+
+
+  'locked_Witch':
+    material: BARRIER
+    amount: 1
+    slot: 25
+    update: true
+    display_name: '&6&lWitch'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Witch
+    priority: 1
+
+  'toggle_Witch':
+    material: BREWING_STAND
+    amount: 1
+    slot: 25
+    update: true
+    display_name: '&6&lWitch'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Witch"
+    priority: 2
+
+
+
+
+  'locked_Emerald':
+    material: BARRIER
+    amount: 1
+    slot: 28
+    update: true
+    display_name: '&6&lEmerald'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Emerald
+    priority: 1
+
+  'toggle_Emerald':
+    material: EMERALD
+    amount: 1
+    slot: 28
+    update: true
+    display_name: '&6&lEmerald'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Emerald"
+    priority: 2
+
+
+
+
+  'locked_Note':
+    material: BARRIER
+    amount: 1
+    slot: 29
+    update: true
+    display_name: '&6&lNote'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Note
+    priority: 1
+
+  'toggle_Note':
+    material: NOTE_BLOCK
+    amount: 1
+    slot: 29
+    update: true
+    display_name: '&6&lNote'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Note"
+    priority: 2
+
+
+
+
+  'locked_Love':
+    material: BARRIER
+    amount: 1
+    slot: 30
+    update: true
+    display_name: '&6&lLove'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Love
+    priority: 1
+
+  'toggle_Love':
+    material: PINK_WOOL
+    amount: 1
+    slot: 30
+    update: true
+    display_name: '&6&lLove'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Love"
+    priority: 2
+
+
+
+
+  'locked_Lava':
+    material: BARRIER
+    amount: 1
+    slot: 31
+    update: true
+    display_name: '&6&lLava'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Lava
+    priority: 1
+
+  'toggle_Lava':
+    material: LAVA_BUCKET
+    amount: 1
+    slot: 31
+    update: true
+    display_name: '&6&lLava'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Lava"
+    priority: 2
+
+
+
+
+  'locked_Snow':
+    material: BARRIER
+    amount: 1
+    slot: 32
+    update: true
+    display_name: '&6&lSnow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Snow
+    priority: 1
+
+  'toggle_Snow':
+    material: SNOWBALL
+    amount: 1
+    slot: 32
+    update: true
+    display_name: '&6&lSnow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Snow"
+    priority: 2
+
+
+
+
+  'locked_Slime':
+    material: BARRIER
+    amount: 1
+    slot: 33
+    update: true
+    display_name: '&6&lSlime'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Slime
+    priority: 1
+
+  'toggle_Slime':
+    material: SLIME_BALL
+    amount: 1
+    slot: 33
+    update: true
+    display_name: '&6&lSlime'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Slime"
+    priority: 2
+
+
+
+
+  'locked_Crit':
+    material: BARRIER
+    amount: 1
+    slot: 34
+    update: true
+    display_name: '&6&lCrit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Crit
+    priority: 1
+
+  'toggle_Crit':
+    material: IRON_SWORD
+    amount: 1
+    slot: 34
+    update: true
+    display_name: '&6&lCrit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Crit"
+    priority: 2
+
+
+
+
+  'locked_Explosion':
+    material: BARRIER
+    amount: 1
+    slot: 37
+    update: true
+    display_name: '&6&lExplosion'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Explosion
+    priority: 1
+
+  'toggle_Explosion':
+    material: TNT
+    amount: 1
+    slot: 37
+    update: true
+    display_name: '&6&lExplosion'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Explosion"
+    priority: 2
+
+
+
+
+  'locked_Cloud':
+    material: BARRIER
+    amount: 1
+    slot: 38
+    update: true
+    display_name: '&6&lCloud'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Cloud
+    priority: 1
+
+  'toggle_Cloud':
+    material: WHITE_WOOL
+    amount: 1
+    slot: 38
+    update: true
+    display_name: '&6&lCloud'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Cloud"
+    priority: 2
+
+
+
+
+  'locked_Smoke':
+    material: BARRIER
+    amount: 1
+    slot: 39
+    update: true
+    display_name: '&6&lSmoke'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Smoke
+    priority: 1
+
+  'toggle_Smoke':
+    material: GRAY_WOOL
+    amount: 1
+    slot: 39
+    update: true
+    display_name: '&6&lSmoke'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Smoke"
+    priority: 2
+
+
+
+
+  'locked_Portal':
+    material: BARRIER
+    amount: 1
+    slot: 40
+    update: true
+    display_name: '&6&lPortal'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Unlock this cosmetic'
+      - '&7in the coinshop!'
+      - ''
+      - '&c&nLocked'
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: ultracosmetics.projectileeffects.Portal
+    priority: 1
+
+  'toggle_Portal':
+    material: OBSIDIAN
+    amount: 1
+    slot: 40
+    update: true
+    display_name: '&6&lPortal'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Cosmetic Item'
+      - ''
+      - '&7Toggle this cosmetic!'
+      - ''
+      - '&e➥ Left-Click to toggle'
+    click_commands:
+      - "[player] ultracosmetics toggle projectile_effects Portal"
+    priority: 2
+
+
+
+
+
+
+

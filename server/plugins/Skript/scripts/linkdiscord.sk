@@ -1,0 +1,14 @@
+
+command /discord:
+ trigger:
+  message ""
+  message " <##7187D6>&lDiscord &8&l▪ &fJoin Our Discord Community!"
+  message ""
+  message "<##96A4D3>Hey &f%player%<##96A4D3>! Are you enjoying your time on the server?"
+  message "<##96A4D3>Become more engaged with our &fcommunity<##96A4D3>,"
+  message "<##96A4D3>by joing our discord server!"
+  message ""
+  message "      <##7187D6><link:https://discord.example.com>discord.example.com &f"
+  message ""
+
+

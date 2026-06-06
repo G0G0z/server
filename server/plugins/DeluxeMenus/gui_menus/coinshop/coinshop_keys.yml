@@ -1,0 +1,191 @@
+menu_title: '&f七七七七七七七七︽'
+open_command: coinshopkeys
+size: 36
+update_interval: 1
+
+items:
+
+
+  'buy_commonkey':
+    material: TRIPWIRE_HOOK
+    amount: 1
+    slot: 0
+    update: true
+    display_name: '&f&l1x &a&lCommon Key'
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f50 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crate key give %player_name% common 1"
+      - "[console] coins take %player_name% 50"
+      - "[console] codex unlock %player_name% objectives purchase_common_key"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f50 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 50'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f50 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_rarekey':
+    material: TRIPWIRE_HOOK
+    amount: 1
+    slot: 1
+    update: true
+    display_name: '&f&l1x &b&lRare Key'
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f100 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crate key give %player_name% rare 1"
+      - "[console] coins take %player_name% 100"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f100 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 100'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f100 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_epickey':
+    material: TRIPWIRE_HOOK
+    amount: 1
+    slot: 2
+    update: true
+    display_name: '&f&l1x &d&lEpic Key'
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f150 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crate key give %player_name% epic 1"
+      - "[console] coins take %player_name% 150"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f150 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 150'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f150 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+  'buy_superiorkey':
+    material: TRIPWIRE_HOOK
+    amount: 1
+    slot: 3
+    update: true
+    display_name: '&f&l1x &e&lSuperior Key'
+    enchantments:
+      - mending;1
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    lore:
+      - '&8Coinshop Item'
+      - ''
+      - '&6Price: &f250 Coins'
+      - ''
+      - '&e➥ Left-Click to purchase'
+    click_commands:
+      - "[console] crate key give %player_name% superior 1"
+      - "[console] coins take %player_name% 250"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &7You have bought this item!"
+      - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &f250 &7Coins has been taken from your account!"
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    click_requirement:
+      requirements:
+        coins:
+          type: javascript
+          expression: '%coinsengine_balance_raw_coins% >= 250'
+          deny_commands:
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou don't have enough coins to purchase this!"
+            - "[message] &8[&e&l!&8] &e&lCoinshop &8→ &cYou need &f250 &ccoins, but you only have &f%coinsengine_balance_coins%&c!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'coins':
+    material: PAPER
+    model_data: 110007
+    slot: 16
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    display_name: '&6&lᴄᴏɪɴs'
+    lore:
+      - '&8Information'
+      - ''
+      - '&7Coins is a premium currency'
+      - '&7on our server which can be'
+      - '&7bought in the server store!'
+      - ''
+      - '&6Your Coins: &f%coinsengine_balance_coins%'
+
+
+  'back':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 28
+      - 29
+      - 30
+    display_name: '&c&lʙᴀᴄᴋ'
+    left_click_commands:
+      - "[openguimenu] coinshop_menu"
+
