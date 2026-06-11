@@ -1,3 +1,0 @@
-every 5 minutes:
- loop all players:
-  execute console command "/levelxp give %loop-player% 1"

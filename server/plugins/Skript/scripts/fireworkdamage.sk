@@ -1,4 +1,0 @@
-on damage:
-  if damage cause is entity explosion:
-    if event-projectile is firework:
-      cancel event

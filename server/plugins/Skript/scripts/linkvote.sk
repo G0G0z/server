@@ -1,8 +1,0 @@
-command /vote:
- trigger:
-  message ""
-  message " &6&lVote Links: &f"
-  message " &8• &7<link:https://voting.example.com>Click here to vote!"
-  message " &8• &7<link:https://voting.example.com>Click here to vote!"
-  message " &8• &7<link:https://voting.example.com>Click here to vote!"
-  message ""

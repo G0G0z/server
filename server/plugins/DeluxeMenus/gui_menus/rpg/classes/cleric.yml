@@ -1,9 +1,0 @@
-menu_title: 'rpgaddon'
-size: 45
-
-items:
-
-  'air':
-    material: PAPER
-    display_name: 'YOU NEED THE RPG ADDON TO HAVE THIS FILE'
-    slot: 0

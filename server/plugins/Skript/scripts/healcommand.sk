@@ -1,3 +1,0 @@
-command /heal:
- trigger:
-  make player execute command "/essentials:heal"

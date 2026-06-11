@@ -1,7 +1,0 @@
-command /sellall:
- trigger:
-  make player execute command "/essentials:sell all"
-
-command /sellhand:
- trigger:
-  make player execute command "/essentials:sell hand"
