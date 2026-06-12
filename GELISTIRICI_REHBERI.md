@@ -1,9 +1,71 @@
 # TurkiyeCraft Geliştirici Rehberi
 
+## Forge 1.20.1 Mod — turkiyecraft-1.0.0.jar
+
+> **Build Durumu:** BASARILI ✅ | `BUILD #124` (1.8.9 client) + `turkiyecraft-1.0.0.jar` (Forge 1.20.1)
+
+### Forge 1.20.1 Mod Konumu (VPS)
+
+```
+VPS: /opt/cuberite/forge-mod/mdk/
+├── src/main/java/com/turkiyecraft/
+│   ├── TurkiyeCraft.java          ← Ana mod sinifi (@Mod entry point)
+│   ├── config/TurkiyeCraftConfig.java
+│   ├── event/TurkiyeCraftEvents.java
+│   ├── init/
+│   │   ├── ModItems.java          ← 22 item (silah, zirh, yiyecek, malzeme)
+│   │   ├── ModBlocks.java         ← 11 blok (yapi, cevher, dekoratif)
+│   │   ├── ModCreativeTabs.java   ← TurkiyeCraft yaratici sekmesi
+│   │   └── ModArmorMaterials.java ← Osmali zirh materyali
+│   └── item/
+│       ├── TurkishSwordItem.java
+│       └── TurkishFoodItem.java
+├── build/libs/turkiyecraft-1.0.0.jar  ← DERLENMIS JAR (39KB)
+└── src/main/resources/
+    ├── META-INF/mods.toml
+    ├── assets/turkiyecraft/lang/tr_tr.json
+    └── assets/turkiyecraft/lang/en_us.json
+```
+
+### Forge 1.20.1 Build Komutu
+
+```bash
+cd /opt/cuberite/forge-mod/mdk
+./gradlew build --no-daemon
+# Cikti: build/libs/turkiyecraft-1.0.0.jar
+```
+
+### Forge 1.20.1 Modun Icerigi
+
+| Kategori | Icerik |
+|----------|--------|
+| Silahlar | Turk Kilici, Altin Hilal Kilici, Demir Yatagan |
+| Aletler | Turk Kazma, Turk Balta |
+| Zirhlar | Tam Osmali Seti (Migfer, Gomlek, Pantolon, Cizme) |
+| Yiyecekler | Simit, Baklava, Turk Kahvesi, Ayran, Kebap |
+| Malzemeler | Altin Hilal, Bayrak Parcasi, Lale Tohumu, Nazar Boncugu, Sultan Tugra |
+| Yapi Bloklari | Turk Mermeri, Osmali Tasi, Toprak Tuglasi, Cini Karosu, Sultan Taslari |
+| Cevherler | Turk Altin Cevheri, Lale Tasi Cevheri |
+| Dekoratif | Turk Lambasi, Cami Kubbesi, Turk Halisi, Turk Mavi Isik |
+
+### Forge 1.20.1 Motor Guncellemeleri
+
+- **Kayit Sistemi**: DeferredRegister ile tam modern Forge kayit yapisi
+- **Event Bus**: `@Mod.EventBusSubscriber` ile ayri mod ve forge event bus
+- **Yaratici Sekme**: `CreativeModeTab.builder()` ile 1.20.1 API
+- **Config**: `ForgeConfigSpec` ile TOML tabanli yapilandirma
+- **Zirh**: `ArmorMaterial` enum ile ozel Osmali zirh materyali
+- **Loot Table**: Her blok icin JSON loot table
+- **Tarif**: Shaped/shapeless crafting tarifleri (JSON)
+- **Dil Destegi**: `tr_tr.json` + `en_us.json`
+
+---
+
 ## Dizin Yapısı
 
 ```
 VPS: /opt/cuberite/
+├── forge-mod/mdk/           ← Forge 1.20.1 Mod (YENİ)
 ├── client/                  ← Minecraft 1.8.9 İstemci Kaynak Kodu (MCP-919)
 │   ├── src/minecraft/       ← BURASI DÜZENLENİR
 │   ├── build/               ← Build çıktıları (JAR, ZIP, version.json)
