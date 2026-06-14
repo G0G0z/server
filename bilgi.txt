@@ -2,4 +2,4 @@
 VPS: root@165.22.90.13 | Şifre: 20192019zZ..zZ
 
 
-mobist Server Ve Clinet Kodları Var Vps eksiksiz okuyup istekler doğrultusunda düzenlemelisin.
+/opt/minecraft Server Ve Clinet Kodları Var Vps eksiksiz okuyup istekler doğrultusunda düzenlemelisin.
