@@ -1,5 +1,4 @@
  Hızlı Başlangıç Promptu
-VPS: root@165.22.90.13 | Şifre: 20192019zZ..zZ
+VPS: root@207.154.255.3 | Şifre: 20192019zZ..zZ
 
-
-/opt/minecraft Server Ve Clinet Kodları Var Vps eksiksiz okuyup istekler doğrultusunda düzenlemelisin.
+Bilgileri
